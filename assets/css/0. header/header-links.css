@@ -1,0 +1,10 @@
+.header__links {
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.header__links:hover {
+  color: #929292;
+}

@@ -1,0 +1,18 @@
+.plants__plant {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+  margin-top: 120px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.plants__plant a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.plants__plant a:hover {
+  cursor: pointer;
+}

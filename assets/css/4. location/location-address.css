@@ -1,0 +1,9 @@
+.location__address {
+  width: 70%;
+  margin: auto;
+  margin-top: 20px;
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: bold;
+}

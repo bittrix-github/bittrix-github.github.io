@@ -1,0 +1,23 @@
+.hero__button {
+  margin-top: 150px;
+}
+
+.hero__button--button {
+  font-size: 20px;
+  background-color: #375739;
+  color: #ffffff;
+  border-radius: 50px;
+  border: none;
+  height: 50px;
+  width: 220px;
+  font-weight: bold;
+  filter: drop-shadow(5px 5px 5px rgb(0, 0, 0, 0.45));
+  transition: all 0.2s ease-in-out;
+}
+
+.hero__button--button:hover {
+  cursor: pointer;
+  color: #000000;
+  background-color: #b7eaaf;
+  border: none;
+}

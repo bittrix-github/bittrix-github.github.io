@@ -1,0 +1,18 @@
+.service {
+  width: 50vw;
+  height: 60vh;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 20px;
+  background-image: linear-gradient(
+      to right bottom,
+      #213f36,
+      rgb(33, 63, 54, 0.15)
+    ),
+    url("../../img/service-card.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: left;
+  padding: 40px;
+  padding-left: 50px;
+}

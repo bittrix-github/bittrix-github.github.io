@@ -1,0 +1,6 @@
+body {
+  height: 120vh;
+  width: 99vw;
+  background: url("../../img/home-background.png") center / cover no-repeat;
+  text-align: center;
+}

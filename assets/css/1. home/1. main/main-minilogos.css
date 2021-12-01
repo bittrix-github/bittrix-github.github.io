@@ -1,0 +1,7 @@
+.main__minilogos {
+  display: flex;
+  width: 25%;
+  margin: auto;
+  margin-top: 80px;
+  justify-content: space-between;
+}

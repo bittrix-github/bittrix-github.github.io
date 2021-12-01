@@ -1,0 +1,14 @@
+.main__title {
+  padding-top: 180px;
+}
+
+.main__title h1 {
+  font-size: 75px;
+  font-weight: 600;
+  line-height: 100px;
+  color: rgb(255, 255, 255, 0.8);
+}
+
+.main__title span {
+  color: #d2ffcb;
+}

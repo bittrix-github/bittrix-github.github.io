@@ -1,0 +1,10 @@
+.main__paragraph {
+  width: 35%;
+  margin: auto;
+  margin-top: 60px;
+  color: #ffffff;
+  font-size: 30px;
+  line-height: 50px;
+  text-shadow: -2px 2px 0 #000, 2px 2px 0 #000, 2px -2px 0 #000,
+    -2px -2px 0 #000;
+}

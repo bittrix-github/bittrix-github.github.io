@@ -1,0 +1,25 @@
+.service__button {
+  margin-top: 70px;
+}
+
+.service__button--button {
+  font-size: 25px;
+  background: linear-gradient(to right, rgb(115, 178, 42, 0.8), #115200);
+  color: #ffffff;
+  border-radius: 50px;
+  border: none;
+  height: 70px;
+  width: 280px;
+  font-weight: bold;
+  filter: drop-shadow(5px 5px 5px rgb(0, 0, 0, 0.45));
+  transition: all 0.2s ease-in-out;
+}
+
+.service__button--button:hover {
+  cursor: pointer;
+  color: rgb(0, 0, 0, 0.6);
+  background: linear-gradient(to right, rgb(183, 234, 175, 0.7), #115200);
+  border: none;
+}
+
+/* #4c7e4 */

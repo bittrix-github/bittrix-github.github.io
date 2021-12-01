@@ -1,0 +1,21 @@
+.main__button {
+  margin-top: 50px;
+}
+
+.main__button--button {
+  font-size: 20px;
+  text-transform: uppercase;
+  background-color: rgb(0, 0, 0, 0.65);
+  color: #ffffff;
+  border-radius: 50px;
+  border-color: #ffffff;
+  height: 50px;
+  width: 250px;
+  transition: all 0.2s ease-in-out;
+}
+
+.main__button--button:hover {
+  cursor: pointer;
+  color: #000000;
+  background-color: #ffffff;
+}

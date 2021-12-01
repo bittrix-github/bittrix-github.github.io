@@ -1,0 +1,112 @@
+.plants__plant h3 {
+  font-size: 35px;
+}
+
+.plants__plant span {
+  text-transform: uppercase;
+  font-size: 25px;
+}
+
+.plants__plant-type--foliage {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 300px;
+  height: 210px;
+  padding: 30px;
+  border-radius: 30px;
+  position: relative;
+  background-image: url("../../../img/home-card1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.6;
+  transition: all 0.2s ease-in-out;
+}
+
+.plants__plant-type--foliage:hover {
+  opacity: 1;
+}
+
+.plants__plant-type--foliage img {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+
+.plants__plant-type--pucculent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 300px;
+  height: 210px;
+  padding: 30px;
+  border-radius: 30px;
+  position: relative;
+  background-image: url("../../../img/home-card2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.6;
+  transition: all 0.2s ease-in-out;
+}
+
+.plants__plant-type--pucculent:hover {
+  opacity: 1;
+}
+
+.plants__plant-type--pucculent img {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+
+.plants__plant-type--flower {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 300px;
+  height: 210px;
+  padding: 30px;
+  border-radius: 30px;
+  position: relative;
+  background-image: url("../../../img/home-card3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.6;
+  transition: all 0.2s ease-in-out;
+}
+
+.plants__plant-type--flower:hover {
+  opacity: 1;
+}
+
+.plants__plant-type--flower img {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+
+.plants__plant-type--fruit {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 300px;
+  height: 210px;
+  padding: 30px;
+  border-radius: 30px;
+  position: relative;
+  background-image: url("../../../img/home-card4.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.6;
+  transition: all 0.2s ease-in-out;
+}
+
+.plants__plant-type--fruit:hover {
+  opacity: 1;
+}
+
+.plants__plant-type--fruit img {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
