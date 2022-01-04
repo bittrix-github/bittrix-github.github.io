@@ -27,16 +27,7 @@
   opacity: 1;
 }
 
-#test {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  bottom: 15px;
-  right: 15px;
-  z-index: 5;
-}
-
-/* .plants__plant-type--foliage img {
+/* #test {
   position: absolute;
   width: 20px;
   height: 20px;
@@ -44,6 +35,15 @@
   right: 15px;
   z-index: 5;
 } */
+
+.plants__plant-type--foliage img {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  bottom: 15px;
+  right: 15px;
+  z-index: 5;
+}
 
 .plants__plant-type--pucculent {
   display: flex;
