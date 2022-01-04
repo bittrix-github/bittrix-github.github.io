@@ -1,15 +1,15 @@
 .hero__button {
-  margin-top: 150px;
+  margin-top: 15rem;
 }
 
 .hero__button--button {
-  font-size: 20px;
+  font-size: 2rem;
   background-color: #375739;
   color: #ffffff;
-  border-radius: 50px;
+  border-radius: 5rem;
   border: none;
-  height: 50px;
-  width: 220px;
+  height: 5rem;
+  width: 22rem;
   font-weight: bold;
   filter: drop-shadow(5px 5px 5px rgb(0, 0, 0, 0.45));
   transition: all 0.2s ease-in-out;

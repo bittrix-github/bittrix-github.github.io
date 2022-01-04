@@ -1,5 +1,6 @@
 .hero__title {
-  margin-top: 50px;
+  margin-top: 5rem;
+  font-size: 1.6rem;
   text-transform: uppercase;
   color: #b7eaaf;
   font-weight: bold;

@@ -1,6 +1,6 @@
 .hero__paragraph {
-  font-size: 18px;
-  margin-top: 60px;
+  font-size: 1.8rem;
+  margin-top: 6rem;
   font-weight: bold;
-  line-height: 30px;
+  line-height: 3rem;
 }

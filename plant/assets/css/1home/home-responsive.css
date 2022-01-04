@@ -1,19 +1,19 @@
 @media (max-width: 500px) {
   body {
-    height: 750px;
+    height: 75rem;
     width: 100vw;
     background: url("../../img/home-background.jpg") center / cover no-repeat;
     text-align: center;
   }
 
   .main__title {
-    padding-top: 50px;
+    padding-top: 5rem;
   }
 
   .main__title h1 {
-    font-size: 50px;
+    font-size: 5rem;
     font-weight: 600;
-    line-height: 55px;
+    line-height: 5.5rem;
     color: rgb(255, 255, 255, 0.8);
   }
 
@@ -24,20 +24,20 @@
   .main__paragraph {
     width: 85%;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 5rem;
     color: #ffffff;
-    font-size: 20px;
-    line-height: 25px;
+    font-size: 2rem;
+    line-height: 2.5rem;
     text-shadow: none;
   }
 
   .main__button {
-    margin-top: 40px;
+    margin-top: 4rem;
   }
 
   .main__button--button {
-    font-size: 18px;
-    width: 230px;
+    font-size: 1.8rem;
+    width: 23rem;
   }
 
   .main__minilogos {
@@ -46,70 +46,70 @@
     width: 40%;
     margin: auto;
     flex-wrap: wrap;
-    margin-top: 40px;
+    margin-top: 4rem;
   }
 
   .main__minilogos img:nth-child(3) {
-    margin-top: 25px;
+    margin-top: 2.5rem;
   }
 
   .main__minilogos img:nth-child(4) {
-    margin-top: 25px;
+    margin-top: 2.5rem;
   }
 
   .hero__button {
-    margin-top: 80px;
+    margin-top: 8rem;
   }
 
   .hero__button--button {
-    font-size: 26px;
-    border-radius: 70px;
-    height: 70px;
-    width: 280px;
+    font-size: 2.6rem;
+    border-radius: 7rem;
+    height: 7rem;
+    width: 28rem;
   }
 
   .hero__title {
-    margin-top: 60px;
-    font-size: 20px;
+    margin-top: 6rem;
+    font-size: 2rem;
   }
 
   .hero__paragraph {
     width: 85%;
     margin: auto;
-    font-size: 16px;
-    margin-top: 60px;
-    line-height: 25px;
+    font-size: 1.6rem;
+    margin-top: 6rem;
+    line-height: 2.5rem;
   }
 
   .plants {
     text-align: center;
-    margin-top: 90px;
-    padding-bottom: 120px;
+    margin-top: 9rem;
+    padding-bottom: 12rem;
   }
 
   .plants__title h2 {
-    font-size: 60px;
+    font-size: 6rem;
   }
 
   .plants__plant {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    margin-top: 90px;
+    margin-top: 9rem;
   }
 
   .plants__plant-type--foliage {
-    margin: 0px 0px 60px 0px;
+    margin: 0 0 6rem 0;
     opacity: 1;
   }
 
   .plants__plant-type--pucculent {
-    margin: 0px 0px 60px 0px;
+    margin: 0 0 6rem 0;
     opacity: 1;
   }
 
   .plants__plant-type--flower {
-    margin: 0px 0px 60px 0px;
+    margin: 0 0 6rem 0;
     opacity: 1;
   }
 

@@ -1,7 +1,7 @@
 .service__paragraph {
   width: 60%;
-  margin-top: 50px;
-  font-size: 22px;
-  line-height: 35px;
+  margin-top: 5rem;
+  font-size: 2.2rem;
+  line-height: 3.5rem;
   color: rgb(255, 255, 255, 0.75);
 }

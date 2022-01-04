@@ -7,12 +7,13 @@
 .header__button--button {
   color: #000000;
   font-weight: bold;
+  font-size: 1.6rem;
   background-color: #b7eaaf;
   border: none;
-  border-radius: 10px;
-  width: 150px;
-  height: 45px;
-  padding-top: 2px;
+  border-radius: 1rem;
+  width: 15rem;
+  height: 4.5rem;
+  padding-top: 0.2rem;
   transition: all 0.2s ease-in-out;
 }
 

@@ -1,15 +1,15 @@
 .location__button {
-  margin-top: 40px;
+  margin-top: 4rem;
 }
 
 .location__button--button {
-  font-size: 25px;
+  font-size: 2.5rem;
   background: linear-gradient(to right, rgb(115, 178, 42, 0.8), #115200);
   color: #ffffff;
-  border-radius: 50px;
+  border-radius: 5rem;
   border: none;
-  height: 70px;
-  width: 280px;
+  height: 7rem;
+  width: 28rem;
   font-weight: bold;
   filter: drop-shadow(5px 5px 5px rgb(0, 0, 0, 0.45));
   transition: all 0.2s ease-in-out;

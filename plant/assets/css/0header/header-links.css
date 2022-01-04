@@ -1,6 +1,7 @@
 .header__links {
   color: #ffffff;
   font-weight: 600;
+  font-size: 1.6rem;
   text-decoration: none;
   transition: all 0.2s ease-in-out;
 }

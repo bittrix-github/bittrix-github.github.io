@@ -1,15 +1,15 @@
 .service__button {
-  margin-top: 70px;
+  margin-top: 7rem;
 }
 
 .service__button--button {
-  font-size: 25px;
+  font-size: 2.5rem;
   background: linear-gradient(to right, rgb(115, 178, 42, 0.8), #115200);
   color: #ffffff;
-  border-radius: 50px;
+  border-radius: 5rem;
   border: none;
-  height: 70px;
-  width: 280px;
+  height: 7rem;
+  width: 28rem;
   font-weight: bold;
   filter: drop-shadow(5px 5px 5px rgb(0, 0, 0, 0.45));
   transition: all 0.2s ease-in-out;
@@ -21,5 +21,3 @@
   background: linear-gradient(to right, rgb(183, 234, 175, 0.7), #115200);
   border: none;
 }
-
-/* #4c7e4 */

@@ -2,13 +2,13 @@
   width: 35vw;
   height: 55vh;
   margin: auto;
-  margin-top: 80px;
+  margin-top: 8rem;
   border: 2px solid rgb(76, 99, 92, 0.2);
-  border-radius: 20px;
+  border-radius: 2rem;
   background-color: rgb(33, 63, 54, 0.8);
   -webkit-backdrop-filter: blur(15px);
   backdrop-filter: blur(15px);
   filter: drop-shadow(20px 20px 20px rgb(0, 0, 0, 0.45));
   text-align: center;
-  padding-top: 70px;
+  padding-top: 7rem;
 }
