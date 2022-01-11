@@ -88,6 +88,7 @@ playb.addEventListener('click', () => {
 
     playOn = 1;
 
+    document.getElementById('audio' + track).volume = 0.5;
     document.getElementById('audio' + track).play()
 
 })
@@ -137,7 +138,7 @@ volumex.addEventListener('click', () => {
 
     soundOn = 1;
 
-    document.getElementById('audio' + track).volume = 1;
+    document.getElementById('audio' + track).volume = 0.5;
 
 })
 
@@ -207,7 +208,7 @@ homeBtn.addEventListener('click', () => {
             document.getElementById('audio' + track).currentTime = 0;
             track = 0;
             document.getElementById('audio' + track).play();
-            document.getElementById('audio' + track).volume = 1;
+            document.getElementById('audio' + track).volume = 0.5;
         }
 
     }
@@ -241,7 +242,7 @@ halfBtn.addEventListener('click', () => {
             document.getElementById('audio' + track).currentTime = 0;
             track = 1;
             document.getElementById('audio' + track).play();
-            document.getElementById('audio' + track).volume = 1;
+            document.getElementById('audio' + track).volume = 0.5;
         }
 
     }
@@ -275,7 +276,7 @@ surfingBtn.addEventListener('click', () => {
             document.getElementById('audio' + track).currentTime = 0;
             track = 2;
             document.getElementById('audio' + track).play();
-            document.getElementById('audio' + track).volume = 1;
+            document.getElementById('audio' + track).volume = 0.5;
         }
 
     }
@@ -309,7 +310,7 @@ skatingBtn.addEventListener('click', () => {
             document.getElementById('audio' + track).currentTime = 0;
             track = 3;
             document.getElementById('audio' + track).play();
-            document.getElementById('audio' + track).volume = 1;
+            document.getElementById('audio' + track).volume = 0.5;
         }
 
     }
@@ -344,7 +345,7 @@ bmxBtn.addEventListener('click', () => {
             document.getElementById('audio' + track).currentTime = 0;
             track = 4;
             document.getElementById('audio' + track).play();
-            document.getElementById('audio' + track).volume = 1;
+            document.getElementById('audio' + track).volume = 0.5;
         }
 
     }
@@ -380,7 +381,7 @@ aboutBtn.addEventListener('click', () => {
             document.getElementById('audio' + track).currentTime = 0;
             track = 5;
             document.getElementById('audio' + track).play();
-            document.getElementById('audio' + track).volume = 1;
+            document.getElementById('audio' + track).volume = 0.5;
         }
 
     }
