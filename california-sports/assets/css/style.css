@@ -1,0 +1,523 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* background-color: #ebebeb; */
+  background-color: transparent;
+  font-family: sans-serif;
+}
+
+/*
+
+
+
+
+
+==============================     MENU     ==============================
+
+
+
+
+
+*/
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 7rem;
+  background-color: rgb(0, 0, 50);
+  border-top-right-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+  overflow-x: hidden;
+  box-shadow: 0 0 5rem rgb(32, 115, 209);
+  transition: 0.5s ease;
+}
+
+.menu:hover {
+  width: 25rem;
+}
+
+.menu__lista {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25rem;
+  height: 60vh;
+  margin-top: 20vh;
+}
+
+.menu__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  font-size: 1.6rem;
+  width: 100%;
+}
+
+.menu__item:hover {
+  background-color: rgb(24, 67, 114);
+  cursor: pointer;
+}
+
+.icon {
+  width: 25%;
+  padding: 1rem;
+}
+
+.text {
+  width: 60%;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgb(32, 115, 209);
+}
+
+/*
+
+
+
+
+
+==============================     TITLE SCREEN     ==============================
+
+
+
+
+
+*/
+
+.palm {
+  position: absolute;
+  bottom: 47%;
+  left: 35.5%;
+}
+
+#copa {
+  animation: copa 1s ease-in-out infinite alternate;
+}
+
+@keyframes copa {
+  from {
+    transform: skewX(1deg);
+  }
+
+  to {
+    transform: skewX(-1deg);
+  }
+}
+
+.california {
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.california h1 {
+  font-size: 15rem;
+  letter-spacing: 1.5rem;
+  background: linear-gradient(
+    rgb(230, 230, 230),
+    30%,
+    rgb(82, 33, 14),
+    55%,
+    rgb(230, 230, 230)
+  );
+
+  -webkit-background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+}
+
+.sports {
+  position: absolute;
+  top: 65vh;
+  left: 55%;
+  transform: translateX(-55%);
+}
+
+#mar {
+  animation: mar 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes mar {
+  from {
+    transform: translateY(0px);
+  }
+
+  to {
+    transform: translateY(10px);
+  }
+}
+
+.title {
+  position: absolute;
+  z-index: -1;
+}
+
+.title.inactive {
+  position: absolute;
+  z-index: -10;
+}
+
+.title__bg1 {
+  width: 100vw;
+  height: 60vh;
+  background: linear-gradient(
+    rgb(0, 0, 31),
+    rgb(2, 2, 68),
+    rgb(0, 0, 31),
+    rgb(2, 2, 68),
+    rgb(0, 0, 40)
+  );
+}
+
+.title__div {
+  position: absolute;
+  width: 55%;
+  height: 0.6rem;
+  top: 63%;
+  left: 55%;
+  transform: translateX(-55%);
+  border-radius: 2rem;
+  background-color: rgb(188, 243, 59);
+}
+
+.title__bg2 {
+  width: 100vw;
+  height: 40vh;
+  background-color: rgb(0, 0, 40);
+}
+
+/*
+
+
+
+
+
+==============================     CONTEÚDO     ==============================
+
+
+
+
+
+*/
+
+.conteudo {
+  position: absolute;
+  width: 62rem;
+  height: 62rem;
+  top: 50%;
+  left: 53%;
+  transform: translate(-53%, -50%);
+}
+
+/*
+
+
+
+HALF PIPE
+
+
+
+*/
+
+.half__pipe {
+  position: absolute;
+  opacity: 0;
+}
+
+.half__pipe.active {
+  opacity: 1;
+}
+
+#half__pipe {
+  animation: half__pipe 3s ease infinite;
+}
+
+@keyframes half__pipe {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-70px);
+  }
+}
+
+#skateboard {
+  animation: skateboard 3s ease-out infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+@keyframes skateboard {
+  from {
+    transform: rotateZ(0deg);
+  }
+
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+/*
+
+
+
+SURFING
+
+
+
+*/
+
+.surfing {
+  position: absolute;
+  opacity: 0;
+}
+
+.surfing.active {
+  opacity: 1;
+}
+
+#surfer {
+  animation: surfer 1.5s ease infinite alternate;
+}
+
+@keyframes surfer {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-42px);
+  }
+}
+
+#surfboard {
+  animation: surfboard 1.5s ease infinite alternate;
+}
+
+@keyframes surfboard {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-50px);
+  }
+}
+
+/*
+
+
+
+SKATING
+
+
+
+*/
+
+.skating {
+  position: absolute;
+  opacity: 0;
+}
+
+.skating.active {
+  opacity: 1;
+}
+
+#body {
+  animation: body 0.7s ease infinite alternate;
+}
+
+@keyframes body {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+#legs {
+  animation: legs 0.7s ease infinite alternate;
+}
+
+@keyframes legs {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-15px);
+  }
+}
+
+#hair {
+  animation: hair 0.2s ease infinite alternate;
+}
+
+@keyframes hair {
+  from {
+    transform: translateY(-5px);
+  }
+
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+/*
+
+
+
+BMX
+
+
+
+*/
+
+.bmx {
+  position: absolute;
+  opacity: 0;
+}
+
+.bmx.active {
+  opacity: 1;
+}
+
+#bmx {
+  animation: bmx 3s ease infinite;
+}
+
+@keyframes bmx {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-70px);
+  }
+}
+
+#front-wheel {
+  animation: front-wheel 1s infinite linear;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+@keyframes front-wheel {
+  from {
+    transform: rotateZ(0deg);
+  }
+
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+#back-wheel {
+  animation: back-wheel 3s infinite linear;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+@keyframes back-wheel {
+  from {
+    transform: rotateZ(0deg);
+  }
+
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+/*
+
+
+
+ABOUT
+
+
+
+*/
+
+.about {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 1.5rem;
+  background-color: rgb(0, 0, 50);
+  box-shadow: 0 0 5rem rgb(32, 115, 209);
+  color: rgb(32, 115, 209);
+  padding: 5rem 7rem;
+  font-family: "Poppins", sans-serif;
+  opacity: 0;
+}
+
+.about h2 {
+  font-size: 3rem;
+}
+
+.about p {
+  font-size: 1.6rem;
+}
+
+.about p span {
+  font-style: italic;
+}
+
+.about.active {
+  opacity: 1;
+}
+
+/*
+
+
+
+==============================     BACKGROUND     ==============================
+
+
+
+*/
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+
+.bg {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(
+    #1f8baa,
+    #248bac,
+    #3e90ae,
+    #5f97b0,
+    #7599af,
+    #879cad,
+    #959cac,
+    #b5a0a5,
+    #c6a1a0,
+    #cea19c,
+    #e5a28f,
+    #fea168,
+    #ffa163,
+    #ff9c49,
+    #ff982e,
+    #fe9112
+  );
+}

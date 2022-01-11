@@ -1,0 +1,118 @@
+.musica__container {
+  width: 66vw;
+  height: 85vh;
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+}
+
+.musica {
+  display: flex;
+  position: absolute;
+  top: 15%;
+  left: 60%;
+}
+
+.musica .activatorO {
+  padding: 1.5rem;
+  border-radius: 50%;
+  cursor: -webkit-grab;
+  transition: 0.3s ease;
+}
+
+.musica .activatorO:active {
+  cursor: -webkit-grabbing;
+}
+
+.musica .activatorO:hover {
+  background: #2073d1;
+  transition: 0.3s ease;
+  border-top-left-radius: 7px;
+}
+
+.musica .activatorX {
+  padding: 1.5em;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+}
+
+.musica .adjustments {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 24px;
+  height: 24px;
+  padding: 2px;
+  opacity: 0;
+}
+
+.activatorO:hover + .adjustments {
+  opacity: 1;
+  transition: 1s ease;
+  cursor: pointer;
+  background: #2073d1;
+  border-radius: 100%;
+}
+
+.adjustments:hover {
+  opacity: 1;
+  transition: 1s ease;
+  cursor: pointer;
+  background: #2073d1;
+  border-radius: 100%;
+}
+
+.musica__botoes--lista {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.musica__botoes {
+  background: rgb(0, 0, 40);
+  border-radius: 0 6rem 6rem 0;
+  padding: 0.5rem;
+  align-items: center;
+  clip-path: ellipse(50% 50% at -50% 50%);
+  max-width: 0;
+}
+
+.musica__botoes--lista li svg {
+  display: block;
+  padding: 0.3rem;
+  margin: 0.3rem 0.3rem;
+  border-radius: 50%;
+  transform: translateX(-10px);
+  opacity: 0;
+}
+
+.musica__botoes--lista li svg:hover {
+  background: rgb(50, 56, 68);
+  cursor: pointer;
+}
+
+.pause-btn {
+  display: none;
+}
+
+.volumeX-btn {
+  display: none;
+}
+
+.testeee {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100vh;
+}
+
+.testeee button {
+  width: 5%;
+  height: 8%;
+  background-color: blueviolet;
+  padding: 1.5rem;
+}
