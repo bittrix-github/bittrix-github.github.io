@@ -9,9 +9,12 @@ html {
 }
 
 body {
-  /* background-color: #ebebeb; */
-  background-color: transparent;
   font-family: sans-serif;
+  overflow-x: hidden;
+}
+
+.musica__mobile {
+  display: none;
 }
 
 /*
@@ -95,10 +98,18 @@ body {
 
 */
 
+.palm__container {
+  position: absolute;
+  bottom: calc(65% - 7vw);
+  height: 31rem;
+  width: 16.5rem;
+  left: calc(-10rem + 40vw);
+}
+
 .palm {
   position: absolute;
-  bottom: 47%;
-  left: 35.5%;
+  z-index: 1;
+  margin-left: -14vw;
 }
 
 #copa {
@@ -117,13 +128,16 @@ body {
 
 .california {
   position: absolute;
-  top: 40%;
-  left: 20%;
+  width: 100%;
+  top: 35%;
+  left: 50%;
+  transform: translateX(-50%);
   font-family: "Josefin Sans", sans-serif;
 }
 
 .california h1 {
-  font-size: 15rem;
+  text-align: center;
+  font-size: 9vw;
   letter-spacing: 1.5rem;
   background: linear-gradient(
     rgb(230, 230, 230),
@@ -140,9 +154,10 @@ body {
 
 .sports {
   position: absolute;
-  top: 65vh;
-  left: 55%;
-  transform: translateX(-55%);
+  transform: scale(-50%);
+  top: 65%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 #mar {
@@ -165,8 +180,16 @@ body {
 }
 
 .title.inactive {
+  display: none;
+}
+
+.title__container {
   position: absolute;
-  z-index: -10;
+  width: 75%;
+  height: 70%;
+  top: 50%;
+  left: 55%;
+  transform: translate(-55%, -50%);
 }
 
 .title__bg1 {
@@ -183,11 +206,12 @@ body {
 
 .title__div {
   position: absolute;
-  width: 55%;
+  width: 80%;
   height: 0.6rem;
-  top: 63%;
-  left: 55%;
-  transform: translateX(-55%);
+  top: 50%;
+  left: 50%;
+  margin-top: 6vw;
+  transform: translateX(-50%);
   border-radius: 2rem;
   background-color: rgb(188, 243, 59);
 }
@@ -520,4 +544,167 @@ ABOUT
     #ff982e,
     #fe9112
   );
+}
+
+/*
+
+
+
+
+
+==============================     RESPONSIVO     ==============================
+
+
+
+
+
+*/
+
+@media (max-width: 500px) {
+  .sports {
+    display: none;
+  }
+  .menu {
+    position: fixed;
+    top: 90vh;
+    left: 0;
+    height: 10vh;
+    width: 100vw;
+    background-color: rgb(0, 0, 50);
+    border-top-right-radius: 1.5rem;
+    border-top-left-radius: 1.5rem;
+    border-bottom-right-radius: 0;
+    overflow-x: hidden;
+    box-shadow: 0 0 5rem rgb(32, 115, 209);
+    transition: 0.5s ease;
+  }
+
+  .menu:hover {
+    width: 100%;
+  }
+
+  .menu__lista {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin: auto;
+    height: 100%;
+    margin-top: 0;
+  }
+
+  .menu__item p {
+    display: none;
+  }
+
+  .menu__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    font-size: 1.6rem;
+    width: 100%;
+  }
+
+  .menu__item:hover {
+    background-color: rgb(24, 67, 114);
+    cursor: pointer;
+  }
+
+  .icon {
+    width: 100%;
+    padding: 0;
+  }
+
+  .icon svg {
+    width: 100%;
+    margin: auto;
+  }
+
+  .musica__container {
+    display: none;
+  }
+
+  .half__pipe,
+  .surfing,
+  .skating,
+  .bmx {
+    transform: scale(0.75);
+  }
+
+  .musica__mobile {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 10vh;
+    width: 100vw;
+    background-color: rgb(0, 0, 50);
+    border-bottom-right-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+    overflow-x: hidden;
+    box-shadow: 0 0 5rem rgb(32, 115, 209);
+    transition: 0.5s ease;
+  }
+
+  .m-musica {
+    display: flex;
+    width: 70%;
+    margin: auto;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .m-musica svg {
+    display: block;
+    padding: 0.3rem;
+    margin: 0.3rem 0.3rem;
+    border-radius: 50%;
+  }
+
+  .m-musica svg:hover {
+    background: rgb(40, 40, 80);
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .m-musica svg:first-child:hover {
+    background: none;
+    cursor: inherit;
+  }
+
+  #m-pause-btn {
+    display: none;
+  }
+
+  #m-volumeX-btn {
+    display: none;
+  }
+
+  .about {
+    position: absolute;
+    width: 70vw;
+    height: 70vh;
+    top: 0;
+    left: 28vw;
+    padding: 2vh 5vw;
+    opacity: 0;
+  }
+
+  .about h2 {
+    font-size: 2.5rem;
+  }
+
+  .about p {
+    font-size: 1.5rem;
+  }
+
+  .about p span {
+    font-style: italic;
+  }
+
+  .about.active {
+    opacity: 1;
+  }
 }

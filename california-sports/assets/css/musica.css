@@ -103,17 +103,3 @@
 .volumeX-btn {
   display: none;
 }
-
-.testeee {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  height: 100vh;
-}
-
-.testeee button {
-  width: 5%;
-  height: 8%;
-  background-color: blueviolet;
-  padding: 1.5rem;
-}
