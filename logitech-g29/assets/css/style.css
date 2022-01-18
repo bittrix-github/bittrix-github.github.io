@@ -360,7 +360,7 @@ nav ul li p {
     width: 70vw;
     left: 15vw;
     text-align: center;
-    transform: translateY(-8vh);
+    transform: translateY(-6vh);
   }
 
   .s1 .fp-controlArrow.fp-prev {
@@ -368,21 +368,21 @@ nav ul li p {
     width: 0;
     margin-top: 0rem;
     border-width: 13px 13px 13px 0;
-    transform: translateY(-17vh);
+    transform: translateY(-16vh);
   }
 
   .s1 .fp-controlArrow.fp-next {
     left: 91vw;
     margin-top: 0rem;
     border-width: 13px 0 13px 13px;
-    transform: translateY(-17vh);
+    transform: translateY(-16vh);
   }
 
   .s1__container {
     position: absolute;
     width: 96vw;
     height: 100vh;
-    top: 9vh;
+    top: 10vh;
     left: 2vw;
   }
 
@@ -398,7 +398,7 @@ nav ul li p {
     position: absolute;
     width: 96vw;
     left: 2vw;
-    height: 50vh;
+    height: 49vh;
     bottom: 0;
   }
 
@@ -468,14 +468,14 @@ nav ul li p {
 
   .s2 h2 {
     font-size: 4rem;
-    margin-top: 12vh;
+    margin-top: 10vh;
   }
 
   .s2__mobile--h3 {
     position: absolute;
     width: 100%;
     margin: auto;
-    height: 16vh;
+    height: 18vh;
     bottom: 0;
   }
 
@@ -488,7 +488,7 @@ nav ul li p {
     width: 75vw;
     left: 12.5vw;
     height: 40vh;
-    top: calc(55vh + 3.5rem);
+    top: calc(50vh + 3.5rem);
     transform: translateY(-50%);
   }
 }
