@@ -360,7 +360,7 @@ nav ul li p {
     width: 70vw;
     left: 15vw;
     text-align: center;
-    transform: translateY(-6vh);
+    transform: translateY(-5vh);
   }
 
   .s1 .fp-controlArrow.fp-prev {
@@ -397,9 +397,9 @@ nav ul li p {
   .s1__mobile {
     position: absolute;
     width: 96vw;
-    left: 2vw;
     height: 49vh;
-    bottom: 0;
+    bottom: 0vh;
+    padding-bottom: 5vh;
   }
 
   .s1__container h3 {
@@ -407,6 +407,7 @@ nav ul li p {
     line-height: 2.8rem;
 
     width: 80vw;
+    margin: auto;
     margin-top: 0;
   }
 
