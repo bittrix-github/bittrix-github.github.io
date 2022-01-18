@@ -8,6 +8,9 @@ new fullpage("#fullpage", {
     fixedElements: '#header',
     sectionsColor : ['rgb(0, 0, 0, 0)', 'rgb(0, 0, 0, 0)', 'rgb(0, 0, 0, 0)', 'rgb(0, 0, 0, 0)', 'rgb(190, 190, 190)', 'rgb(0, 0, 0, 0)'],
     anchors: ['section1', 'section2', 'section3', 'section4', 'section5', 'section6'],
+    recordHistory: false,
+    scrollOverflow: true,
+    // responsiveWidth: 900,
 
     afterRender: function(){
 
