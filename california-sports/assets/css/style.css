@@ -565,7 +565,7 @@ ABOUT
 
 */
 
-@media (max-width: 500px) {
+@media (max-width: 510px) {
   .conteudo {
     position: absolute;
     width: 99vw;
@@ -578,7 +578,7 @@ ABOUT
   .surfing,
   .skating,
   .bmx {
-    transform: scale(0.5);
+    transform: scale(0.65);
 
     width: 20vw;
     height: 50vh;
@@ -602,10 +602,6 @@ ABOUT
   .bmx {
     top: 45vh;
     left: 57vw;
-  }
-
-  .sports {
-    display: none;
   }
 
   .menu {
@@ -646,11 +642,6 @@ ABOUT
     padding: 0;
     font-size: 1.6rem;
     width: 100%;
-  }
-
-  .menu__item:hover {
-    background-color: rgb(24, 67, 114);
-    cursor: pointer;
   }
 
   .icon {
@@ -717,6 +708,159 @@ ABOUT
     display: none;
   }
 
+  .palm__container {
+    bottom: 31vh;
+    left: 18vw;
+  }
+
+  .palm {
+    transform: scale(0.65);
+  }
+
+  .california {
+    width: 90vw;
+    top: 28vh;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .california h1 {
+    font-size: 5rem;
+    letter-spacing: 1.2rem;
+  }
+
+  .title__div {
+    width: 100%;
+    top: 38vh;
+    height: 0.4rem;
+  }
+
+  .sports {
+    width: 10vw;
+    height: 10vh;
+
+    top: 42vh;
+    left: 50%;
+
+    transform: translateX(-385%) scale(0.5);
+  }
+
+  .about__container {
+    display: none;
+  }
+
+  .about__container-mobile {
+    display: block;
+  }
+
+  .about {
+    position: absolute;
+    width: 75vw;
+    height: 70vh;
+    top: 44.5vh;
+    left: 64vw;
+    padding: 2vh 5vw;
+    opacity: 0;
+  }
+
+  .about h2 {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+  }
+
+  .about p {
+    font-size: 1.5rem;
+    margin-top: 4.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title__bg2 {
+    position: absolute;
+    width: 100vw;
+    height: 52vh;
+    top: 48vh;
+    z-index: -1;
+  }
+
+  .sports {
+    width: 100vw;
+    height: 1vh;
+
+    top: 48vh;
+    left: 0;
+
+    transform: translateX(-35%) scale(0.53);
+  }
+
+  .palm__container {
+    width: 10vw;
+    height: 10vh;
+
+    bottom: 22.5vh;
+    left: 12vw;
+  }
+
+  .palm {
+    transform: scale(0.55);
+  }
+
+  .california {
+    width: 95vw;
+    top: 34vh;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .california h1 {
+    font-size: 4rem;
+    letter-spacing: 1rem;
+  }
+
+  .title__div {
+    width: 100%;
+    top: 44vh;
+    height: 0.4rem;
+  }
+
+  .conteudo {
+    position: absolute;
+    width: 99vw;
+    height: 79vh;
+    top: 10vh;
+    left: 0;
+  }
+
+  .half__pipe,
+  .surfing,
+  .skating,
+  .bmx {
+    transform: scale(0.48);
+
+    width: 20vw;
+    height: 50vh;
+  }
+
+  .half__pipe {
+    top: 47vh;
+    left: 60vw;
+  }
+
+  .surfing {
+    top: 47vh;
+    left: 57vw;
+  }
+
+  .skating {
+    top: 47vh;
+    left: 57vw;
+  }
+
+  .bmx {
+    top: 45vh;
+    left: 57vw;
+  }
+
   .about__container {
     display: none;
   }
@@ -737,10 +881,11 @@ ABOUT
 
   .about h2 {
     font-size: 2.5rem;
+    margin-top: 2rem;
   }
 
   .about p {
     font-size: 1.5rem;
-    margin-top: 1.5rem;
+    margin-top: 4.5rem;
   }
 }

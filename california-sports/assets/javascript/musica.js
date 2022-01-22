@@ -437,7 +437,7 @@ function stopDown(dD) {
 
 
   
-  var dD = window.matchMedia("(max-width: 500px)");
+  var dD = window.matchMedia("(max-width: 510px)");
 
   stopDown(dD);
 
@@ -864,7 +864,7 @@ function stopUp(uU) {
 
 
 
-var uU = window.matchMedia("(min-width: 501px)");
+var uU = window.matchMedia("(min-width: 511px)");
 
 stopUp(uU);
 
