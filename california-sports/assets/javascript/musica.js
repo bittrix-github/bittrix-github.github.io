@@ -416,6 +416,51 @@ aboutBtn.addEventListener('click', () => {
 
 
 
+function stopDown(dD) {
+
+    if (dD.matches) {
+      
+        pauseb.style.display = 'none';
+
+        playb.style.display = 'block';
+    
+        playOn = 0;
+
+        document.getElementById('audio' + track).pause();
+        document.getElementById('audio' + track).currentTime = 0;
+
+    }
+    
+}
+
+
+
+
+  
+  var dD = window.matchMedia("(max-width: 500px)");
+
+  stopDown(dD);
+
+  dD.addListener(stopDown);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -779,3 +824,48 @@ mAboutBtn.addEventListener('click', () => {
     }
 
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function stopUp(uU) {
+
+    if (uU.matches) {
+      
+        mPauseb.style.display = 'none';
+
+        mPlayb.style.display = 'block';
+    
+        mPlayOn = 0;
+    
+        document.getElementById('m-audio' + mTrack).pause();
+        document.getElementById('m-audio' + mTrack).currentTime = 0;
+
+    }
+    
+}
+
+
+
+var uU = window.matchMedia("(min-width: 501px)");
+
+stopUp(uU);
+
+uU.addListener(stopUp);
