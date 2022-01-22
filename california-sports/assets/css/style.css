@@ -866,7 +866,7 @@ ABOUT
     height: 10vh;
 
     bottom: 60.5vh;
-    left: 25vw;
+    left: 60vw;
   }
 
   .palm {
@@ -887,7 +887,6 @@ ABOUT
 
   .title__div {
     width: 80vw;
-    margin-left: 0;
     top: 44vh;
     height: 0.4rem;
   }
