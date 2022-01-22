@@ -862,11 +862,11 @@ ABOUT
   }
 
   .palm__container {
-    width: 10vw;
-    height: 10vh;
+    width: 20vw;
+    height: 20vh;
 
-    bottom: 60.5vh;
-    left: 60vw;
+    bottom: 50.5vh;
+    left: 26vw;
   }
 
   .palm {
@@ -881,8 +881,9 @@ ABOUT
   }
 
   .california h1 {
-    font-size: 4rem;
-    letter-spacing: 1rem;
+    width: 100vw;
+    font-size: 10vw;
+    letter-spacing: 2vw;
   }
 
   .title__div {
