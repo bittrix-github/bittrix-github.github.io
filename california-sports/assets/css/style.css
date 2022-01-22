@@ -728,8 +728,8 @@ ABOUT
   .about {
     position: absolute;
     width: 90vw;
-    height: 70vh;
-    top: 44vh;
+    height: 75vh;
+    top: 42vh;
     left: 57.5vw;
     padding: 2vh 5vw;
     opacity: 0;
