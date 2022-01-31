@@ -12,7 +12,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url("/assets/img/02quem-somos/banner-responsive.jpg");
+    background-image: url("assets/img/02quem-somos/banner-responsive.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     z-index: -2;

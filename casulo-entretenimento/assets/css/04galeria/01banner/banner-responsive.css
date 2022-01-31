@@ -14,7 +14,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url("/assets/img/4. galeria/banner-responsive.jpg");
+    background-image: url("assets/img/04galeria/banner-responsive.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     z-index: -2;
