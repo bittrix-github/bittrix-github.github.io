@@ -1,0 +1,8 @@
+.hero__cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero__cards img {
+  width: 24.5%;
+}

@@ -1,0 +1,27 @@
+.contato__container {
+  position: relative;
+  background-image: url("../../../img/01home/bottom.jpg");
+  background-repeat: no-repeat;
+  z-index: 0;
+  background-size: 99vw;
+  padding: 95rem 13rem 40rem 13rem;
+  background-color: #0e0d0b;
+
+  margin-left: 0;
+}
+
+.contato__container {
+  display: flex;
+  justify-content: space-between;
+  color: #ffffff;
+}
+
+.contato__mascara {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  width: 99vw;
+  height: 105rem;
+  background: linear-gradient(rgb(142, 5, 106, 0), rgb(142, 5, 106, 0.25));
+}

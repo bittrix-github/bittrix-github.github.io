@@ -1,0 +1,14 @@
+.main__titulo {
+  display: grid;
+  align-items: center;
+  font-family: "Comfortaa", cursive;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  height: 18rem;
+  margin: auto;
+}
+
+.main__titulo h2 span {
+  font-weight: 700;
+}

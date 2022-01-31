@@ -1,0 +1,16 @@
+.main__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 13rem 11rem 35rem 11rem;
+}
+
+.main__mascara {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  width: 99vw;
+  height: 82.5rem;
+  background: linear-gradient(rgb(142, 5, 106, 0), rgb(142, 5, 106, 1));
+}

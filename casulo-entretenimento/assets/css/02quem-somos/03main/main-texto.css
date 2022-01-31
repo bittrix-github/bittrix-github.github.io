@@ -1,0 +1,7 @@
+.main__texto {
+  font-family: avenir;
+  width: calc(100rem - 7vw);
+  font-size: 1.8rem;
+  line-height: calc(3rem + 0.8vw);
+  margin-left: 10rem;
+}

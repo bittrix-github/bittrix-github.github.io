@@ -1,0 +1,14 @@
+.contato__item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: "Comfortaa", cursive;
+  font-size: 1.4vw;
+  line-height: 4rem;
+  padding-left: calc(7rem + 7vw);
+  margin-bottom: 4rem;
+}
+
+.contato__item img {
+  margin-right: 4rem;
+}

@@ -1,0 +1,17 @@
+.sociais__container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20rem 15rem 20rem 15rem;
+}
+
+.sociais__mascara {
+  position: absolute;
+  background-color: #b30069;
+  bottom: 0;
+  left: 0;
+  width: 99vw;
+  height: calc(90rem + 10vw);
+  z-index: -1;
+}

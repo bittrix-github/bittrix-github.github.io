@@ -1,0 +1,14 @@
+.hero__titulo {
+  color: #8e056a;
+  text-transform: uppercase;
+  font-size: 3vw;
+  line-height: 12rem;
+  font-family: "Comfortaa", cursive;
+  font-weight: 400;
+}
+
+.hero__titulo span {
+  color: #b30069;
+  font-weight: 700;
+  font-size: 5.7vw;
+}

@@ -1,0 +1,10 @@
+.hero__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 13rem 12rem 13rem 12rem;
+}
+
+.hero__cards--responsive {
+  display: none;
+}

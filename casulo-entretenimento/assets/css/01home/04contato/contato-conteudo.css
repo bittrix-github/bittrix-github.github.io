@@ -1,0 +1,16 @@
+.contato__conteudo {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: space-between;
+}
+
+.contato__conteudo h3 {
+  font-family: "Comfortaa", cursive;
+  text-transform: uppercase;
+  font-size: 2.3vw;
+  line-height: 6rem;
+  width: 60%;
+  padding-left: calc(7rem + 7vw);
+  margin-bottom: 6rem;
+}

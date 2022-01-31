@@ -1,0 +1,9 @@
+.cabecalho__links {
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.cabecalho__ativo {
+  color: #ff68c1;
+}

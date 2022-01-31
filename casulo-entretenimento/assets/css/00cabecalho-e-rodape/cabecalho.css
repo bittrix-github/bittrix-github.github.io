@@ -1,0 +1,10 @@
+.cabecalho {
+  font-family: uniformCondensed;
+  font-size: 1.8rem;
+  word-spacing: 0.5rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  width: 99vw;
+}

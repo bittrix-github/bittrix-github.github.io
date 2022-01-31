@@ -1,0 +1,12 @@
+.cabecalho__lista {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cabecalho__X {
+  display: none;
+}
+
+.cabecalho__home {
+  display: none;
+}

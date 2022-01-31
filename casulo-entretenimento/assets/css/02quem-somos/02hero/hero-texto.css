@@ -1,0 +1,7 @@
+.hero__texto {
+  font-family: avenir;
+  width: calc(80rem - 2vw);
+  font-size: 1.8rem;
+  line-height: 2vw;
+  margin-left: 5rem;
+}

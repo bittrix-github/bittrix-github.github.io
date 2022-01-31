@@ -1,0 +1,55 @@
+@media (max-width: 500px) {
+  .rodape {
+    width: 100vw;
+    bottom: 0rem;
+    height: 30rem;
+  }
+  .rodape__container {
+    flex-direction: column;
+    align-items: center;
+    width: 85%;
+    margin: auto;
+    text-align: center;
+  }
+
+  .rodape__casulo {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .rodape__logo {
+    width: 70%;
+  }
+
+  .rodape__texto {
+    display: none;
+  }
+
+  .rodape__texto--responsive {
+    display: block;
+    font-family: avenir;
+    width: 100%;
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    margin-top: 3rem;
+  }
+
+  .rodape__credito {
+    text-align: left;
+    width: 90%;
+    font-size: 1.8rem;
+    line-height: 3.5rem;
+    margin-top: 5rem;
+    margin-left: 4.2rem;
+  }
+
+  .rodape__awb a {
+    font-size: 1.8rem;
+    margin-left: 4.2rem;
+  }
+
+  .rodape__bittrix a {
+    font-size: 1.8rem;
+    margin-left: 3rem;
+  }
+}

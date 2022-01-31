@@ -1,0 +1,10 @@
+.rodape__casulo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+}
+
+.rodape__texto--responsive {
+  display: none;
+}

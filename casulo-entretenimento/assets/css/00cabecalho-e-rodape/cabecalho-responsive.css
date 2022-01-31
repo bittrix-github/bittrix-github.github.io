@@ -1,0 +1,70 @@
+@media (max-width: 500px) {
+  .cabecalho {
+    width: 100vw;
+  }
+  .cabecalho__container {
+    width: 100vw;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+  }
+
+  .cabecalho__logo {
+    margin: 4rem 0 0 4rem;
+  }
+  .cabecalho__logo img {
+    width: 62%;
+  }
+
+  .cabecalho__burguer {
+    display: flex;
+  }
+
+  .cabecalho__nav {
+    display: none;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .cabecalho__lista {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 85%;
+    margin: auto;
+  }
+
+  .cabecalho__items {
+    width: 100%;
+    text-align: center;
+    padding: 3.5rem 0;
+  }
+
+  .cabecalho__links {
+    font-family: "Comfortaa";
+    font-size: 2.5rem;
+    font-weight: regular;
+  }
+
+  .cabecalho__nav.active {
+    display: flex;
+    position: absolute;
+    top: 0;
+    background-color: #8e056a;
+    width: 100vw;
+    z-index: 1;
+  }
+
+  .cabecalho__X {
+    display: block;
+  }
+
+  .cabecalho__home {
+    display: block;
+  }
+}

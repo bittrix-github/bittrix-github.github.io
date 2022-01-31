@@ -1,0 +1,24 @@
+.main__container {
+  width: 85vw;
+  margin: auto;
+  margin-top: 7rem;
+  padding-bottom: 25rem;
+  display: grid;
+  grid-template-columns: repeat(4, 19.5vw);
+  grid-column-gap: 4rem;
+  grid-row-gap: 10rem;
+}
+
+.main__card--responsive {
+  display: none;
+}
+
+.main__mascara {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  width: 100vw;
+  height: 82.5rem;
+  background: linear-gradient(rgb(179, 0, 105, 0), rgb(179, 0, 105, 0.8));
+}

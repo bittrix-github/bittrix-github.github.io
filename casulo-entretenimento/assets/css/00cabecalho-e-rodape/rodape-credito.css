@@ -1,0 +1,20 @@
+.rodape__credito {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: left;
+  width: 35%;
+  font-family: avenir;
+  font-size: 1.6rem;
+  line-height: 3.5rem;
+}
+
+.rodape__credito p {
+  margin-left: 30%;
+}
+
+@media (max-width: 1300px) {
+  .rodape__credito p {
+    margin-left: 10%;
+  }
+}

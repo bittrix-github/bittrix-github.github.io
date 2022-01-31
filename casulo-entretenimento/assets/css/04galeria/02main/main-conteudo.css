@@ -1,0 +1,9 @@
+.main__conteudo {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+}
+
+.main__imagens {
+  width: 25vw;
+  cursor: pointer;
+}

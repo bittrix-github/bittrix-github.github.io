@@ -1,0 +1,71 @@
+@media (max-width: 500px) {
+  .contato__container {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 0;
+    padding-bottom: 43rem;
+  }
+  .contato__titulo {
+    font-size: 2rem;
+    line-height: 3rem;
+    width: 50%;
+    padding: 0;
+    margin-top: 22rem;
+    border-right: 0;
+  }
+
+  .contato__titulo span {
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+
+  .contato__conteudo {
+    width: 85%;
+    align-items: center;
+  }
+
+  .contato__conteudo h3 {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    padding: 0;
+    margin: 0;
+    margin-top: 3rem;
+  }
+
+  .contato__item {
+    flex-direction: column;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding: 0;
+    margin: 0;
+    margin-top: 5rem;
+    width: 50%;
+  }
+
+  .contato__item p {
+    margin-top: 2rem;
+  }
+
+  .contato__item img {
+    margin: 0;
+  }
+
+  .contato__item1 {
+    width: 20%;
+  }
+
+  .contato__item2 {
+    width: 20%;
+  }
+
+  .contato__item3 {
+    width: 15%;
+  }
+
+  .contato__mascara {
+    width: 100vw;
+    height: 103rem;
+    background: linear-gradient(rgb(142, 5, 106, 0), rgb(142, 5, 106, 0.25));
+  }
+}

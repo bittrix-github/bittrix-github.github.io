@@ -1,0 +1,14 @@
+.hero__titulo {
+  width: calc(90rem - 6vw);
+  text-align: right;
+  text-transform: uppercase;
+  font-size: calc(2rem + 1vw);
+  line-height: calc(5rem + 0.5vw);
+  font-family: "Comfortaa", cursive;
+  font-weight: 300;
+  margin-right: 7rem;
+}
+
+.hero__titulo span {
+  font-weight: 700;
+}

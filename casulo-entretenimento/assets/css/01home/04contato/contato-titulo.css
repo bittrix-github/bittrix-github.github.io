@@ -1,0 +1,16 @@
+.contato__titulo {
+  font-family: "Comfortaa", cursive;
+  text-transform: uppercase;
+  font-size: 2.3vw;
+  line-height: 8rem;
+  width: 50%;
+  padding-top: 10rem;
+  border-right: 0.1rem solid #ffffff;
+}
+
+.contato__titulo span {
+  color: #b30069;
+  font-size: 4.8vw;
+  font-weight: 700;
+  line-height: 5vw;
+}

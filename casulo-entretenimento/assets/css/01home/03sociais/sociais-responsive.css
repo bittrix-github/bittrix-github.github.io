@@ -1,0 +1,44 @@
+@media (max-width: 500px) {
+  .sociais__container {
+    flex-direction: column;
+    padding: 5rem 0 5rem 0;
+  }
+  .sociais__mascara {
+    height: 100%;
+  }
+  .sociais__titulo {
+    text-align: center;
+    font-size: 2rem;
+    line-height: 3.5rem;
+    width: 50%;
+  }
+
+  .sociais__titulo span {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+
+  .sociais__itens {
+    width: 85%;
+    margin-top: 4rem;
+  }
+
+  .sociais__redes {
+    width: 50%;
+  }
+
+  .sociais__logo {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .sociais__logo img {
+    width: 50%;
+  }
+
+  .sociais__redes p {
+    margin-top: 3rem;
+    font-size: 1.55rem;
+    line-height: 2rem;
+  }
+}
