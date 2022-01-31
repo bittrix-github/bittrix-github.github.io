@@ -4,11 +4,11 @@ html {
 }
 
 @font-face {
-  font-family: uniformCondensed;
+  font-family: "uniformCondensed";
   src: url(assets/fonts/UniformCondensedRegular.ttf);
 }
 
 @font-face {
-  font-family: avenir;
+  font-family: "avenir";
   src: url(assets/fonts/AvenirLTStd-Book.otf);
 }
