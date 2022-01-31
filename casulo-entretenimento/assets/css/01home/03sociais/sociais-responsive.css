@@ -2,12 +2,16 @@
   .sociais__container {
     flex-direction: column;
     padding: 5rem 0 5rem 0;
+    text-align: center;
+    width: 100vw;
   }
   .sociais__mascara {
     height: 100%;
+    width: 100vw;
   }
   .sociais__titulo {
     text-align: center;
+    margin: auto;
     font-size: 2rem;
     line-height: 3.5rem;
     width: 50%;
@@ -37,6 +41,8 @@
   }
 
   .sociais__redes p {
+    text-align: center;
+    width: 70%;
     margin-top: 3rem;
     font-size: 1.55rem;
     line-height: 2rem;

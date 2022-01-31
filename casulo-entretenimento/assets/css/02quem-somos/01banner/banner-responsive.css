@@ -2,22 +2,22 @@
   .banner {
     width: 100%;
     height: 5.8rem;
-    padding-top: 15.5rem;
+    padding-top: 19rem;
     text-align: center;
   }
   .banner__mascara {
-    height: 21.3rem;
+    height: 25rem;
   }
   .banner__imagem {
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url("/assets/img/2. quem somos/banner-responsive.jpg");
-    background-size: contain;
+    background-image: url("/assets/img/02quem-somos/banner-responsive.jpg");
+    background-size: cover;
     background-repeat: no-repeat;
     z-index: -2;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 25rem;
   }
 
   .banner__imagem img {

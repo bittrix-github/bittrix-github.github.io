@@ -5,6 +5,7 @@
   }
   .hero__titulo {
     width: 60%;
+    margin: auto;
     text-align: center;
     font-size: 2rem;
     line-height: 3rem;

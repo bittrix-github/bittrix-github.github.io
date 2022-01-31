@@ -12,13 +12,13 @@ const nav = document.getElementsByClassName('cabecalho__nav')[0];
 
 burguer.addEventListener('click', () => {
 
-    nav.classList.toggle('active')
+    nav.classList.add('active');
 
 });
 
 x.addEventListener('click', () => {
 
-    nav.classList.remove('active')
+    nav.classList.remove('active');
 
 });
 
