@@ -8,16 +8,19 @@
   .banner__mascara {
     height: 25rem;
   }
-  .banner__imagem {
+
+  .banner__imagem--responsive {
+    display: block;
+  }
+
+  .banner__imagem--responsive img {
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url("assets/img/02quem-somos/banner-responsive.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: -2;
     width: 100vw;
     height: 25rem;
+    z-index: -2;
+    object-fit: cover;
   }
 
   .banner__imagem img {

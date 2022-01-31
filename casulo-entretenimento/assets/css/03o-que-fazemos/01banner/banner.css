@@ -6,6 +6,10 @@
   font-family: "Comfortaa", cursive;
 }
 
+.banner__imagem--responsive {
+  display: none;
+}
+
 .banner__imagem img {
   position: absolute;
   top: 0;

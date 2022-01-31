@@ -16,6 +16,10 @@
   object-fit: cover;
 }
 
+.banner__imagem--responsive {
+  display: none;
+}
+
 .banner__mascara {
   position: absolute;
   background-color: rgb(142, 5, 106);

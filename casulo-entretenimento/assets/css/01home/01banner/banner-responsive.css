@@ -25,13 +25,15 @@
     margin-top: 2rem;
   }
 
-  .banner__imagem {
+  .banner__imagem--responsive {
+    display: block;
+  }
+
+  .banner__imagem--responsive img {
     position: absolute;
+    object-fit: cover;
     top: 0;
     left: 0;
-    background-image: url("assets/img/01home/banner-responsive.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
     z-index: -2;
     width: 100vw;
     height: 100vh;
