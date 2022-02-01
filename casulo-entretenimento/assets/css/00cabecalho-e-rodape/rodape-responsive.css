@@ -37,20 +37,22 @@
 
   .rodape__credito {
     text-align: left;
-    width: 80%;
+    width: 90%;
     margin: auto;
     font-size: 1.8rem;
     line-height: 3.5rem;
     margin-top: 5rem;
+
+    background-color: rgb(0, 255, 0, 0.2);
   }
 
   .rodape__awb a {
     font-size: 1.8rem;
-    margin-left: 4.2rem;
+    margin-left: 4rem;
   }
 
   .rodape__bittrix a {
     font-size: 1.8rem;
-    margin-left: 3rem;
+    margin-left: 2.8rem;
   }
 }
