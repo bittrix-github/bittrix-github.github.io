@@ -8,7 +8,8 @@
   }
 
   .main__titulo {
-    width: 55%;
+    width: 60%;
+    margin: auto;
     text-align: center;
     font-size: 2rem;
     line-height: 3rem;
@@ -21,7 +22,10 @@
   }
 
   .main__titulo h3 {
+    width: 80%;
+    margin: auto;
     margin-top: 3rem;
+    padding: 0;
   }
   .main__texto {
     width: 83%;

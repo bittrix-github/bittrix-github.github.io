@@ -10,6 +10,7 @@
   .hero__titulo {
     padding: 5rem 10rem 4rem 10rem;
     margin: auto;
+    margin-top: 0;
     text-align: center;
     font-size: 2rem;
     line-height: 4rem;
