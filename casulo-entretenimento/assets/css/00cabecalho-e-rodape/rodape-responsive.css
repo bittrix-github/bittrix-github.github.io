@@ -27,10 +27,10 @@
 
   .rodape__texto--responsive {
     display: block;
-    font-family: avenir;
-    width: 100%;
+    font-family: "Quicksand", sans-serif;
+    width: 110%;
     font-size: 1.6rem;
-    line-height: 2.5rem;
+    line-height: 3rem;
     margin-top: 3rem;
   }
 

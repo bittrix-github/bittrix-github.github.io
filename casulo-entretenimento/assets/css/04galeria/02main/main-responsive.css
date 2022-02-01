@@ -11,18 +11,12 @@
 
   .main__conteudo {
     display: grid;
-    grid-template-columns: repeat(3, 33%);
+    grid-template-columns: repeat(3, 33.33%);
   }
 
   .main__imagens {
-    width: 33vw;
+    width: 33.33vw;
     cursor: pointer;
-  }
-
-  #galeria-a9,
-  #galeria-b9,
-  #galeria-c9 {
-    display: block;
   }
 
   .img__container img {
@@ -35,21 +29,5 @@
   .img__container.active {
     width: 90vw;
     height: 90vh;
-  }
-
-  #img-x {
-    top: 2rem;
-    right: 4rem;
-    font-size: 2rem;
-  }
-
-  #prev {
-    left: 2rem;
-    font-size: 3rem;
-  }
-
-  #next {
-    right: 2rem;
-    font-size: 3rem;
   }
 }

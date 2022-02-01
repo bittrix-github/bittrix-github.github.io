@@ -46,6 +46,12 @@
   cursor: pointer;
 }
 
+#img-xr,
+#prevr,
+#nextr {
+  display: none;
+}
+
 #img-a1,
 #img-a2,
 #img-a3,
@@ -80,4 +86,50 @@
 #galeria-b9,
 #galeria-c9 {
   display: none;
+}
+
+@media (max-width: 500px) {
+  #img-x,
+  #prev,
+  #next {
+    display: none;
+  }
+  #img-xr {
+    display: block;
+    position: absolute;
+    top: 2rem;
+    right: 4rem;
+    font-family: "Comfortaa", cursive;
+    font-size: 4rem;
+    font-weight: lighter;
+    cursor: pointer;
+  }
+
+  #prevr {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 1.5rem;
+    font-family: "Comfortaa", cursive;
+    font-size: 5rem;
+    font-weight: lighter;
+    cursor: pointer;
+  }
+
+  #nextr {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 1.5rem;
+    font-family: "Comfortaa", cursive;
+    font-size: 5rem;
+    font-weight: lighter;
+    cursor: pointer;
+  }
+
+  #galeria-a9,
+  #galeria-b9,
+  #galeria-c9 {
+    display: block;
+  }
 }
