@@ -6,7 +6,7 @@
     padding-bottom: 40rem;
     display: grid;
     grid-template-columns: repeat(1, 83vw);
-    grid-row-gap: 3rem;
+    grid-row-gap: 5rem;
   }
 
   .main__card {
@@ -21,24 +21,23 @@
     width: 83vw;
   }
 
-  .main__card--responsive p {
+  .main__card--responsive---p {
     background: #b30069;
     text-align: center;
-    font-family: avenir;
+    font-family: "Quicksand", sans-serif;
     text-transform: uppercase;
     font-size: 2rem;
-    line-height: 3rem;
-    height: 18rem;
-    padding: 10rem 7rem 0 7rem;
+    line-height: 2.5rem;
+
+    height: 15rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
-  .main__card--responsive:nth-child(-n + 12) p {
-    height: 12rem;
-    padding: 3.5rem 7rem 0 7rem;
-  }
-
-  .main__card--responsive:nth-child(15) p {
-    padding: 6rem 6rem 4rem 6rem;
+  .main__card--responsive---p p {
+    width: 70%;
   }
 
   .main__mascara {

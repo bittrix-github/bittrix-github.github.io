@@ -2,27 +2,21 @@
   width: 19.5vw;
 }
 
-.main__card p {
+.main__card--p {
   background: #b30069;
   text-align: center;
-  font-family: avenir;
+  font-family: "Quicksand", sans-serif;
   text-transform: uppercase;
-  /* font-size: 2rem; */
   font-size: 1vw;
-  line-height: 3rem;
-  height: 18rem;
-  padding: 10rem 7rem 0 7rem;
+  line-height: 1.5vw;
+
+  height: 15rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.main__card:nth-child(-n + 4) p {
-  height: 12rem;
-  padding: 3.5rem 7rem 0 7rem;
-}
-
-.main__card:nth-child(5) p {
-  padding: 8rem 7rem 2rem 7rem;
-}
-
-.main__card:nth-child(7) p {
-  padding: 6rem 5rem 4rem 6rem;
+.main__card--p p {
+  width: 70%;
 }
