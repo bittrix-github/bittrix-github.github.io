@@ -53,7 +53,7 @@
 
   .cabecalho__nav.active {
     display: flex;
-    position: absolute;
+    position: fixed;
     top: 0;
     background-color: #8e056a;
     width: 100vw;

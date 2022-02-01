@@ -15,10 +15,11 @@
   .rodape__casulo {
     flex-direction: column;
     align-items: center;
+    width: 90%;
   }
 
   .rodape__logo {
-    width: 70%;
+    width: 45%;
   }
 
   .rodape__texto {
@@ -28,7 +29,7 @@
   .rodape__texto--responsive {
     display: block;
     font-family: "Quicksand", sans-serif;
-    width: 110%;
+    width: 100%;
     font-size: 1.6rem;
     line-height: 3rem;
     margin-top: 3rem;
@@ -36,11 +37,11 @@
 
   .rodape__credito {
     text-align: left;
-    width: 90%;
+    width: 80%;
+    margin: auto;
     font-size: 1.8rem;
     line-height: 3.5rem;
     margin-top: 5rem;
-    margin-left: 4.2rem;
   }
 
   .rodape__awb a {
