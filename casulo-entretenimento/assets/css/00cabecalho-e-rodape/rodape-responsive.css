@@ -39,18 +39,18 @@
     text-align: left;
     width: 90%;
     margin: auto;
-    font-size: 1.8rem;
+    font-size: 3.5vw;
     line-height: 3.5rem;
     margin-top: 5rem;
   }
 
   .rodape__awb a {
-    font-size: 1.8rem;
+    font-size: 3.5vw;
     margin-left: 4rem;
   }
 
   .rodape__bittrix a {
-    font-size: 1.8rem;
+    font-size: 3.5vw;
     margin-left: 2.8rem;
   }
 }
