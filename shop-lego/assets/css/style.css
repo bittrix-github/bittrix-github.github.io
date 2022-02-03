@@ -1,0 +1,329 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+}
+
+/* 
+
+
+     ==========     header     ==========
+
+
+*/
+
+.header {
+  position: fixed;
+  width: 100vw;
+  height: 11vh;
+
+  z-index: 3;
+
+  display: flex;
+  justify-content: center;
+
+  background-color: rgb(255, 207, 0);
+}
+
+.header__container {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* background-color: rgb(0, 0, 0, 0.2); */
+}
+
+.header__logo {
+  width: 10%;
+  cursor: pointer;
+
+  /* background-color: rgb(0, 0, 0, 0.5); */
+}
+
+.header__logo img {
+  width: 65px;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 25%;
+
+  /* background-color: rgb(0, 0, 0, 0.5); */
+}
+
+.header__nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 2rem;
+}
+
+.header__nav svg {
+  cursor: pointer;
+}
+
+/* 
+
+
+     ==========     banner     ==========
+
+
+*/
+
+.banner {
+  position: relative;
+  height: 80vh;
+  width: 100vw;
+
+  border-bottom: 1px dashed;
+
+  /* background-color: rgb(0, 0, 0, 0.2); */
+}
+
+.banner__logo {
+  position: absolute;
+  top: 35%;
+  left: 25%;
+
+  height: 20rem;
+  width: 35rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transform: rotate(-3deg);
+
+  background-color: rgb(207, 16, 18);
+}
+
+.banner__logo img {
+  width: 28rem;
+}
+
+.banner__text {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+}
+
+.banner__text h1 {
+  font-size: 4.5rem;
+  font-weight: 200;
+  color: #666;
+}
+
+/* 
+
+
+     ==========     hero     ==========
+
+
+*/
+
+.hero {
+  position: relative;
+  height: 130rem;
+  width: 100vw;
+
+  background-color: rgb(0, 0, 0, 0.1);
+
+  border-bottom: 1px dashed;
+}
+
+.hero__title {
+  position: absolute;
+
+  top: 10rem;
+  left: 50%;
+
+  transform: translateX(-50%);
+}
+
+.hero__title h2 {
+  font-size: 5rem;
+  font-weight: 200;
+  color: #555;
+}
+
+.hero__step h3 {
+  font-size: 3rem;
+  font-weight: 200;
+  color: #555;
+}
+
+.step1 {
+  position: absolute;
+
+  top: 30rem;
+  left: 55vw;
+
+  text-align: end;
+}
+
+.step2 {
+  position: absolute;
+
+  top: 58rem;
+  left: 15vw;
+}
+
+.step3 {
+  position: absolute;
+
+  top: 86rem;
+  left: 70vw;
+
+  text-align: left;
+}
+
+.step4 {
+  position: absolute;
+
+  top: 114rem;
+  left: 15vw;
+}
+
+.hero__path1 {
+  position: absolute;
+  width: 16vw;
+  height: 8.5rem;
+  top: 38rem;
+  left: calc(57vw - 16vw);
+
+  border-right: 3px dashed #555;
+  border-bottom: 3px dashed #555;
+}
+
+.hero__path2 {
+  position: absolute;
+  width: 13vw;
+  height: 8.5rem;
+  top: 46.2rem;
+  left: 17vw;
+
+  border-left: 3px dashed #555;
+  border-top: 3px dashed #555;
+}
+
+.hero__path3 {
+  position: absolute;
+  width: 40vw;
+  height: 8.5rem;
+  top: 66rem;
+  left: 17vw;
+
+  border-left: 3px dashed #555;
+  border-bottom: 3px dashed #555;
+}
+
+.hero__path4 {
+  position: absolute;
+  width: 3vw;
+  height: 8.5rem;
+  top: 74.2rem;
+  left: calc(72vw - 3vw);
+
+  border-right: 3px dashed #555;
+  border-top: 3px dashed #555;
+}
+
+.hero__path5 {
+  position: absolute;
+  width: 40vw;
+  height: 8.5rem;
+  top: 94rem;
+  left: calc(72vw - 40vw);
+
+  border-right: 3px dashed #555;
+  border-bottom: 3px dashed #555;
+}
+
+.hero__path6 {
+  position: absolute;
+  width: 6vw;
+  height: 8.5rem;
+  top: 101.7rem;
+  left: 17vw;
+
+  border-left: 3px dashed #555;
+  border-top: 3px dashed #555;
+}
+
+.hero__img1 img {
+  position: absolute;
+  top: calc(38rem + 8.5rem);
+  left: calc(17vw + 14vw);
+  transform: translate(1.5vw, -50%) rotate(-25deg);
+  width: calc(5rem + 3vw);
+}
+
+.hero__img2 img {
+  position: absolute;
+  top: calc(66rem + 8.5rem);
+  left: calc(17vw + 40vw);
+  transform: translate(1vw, -50%) rotate(20deg) rotateY(180deg);
+  width: calc(6rem + 6.5vw);
+}
+
+.hero__img3 img {
+  position: absolute;
+  top: calc(101.7rem);
+  left: calc(17vw + 5.5vw);
+  transform: translate(2vw, -50%) rotate(30deg);
+  width: calc(4rem + 3.5vw);
+}
+
+/* 
+
+
+     ==========     shop     ==========
+
+
+*/
+
+.shop {
+  position: relative;
+  width: 100vw;
+}
+
+.shop h2 {
+  font-size: 6rem;
+  font-weight: 100;
+  margin: 10rem 0 10rem 7.5vw;
+}
+
+.shop__cards {
+  width: 90vw;
+  display: grid;
+  grid-template-columns: repeat(3, 25vw);
+  grid-template-rows: repeat(3, 50vh);
+  row-gap: 5vw;
+  column-gap: 5vw;
+  margin-left: 7.5vw;
+  margin-bottom: 25rem;
+}
+
+.shop__cards3 {
+  width: 90vw;
+  display: grid;
+  grid-template-columns: repeat(2, 25vw);
+  grid-template-rows: repeat(2, 50vh);
+  row-gap: 5vw;
+  column-gap: 5vw;
+  margin-left: 22.5vw;
+  margin-bottom: 25rem;
+}
+
+.shop__card {
+  background-color: rgb(0, 0, 0, 0.2);
+}
