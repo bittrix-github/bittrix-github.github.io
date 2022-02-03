@@ -16,3 +16,9 @@
 .plants__plant a:hover {
   cursor: pointer;
 }
+
+@media (max-width: 1360px) {
+  .plants__plant {
+    width: 95%;
+  }
+}

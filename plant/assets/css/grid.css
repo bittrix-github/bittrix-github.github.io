@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.grid__container {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.vertical1 {
+  position: absolute;
+  z-index: 100;
+  left: 12.5vw;
+  width: 1px;
+  height: 100vh;
+  background-color: rgb(255, 0, 0, 0.2);
+}
+
+.vertical2 {
+  position: absolute;
+  z-index: 100;
+  left: 25vw;
+  width: 1px;
+  height: 100vh;
+  background-color: rgb(255, 0, 0, 0.2);
+}
+
+.vertical3 {
+  position: absolute;
+  z-index: 100;
+  left: 37.5vw;
+  width: 1px;
+  height: 100vh;
+  background-color: rgb(255, 0, 0, 0.2);
+}
+
+.vertical {
+  position: absolute;
+  z-index: 100;
+  left: 50vw;
+  width: 3px;
+  height: 100vh;
+  background-color: rgb(255, 0, 0, 0.2);
+}
+
+.vertical4 {
+  position: absolute;
+  z-index: 100;
+  left: 62.5vw;
+  width: 1px;
+  height: 100vh;
+  background-color: rgb(255, 0, 0, 0.2);
+}
+
+.vertical5 {
+  position: absolute;
+  z-index: 100;
+  left: 75vw;
+  width: 1px;
+  height: 100vh;
+  background-color: rgb(255, 0, 0, 0.2);
+}
+
+.vertical6 {
+  position: absolute;
+  z-index: 100;
+  left: 87.5vw;
+  width: 1px;
+  height: 100vh;
+  background-color: rgb(255, 0, 0, 0.2);
+}
+
+.horizontal1 {
+  position: absolute;
+  z-index: 100;
+  top: 12.5vh;
+  width: 100vw;
+  height: 1px;
+  background-color: rgb(255, 0, 0, 0.2);
+}
+
+.horizontal2 {
+  position: absolute;
+  z-index: 100;
+  top: 25vh;
+  width: 100vw;
+  height: 1px;
+  background-color: rgb(255, 0, 0, 0.2);
+}
+
+.horizontal3 {
+  position: absolute;
+  z-index: 100;
+  top: 37.5vh;
+  width: 100vw;
+  height: 1px;
+  background-color: rgb(255, 0, 0, 0.2);
+}
+
+.horizontal {
+  position: absolute;
+  z-index: 100;
+  top: 50vh;
+  width: 100vw;
+  height: 3px;
+  background-color: rgb(255, 0, 0, 0.2);
+}
+
+.horizontal4 {
+  position: absolute;
+  z-index: 100;
+  top: 62.5vh;
+  width: 100vw;
+  height: 1px;
+  background-color: rgb(255, 0, 0, 0.2);
+}
+
+.horizontal5 {
+  position: absolute;
+  z-index: 100;
+  top: 75vh;
+  width: 100vw;
+  height: 1px;
+  background-color: rgb(255, 0, 0, 0.2);
+}
+
+.horizontal6 {
+  position: absolute;
+  z-index: 100;
+  top: 87.5vh;
+  width: 100vw;
+  height: 1px;
+  background-color: rgb(255, 0, 0, 0.2);
+}

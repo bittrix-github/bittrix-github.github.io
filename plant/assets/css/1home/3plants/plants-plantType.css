@@ -118,3 +118,13 @@
   width: 4rem;
   height: 4rem;
 }
+
+@media (max-width: 1360px) {
+  .plants__plant-type--foliage,
+  .plants__plant-type--pucculent,
+  .plants__plant-type--flower,
+  .plants__plant-type--fruit {
+    width: 24rem;
+    padding: 2.5rem;
+  }
+}

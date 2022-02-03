@@ -12,3 +12,9 @@
   text-align: center;
   padding-top: 7rem;
 }
+
+@media (max-width: 1360px) {
+  .location {
+    width: 50vw;
+  }
+}
