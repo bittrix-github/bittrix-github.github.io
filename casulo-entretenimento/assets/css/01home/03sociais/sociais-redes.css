@@ -8,8 +8,8 @@
 }
 
 .sociais__logo {
-  width: 10vw;
-  height: 10vw;
+  width: 9vw;
+  height: 9vw;
   background-color: #8e056a;
   border-radius: 50%;
   display: flex;
@@ -21,14 +21,14 @@
 }
 
 .sociais__logo img {
-  width: 6vw;
+  width: 5vw;
 }
 
 .sociais__redes p {
   margin-top: 3rem;
   color: #ffffff;
   font-family: "Quicksand", sans-serif;
-  font-size: 1.6vw;
+  font-size: 1.5vw;
   line-height: 3.7rem;
 }
 
