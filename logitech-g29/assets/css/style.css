@@ -291,6 +291,17 @@ nav ul li p {
   text-align: left;
 }
 
+@media (max-width: 1300px) {
+  .s3__cards {
+    width: 95%;
+    margin-left: 1.3vw;
+  }
+
+  .s3__cards p {
+    font-size: 1.3rem;
+  }
+}
+
 .s3__cards h6 {
   display: none;
 }
@@ -317,6 +328,12 @@ nav ul li p {
   justify-content: space-between;
   align-items: initial;
   z-index: 4;
+}
+
+@media (max-width: 1300px) {
+  .s4__lists--container {
+    width: 85vw;
+  }
 }
 
 .s4__title {
@@ -444,12 +461,12 @@ nav ul li p {
   width: 70vw;
   margin: auto;
   height: 40vh;
-  margin-top: 18vh;
+  margin-top: 10vw;
 }
 
 .s6__about p {
   font-size: 1.6rem;
-  line-height: 4rem;
+  line-height: 2.3vw;
 }
 
 .s6__about p:nth-child(3),
