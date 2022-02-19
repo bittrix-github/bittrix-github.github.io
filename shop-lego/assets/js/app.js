@@ -5063,6 +5063,8 @@ cartX.addEventListener('click', () => {
 
         purchaseButton.addEventListener('click', purchaseConcluded)
 
+        updateCartCounter()
+
 
     }
 
