@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <script src="assets/js/app.js" async></script>
 
     <link rel="icon" href="assets/img/icon.svg">
     <title>Shop LEGO&reg;</title>
@@ -35,9 +37,98 @@
 
                 <div class="header__nav--cart">
 
-                    <svg id="cart" data-src="https://s2.svgbox.net/hero-solid.svg?ic=shopping-cart" width="45" height="45" color="#333"></svg>
+                    <svg id="cart-icon" data-src="https://s2.svgbox.net/hero-solid.svg?ic=shopping-cart" width="45" height="45" color="#333"></svg>
+
+                    <div class="fullcart">
+
+                        <span class="total-itens">0</span>
+
+                    </div>
 
                 </div>
+
+                <div class="cart">
+
+                    <div id="cart-x">
+                        <div id="x-1"></div>
+                        <div id="x-2"></div>
+                    </div>
+
+
+                    <div class="cart__row">
+
+                        <span class="cart__part">part</span>
+                        <span class="cart__price">price</span>
+                        <span class="cart__quantity">quantity</span>
+
+                    </div>
+
+                    <div class="cart__items">
+
+                        <!-- <div class="cart__item">
+
+                            <div class="cart__item--part">
+                                <img src="assets/img/01brick/a23a.svg" alt="" class="cart__item--img" width="80">
+                                <span class="cart__item--title">brick 2x3</span>
+                            </div>
+
+                            <span class="cart__item--price">$0.39</span>
+
+                            <div class="cart__item--quantity">
+                                <input type="number" class="item--quantity" value="1">
+                                <div  class="cart__item--remove">
+                                    <svg data-src="https://s2.svgbox.net/hero-solid.svg?ic=trash" width="32" height="32" color="#ffffff"></svg>
+                                </div>
+                            </div>
+                        
+                        </div>
+
+
+                        <div class="cart__item">
+
+                            <div class="cart__item--part">
+                                <img src="assets/img/02plate/b26g.svg" alt="" class="cart__item--img" width="80">
+                                <span class="cart__item--title">plate 2x6</span>
+                            </div>
+
+                            <span class="cart__item--price">$0.54</span>
+
+                            <div class="cart__item--quantity">
+                                <input type="number" class="item--quantity" value="1">
+                                <div  class="cart__item--remove">
+                                    <svg data-src="https://s2.svgbox.net/hero-solid.svg?ic=trash" width="32" height="32" color="#ffffff"></svg>
+                                </div>
+                            </div>
+                        
+                        </div> -->
+                    
+
+                    </div>
+
+                    <div class="cart__total">
+
+                        <span class="cart__total--title">total</span>
+                        <span class="cart__total--price">$0.93</span>
+
+                    </div>
+
+                    <div class="cart__purchase">
+
+                        <button>purchase</button>
+
+                    </div>
+
+                    <div class="cart__empty">
+
+                        <span>cart is empty</span>
+
+                    </div>
+
+                    
+
+                </div>
+
+
 
             </div>
 
@@ -107,9 +198,9 @@
             <div class="hero__path5"></div>
             <div class="hero__path6"></div>
 
-            <div class="hero__img1"><img src="assets/img/01brick/a22a.svg" alt=""></div>
-            <div class="hero__img2"><img src="assets/img/02plate/b23r.svg" alt=""></div>
-            <div class="hero__img3"><img src="assets/img/01brick/a12b.svg" alt=""></div>
+            <div class="hero__img1"><img src="assets/img/hero1.png" alt=""></div>
+            <div class="hero__img2"><img src="assets/img/hero2.png" alt=""></div>
+            <div class="hero__img3"><img src="assets/img/hero3.png" alt=""></div>
 
         </div>
 
@@ -122,63 +213,378 @@
 
 
 
-        <div class="shop__blocks">
+        <div class="shop__bricks">
 
-            <h2>01. blocks</h2>
+            <h2>01. bricks</h2>
 
             <div class="shop__cards">
 
+
+
                 <div class="shop__card">
 
+                    <div class="shop__card--img">
+                        <img src="assets/img/01brick/a11.svg" alt="" id="i-a11">
+                        <img class="card--img" src="assets/img/01brick/a11a.svg" alt="" id="i-a11a">
+                        <img src="assets/img/01brick/a11b.svg" alt="" id="i-a11b">
+                        <img src="assets/img/01brick/a11g.svg" alt="" id="i-a11g">
+                        <img src="assets/img/01brick/a11k.svg" alt="" id="i-a11k">
+                        <img src="assets/img/01brick/a11r.svg" alt="" id="i-a11r">
+                        <img src="assets/img/01brick/a11w.svg" alt="" id="i-a11w">
+                    </div>
 
+                    <div class="shop__card--title">
+                        <span>brick 1x1</span>
+                    </div>
+
+                    <div class="shop__card--color">
+                        <span class="colorA c-a11a" id="c-a11a"></span>
+                        <span class="colorB c-a11b" id="c-a11b"></span>
+                        <span class="colorG c-a11g" id="c-a11g"></span>
+                        <span class="colorK c-a11k" id="c-a11k"></span>
+                        <span class="colorR c-a11r" id="c-a11r"></span>
+                        <span class="colorW c-a11w" id="c-a11w"></span>
+                    </div>
+
+                    <div class="shop__card--quantity">
+                        <input type="number" class="card--quantity" class="card--quantity" value="1">
+                    </div>
+
+                    <div class="shop__card--price">
+                        <span>$0.09</span>
+                    </div>
+
+                    <div class="shop__card--add">
+                        <button>add to cart</button>
+                    </div>
 
                 </div>
 
+
+
                 <div class="shop__card">
 
+                    <div class="shop__card--img">
+                        <img src="assets/img/01brick/a12.svg" alt="" id="i-a12">
+                        <img class="card--img" src="assets/img/01brick/a12a.svg" alt="" id="i-a12a">
+                        <img src="assets/img/01brick/a12b.svg" alt="" id="i-a12b">
+                        <img src="assets/img/01brick/a12g.svg" alt="" id="i-a12g">
+                        <img src="assets/img/01brick/a12k.svg" alt="" id="i-a12k">
+                        <img src="assets/img/01brick/a12r.svg" alt="" id="i-a12r">
+                        <img src="assets/img/01brick/a12w.svg" alt="" id="i-a12w">
+                    </div>
 
+                    <div class="shop__card--title">
+                        <span>brick 1x2</span>
+                    </div>
+
+                    <div class="shop__card--color">
+                        <span class="colorA c-a12a" id="c-a12a"></span>
+                        <span class="colorB c-a12b" id="c-a12b"></span>
+                        <span class="colorG c-a12g" id="c-a12g"></span>
+                        <span class="colorK c-a12k" id="c-a12k"></span>
+                        <span class="colorR c-a12r" id="c-a12r"></span>
+                        <span class="colorW c-a12w" id="c-a12w"></span>
+                    </div>
+
+                    <div class="shop__card--quantity">
+                        <input type="number" class="card--quantity" value="1">
+                    </div>
+
+                    <div class="shop__card--price">
+                        <span>$0.14</span>
+                    </div>
+
+                    <div class="shop__card--add">
+                        <button>add to cart</button>
+                    </div>
 
                 </div>
 
+
+
                 <div class="shop__card">
 
+                    <div class="shop__card--img">
+                        <img src="assets/img/01brick/a13.svg" alt="" id="i-a13">
+                        <img class="card--img" src="assets/img/01brick/a13a.svg" alt="" id="i-a13a">
+                        <img src="assets/img/01brick/a13b.svg" alt="" id="i-a13b">
+                        <img src="assets/img/01brick/a13g.svg" alt="" id="i-a13g">
+                        <img src="assets/img/01brick/a13k.svg" alt="" id="i-a13k">
+                        <img src="assets/img/01brick/a13r.svg" alt="" id="i-a13r">
+                        <img src="assets/img/01brick/a13w.svg" alt="" id="i-a13w">
+                    </div>
 
+                    <div class="shop__card--title">
+                        <span>brick 1x3</span>
+                    </div>
+
+                    <div class="shop__card--color">
+                        <span class="colorA c-a13a" id="c-a13a"></span>
+                        <span class="colorB c-a13b" id="c-a13b"></span>
+                        <span class="colorG c-a13g" id="c-a13g"></span>
+                        <span class="colorK c-a13k" id="c-a13k"></span>
+                        <span class="colorR c-a13r" id="c-a13r"></span>
+                        <span class="colorW c-a13w" id="c-a13w"></span>
+                    </div>
+
+                    <div class="shop__card--quantity">
+                        <input type="number" class="card--quantity" value="1">
+                    </div>
+
+                    <div class="shop__card--price">
+                        <span>$0.19</span>
+                    </div>
+
+                    <div class="shop__card--add">
+                        <button>add to cart</button>
+                    </div>
 
                 </div>
 
+
+
                 <div class="shop__card">
 
+                    <div class="shop__card--img">
+                        <img src="assets/img/01brick/a14.svg" alt="" id="i-a14">
+                        <img class="card--img" src="assets/img/01brick/a14a.svg" alt="" id="i-a14a">
+                        <img src="assets/img/01brick/a14b.svg" alt="" id="i-a14b">
+                        <img src="assets/img/01brick/a14g.svg" alt="" id="i-a14g">
+                        <img src="assets/img/01brick/a14k.svg" alt="" id="i-a14k">
+                        <img src="assets/img/01brick/a14r.svg" alt="" id="i-a14r">
+                        <img src="assets/img/01brick/a14w.svg" alt="" id="i-a14w">
+                    </div>
 
+                    <div class="shop__card--title">
+                        <span>brick 1x4</span>
+                    </div>
+
+                    <div class="shop__card--color">
+                        <span class="colorA c-a14a" id="c-a14a"></span>
+                        <span class="colorB c-a14b" id="c-a14b"></span>
+                        <span class="colorG c-a14g" id="c-a14g"></span>
+                        <span class="colorK c-a14k" id="c-a14k"></span>
+                        <span class="colorR c-a14r" id="c-a14r"></span>
+                        <span class="colorW c-a14w" id="c-a14w"></span>
+                    </div>
+
+                    <div class="shop__card--quantity">
+                        <input type="number" class="card--quantity" value="1">
+                    </div>
+
+                    <div class="shop__card--price">
+                        <span>$0.24</span>
+                    </div>
+
+                    <div class="shop__card--add">
+                        <button>add to cart</button>
+                    </div>
 
                 </div>
 
+
+
                 <div class="shop__card">
 
+                    <div class="shop__card--img">
+                        <img src="assets/img/01brick/a16.svg" alt="" id="i-a16">
+                        <img class="card--img" src="assets/img/01brick/a16a.svg" alt="" id="i-a16a">
+                        <img src="assets/img/01brick/a16b.svg" alt="" id="i-a16b">
+                        <img src="assets/img/01brick/a16g.svg" alt="" id="i-a16g">
+                        <img src="assets/img/01brick/a16k.svg" alt="" id="i-a16k">
+                        <img src="assets/img/01brick/a16r.svg" alt="" id="i-a16r">
+                        <img src="assets/img/01brick/a16w.svg" alt="" id="i-a16w">
+                    </div>
 
+                    <div class="shop__card--title">
+                        <span>brick 1x6</span>
+                    </div>
+
+                    <div class="shop__card--color">
+                        <span class="colorA c-a16a" id="c-a16a"></span>
+                        <span class="colorB c-a16b" id="c-a16b"></span>
+                        <span class="colorG c-a16g" id="c-a16g"></span>
+                        <span class="colorK c-a16k" id="c-a16k"></span>
+                        <span class="colorR c-a16r" id="c-a16r"></span>
+                        <span class="colorW c-a16w" id="c-a16w"></span>
+                    </div>
+
+                    <div class="shop__card--quantity">
+                        <input type="number" class="card--quantity" value="1">
+                    </div>
+
+                    <div class="shop__card--price">
+                        <span>$0.29</span>
+                    </div>
+
+                    <div class="shop__card--add">
+                        <button>add to cart</button>
+                    </div>
 
                 </div>
 
+
+
                 <div class="shop__card">
 
+                    <div class="shop__card--img">
+                        <img src="assets/img/01brick/a22.svg" alt="" id="i-a22">
+                        <img class="card--img" src="assets/img/01brick/a22a.svg" alt="" id="i-a22a">
+                        <img src="assets/img/01brick/a22b.svg" alt="" id="i-a22b">
+                        <img src="assets/img/01brick/a22g.svg" alt="" id="i-a22g">
+                        <img src="assets/img/01brick/a22k.svg" alt="" id="i-a22k">
+                        <img src="assets/img/01brick/a22r.svg" alt="" id="i-a22r">
+                        <img src="assets/img/01brick/a22w.svg" alt="" id="i-a22w">
+                    </div>
 
+                    <div class="shop__card--title">
+                        <span>brick 2x2</span>
+                    </div>
+
+                    <div class="shop__card--color">
+                        <span class="colorA c-a22a" id="c-a22a"></span>
+                        <span class="colorB c-a22b" id="c-a22b"></span>
+                        <span class="colorG c-a22g" id="c-a22g"></span>
+                        <span class="colorK c-a22k" id="c-a22k"></span>
+                        <span class="colorR c-a22r" id="c-a22r"></span>
+                        <span class="colorW c-a22w" id="c-a22w"></span>
+                    </div>
+
+                    <div class="shop__card--quantity">
+                        <input type="number" class="card--quantity" value="1">
+                    </div>
+
+                    <div class="shop__card--price">
+                        <span>$0.29</span>
+                    </div>
+
+                    <div class="shop__card--add">
+                        <button>add to cart</button>
+                    </div>
 
                 </div>
 
+
+
                 <div class="shop__card">
 
+                    <div class="shop__card--img">
+                        <img src="assets/img/01brick/a23.svg" alt="" id="i-a23">
+                        <img class="card--img" src="assets/img/01brick/a23a.svg" alt="" id="i-a23a">
+                        <img src="assets/img/01brick/a23b.svg" alt="" id="i-a23b">
+                        <img src="assets/img/01brick/a23g.svg" alt="" id="i-a23g">
+                        <img src="assets/img/01brick/a23k.svg" alt="" id="i-a23k">
+                        <img src="assets/img/01brick/a23r.svg" alt="" id="i-a23r">
+                        <img src="assets/img/01brick/a23w.svg" alt="" id="i-a23w">
+                    </div>
 
+                    <div class="shop__card--title">
+                        <span>brick 2x3</span>
+                    </div>
+
+                    <div class="shop__card--color">
+                        <span class="colorA c-a23a" id="c-a23a"></span>
+                        <span class="colorB c-a23b" id="c-a23b"></span>
+                        <span class="colorG c-a23g" id="c-a23g"></span>
+                        <span class="colorK c-a23k" id="c-a23k"></span>
+                        <span class="colorR c-a23r" id="c-a23r"></span>
+                        <span class="colorW c-a23w" id="c-a23w"></span>
+                    </div>
+
+                    <div class="shop__card--quantity">
+                        <input type="number" class="card--quantity" value="1">
+                    </div>
+
+                    <div class="shop__card--price">
+                        <span>$0.39</span>
+                    </div>
+
+                    <div class="shop__card--add">
+                        <button>add to cart</button>
+                    </div>
 
                 </div>
 
+
+
                 <div class="shop__card">
 
+                    <div class="shop__card--img">
+                        <img src="assets/img/01brick/a24.svg" alt="" id="i-a24">
+                        <img class="card--img" src="assets/img/01brick/a24a.svg" alt="" id="i-a24a">
+                        <img src="assets/img/01brick/a24b.svg" alt="" id="i-a24b">
+                        <img src="assets/img/01brick/a24g.svg" alt="" id="i-a24g">
+                        <img src="assets/img/01brick/a24k.svg" alt="" id="i-a24k">
+                        <img src="assets/img/01brick/a24r.svg" alt="" id="i-a24r">
+                        <img src="assets/img/01brick/a24w.svg" alt="" id="i-a24w">
+                    </div>
 
+                    <div class="shop__card--title">
+                        <span>brick 2x4</span>
+                    </div>
+
+                    <div class="shop__card--color">
+                        <span class="colorA c-a24a" id="c-a24a"></span>
+                        <span class="colorB c-a24b" id="c-a24b"></span>
+                        <span class="colorG c-a24g" id="c-a24g"></span>
+                        <span class="colorK c-a24k" id="c-a24k"></span>
+                        <span class="colorR c-a24r" id="c-a24r"></span>
+                        <span class="colorW c-a24w" id="c-a24w"></span>
+                    </div>
+
+                    <div class="shop__card--quantity">
+                        <input type="number" class="card--quantity" value="1">
+                    </div>
+
+                    <div class="shop__card--price">
+                        <span>$0.49</span>
+                    </div>
+
+                    <div class="shop__card--add">
+                        <button>add to cart</button>
+                    </div>
 
                 </div>
                 
+
+
                 <div class="shop__card">
 
+                    <div class="shop__card--img">
+                        <img src="assets/img/01brick/a26.svg" alt="" id="i-a26">
+                        <img class="card--img" src="assets/img/01brick/a26a.svg" alt="" id="i-a26a">
+                        <img src="assets/img/01brick/a26b.svg" alt="" id="i-a26b">
+                        <img src="assets/img/01brick/a26g.svg" alt="" id="i-a26g">
+                        <img src="assets/img/01brick/a26k.svg" alt="" id="i-a26k">
+                        <img src="assets/img/01brick/a26r.svg" alt="" id="i-a26r">
+                        <img src="assets/img/01brick/a26w.svg" alt="" id="i-a26w">
+                    </div>
 
+                    <div class="shop__card--title">
+                        <span>brick 2x6</span>
+                    </div>
+
+                    <div class="shop__card--color">
+                        <span class="colorA c-a26a" id="c-a26a"></span>
+                        <span class="colorB c-a26b" id="c-a26b"></span>
+                        <span class="colorG c-a26g" id="c-a26g"></span>
+                        <span class="colorK c-a26k" id="c-a26k"></span>
+                        <span class="colorR c-a26r" id="c-a26r"></span>
+                        <span class="colorW c-a26w" id="c-a26w"></span>
+                    </div>
+
+                    <div class="shop__card--quantity">
+                        <input type="number" class="card--quantity" value="1">
+                    </div>
+
+                    <div class="shop__card--price">
+                        <span>$0.59</span>
+                    </div>
+
+                    <div class="shop__card--add">
+                        <button>add to cart</button>
+                    </div>
 
                 </div>
 
@@ -196,56 +602,369 @@
 
                 <div class="shop__card">
 
+                    <div class="shop__card--img">
+                        <img src="assets/img/02plate/b11.svg" alt="" id="i-b11">
+                        <img class="card--img" src="assets/img/02plate/b11a.svg" alt="" id="i-b11a">
+                        <img src="assets/img/02plate/b11b.svg" alt="" id="i-b11b">
+                        <img src="assets/img/02plate/b11g.svg" alt="" id="i-b11g">
+                        <img src="assets/img/02plate/b11k.svg" alt="" id="i-b11k">
+                        <img src="assets/img/02plate/b11r.svg" alt="" id="i-b11r">
+                        <img src="assets/img/02plate/b11w.svg" alt="" id="i-b11w">
+                    </div>
 
+                    <div class="shop__card--title">
+                        <span>plate 1x1</span>
+                    </div>
 
-                </div>
+                    <div class="shop__card--color">
+                        <span class="colorA c-b11a" id="c-b11a"></span>
+                        <span class="colorB c-b11b" id="c-b11b"></span>
+                        <span class="colorG c-b11g" id="c-b11g"></span>
+                        <span class="colorK c-b11k" id="c-b11k"></span>
+                        <span class="colorR c-b11r" id="c-b11r"></span>
+                        <span class="colorW c-b11w" id="c-b11w"></span>
+                    </div>
 
-                <div class="shop__card">
+                    <div class="shop__card--quantity">
+                        <input type="number" class="card--quantity" value="1">
+                    </div>
 
+                    <div class="shop__card--price">
+                        <span>$0.04</span>
+                    </div>
 
-
-                </div>
-
-                <div class="shop__card">
-
-
-
-                </div>
-
-                <div class="shop__card">
-
-
-
-                </div>
-
-                <div class="shop__card">
-
-
-
-                </div>
-
-                <div class="shop__card">
-
-
-
-                </div>
-
-                <div class="shop__card">
-
-
+                    <div class="shop__card--add">
+                        <button>add to cart</button>
+                    </div>
 
                 </div>
 
+
+
                 <div class="shop__card">
 
+                    <div class="shop__card--img">
+                        <img src="assets/img/02plate/b12.svg" alt="" id="i-b12">
+                        <img class="card--img" src="assets/img/02plate/b12a.svg" alt="" id="i-b12a">
+                        <img src="assets/img/02plate/b12b.svg" alt="" id="i-b12b">
+                        <img src="assets/img/02plate/b12g.svg" alt="" id="i-b12g">
+                        <img src="assets/img/02plate/b12k.svg" alt="" id="i-b12k">
+                        <img src="assets/img/02plate/b12r.svg" alt="" id="i-b12r">
+                        <img src="assets/img/02plate/b12w.svg" alt="" id="i-b12w">
+                    </div>
 
+                    <div class="shop__card--title">
+                        <span>plate 1x2</span>
+                    </div>
+
+                    <div class="shop__card--color">
+                        <span class="colorA c-b12a" id="c-b12a"></span>
+                        <span class="colorB c-b12b" id="c-b12b"></span>
+                        <span class="colorG c-b12g" id="c-b12g"></span>
+                        <span class="colorK c-b12k" id="c-b12k"></span>
+                        <span class="colorR c-b12r" id="c-b12r"></span>
+                        <span class="colorW c-b12w" id="c-b12w"></span>
+                    </div>
+
+                    <div class="shop__card--quantity">
+                        <input type="number" class="card--quantity" value="1">
+                    </div>
+
+                    <div class="shop__card--price">
+                        <span>$0.09</span>
+                    </div>
+
+                    <div class="shop__card--add">
+                        <button>add to cart</button>
+                    </div>
+
+                </div>
+
+
+
+                <div class="shop__card">
+
+                    <div class="shop__card--img">
+                        <img src="assets/img/02plate/b13.svg" alt="" id="i-b13">
+                        <img class="card--img" src="assets/img/02plate/b13a.svg" alt="" id="i-b13a">
+                        <img src="assets/img/02plate/b13b.svg" alt="" id="i-b13b">
+                        <img src="assets/img/02plate/b13g.svg" alt="" id="i-b13g">
+                        <img src="assets/img/02plate/b13k.svg" alt="" id="i-b13k">
+                        <img src="assets/img/02plate/b13r.svg" alt="" id="i-b13r">
+                        <img src="assets/img/02plate/b13w.svg" alt="" id="i-b13w">
+                    </div>
+
+                    <div class="shop__card--title">
+                        <span>plate 1x3</span>
+                    </div>
+
+                    <div class="shop__card--color">
+                        <span class="colorA c-b13a" id="c-b13a"></span>
+                        <span class="colorB c-b13b" id="c-b13b"></span>
+                        <span class="colorG c-b13g" id="c-b13g"></span>
+                        <span class="colorK c-b13k" id="c-b13k"></span>
+                        <span class="colorR c-b13r" id="c-b13r"></span>
+                        <span class="colorW c-b13w" id="c-b13w"></span>
+                    </div>
+
+                    <div class="shop__card--quantity">
+                        <input type="number" class="card--quantity" value="1">
+                    </div>
+
+                    <div class="shop__card--price">
+                        <span>$0.14</span>
+                    </div>
+
+                    <div class="shop__card--add">
+                        <button>add to cart</button>
+                    </div>
+
+                </div>
+
+
+
+                <div class="shop__card">
+
+                    <div class="shop__card--img">
+                        <img src="assets/img/02plate/b14.svg" alt="" id="i-b14">
+                        <img class="card--img" src="assets/img/02plate/b14a.svg" alt="" id="i-b14a">
+                        <img src="assets/img/02plate/b14b.svg" alt="" id="i-b14b">
+                        <img src="assets/img/02plate/b14g.svg" alt="" id="i-b14g">
+                        <img src="assets/img/02plate/b14k.svg" alt="" id="i-b14k">
+                        <img src="assets/img/02plate/b14r.svg" alt="" id="i-b14r">
+                        <img src="assets/img/02plate/b14w.svg" alt="" id="i-b14w">
+                    </div>
+
+                    <div class="shop__card--title">
+                        <span>plate 1x4</span>
+                    </div>
+
+                    <div class="shop__card--color">
+                        <span class="colorA c-b14a" id="c-b14a"></span>
+                        <span class="colorB c-b14b" id="c-b14b"></span>
+                        <span class="colorG c-b14g" id="c-b14g"></span>
+                        <span class="colorK c-b14k" id="c-b14k"></span>
+                        <span class="colorR c-b14r" id="c-b14r"></span>
+                        <span class="colorW c-b14w" id="c-b14w"></span>
+                    </div>
+
+                    <div class="shop__card--quantity">
+                        <input type="number" class="card--quantity" value="1">
+                    </div>
+
+                    <div class="shop__card--price">
+                        <span>$0.19</span>
+                    </div>
+
+                    <div class="shop__card--add">
+                        <button>add to cart</button>
+                    </div>
+
+                </div>
+
+
+
+                <div class="shop__card">
+
+                    <div class="shop__card--img">
+                        <img src="assets/img/02plate/b16.svg" alt="" id="i-b16">
+                        <img class="card--img" src="assets/img/02plate/b16a.svg" alt="" id="i-b16a">
+                        <img src="assets/img/02plate/b16b.svg" alt="" id="i-b16b">
+                        <img src="assets/img/02plate/b16g.svg" alt="" id="i-b16g">
+                        <img src="assets/img/02plate/b16k.svg" alt="" id="i-b16k">
+                        <img src="assets/img/02plate/b16r.svg" alt="" id="i-b16r">
+                        <img src="assets/img/02plate/b16w.svg" alt="" id="i-b16w">
+                    </div>
+
+                    <div class="shop__card--title">
+                        <span>plate 1x6</span>
+                    </div>
+
+                    <div class="shop__card--color">
+                        <span class="colorA c-b16a" id="c-b16a"></span>
+                        <span class="colorB c-b16b" id="c-b16b"></span>
+                        <span class="colorG c-b16g" id="c-b16g"></span>
+                        <span class="colorK c-b16k" id="c-b16k"></span>
+                        <span class="colorR c-b16r" id="c-b16r"></span>
+                        <span class="colorW c-b16w" id="c-b16w"></span>
+                    </div>
+
+                    <div class="shop__card--quantity">
+                        <input type="number" class="card--quantity" value="1">
+                    </div>
+
+                    <div class="shop__card--price">
+                        <span>$0.24</span>
+                    </div>
+
+                    <div class="shop__card--add">
+                        <button>add to cart</button>
+                    </div>
+
+                </div>
+
+
+
+                <div class="shop__card">
+
+                    <div class="shop__card--img">
+                        <img src="assets/img/02plate/b22.svg" alt="" id="i-b22">
+                        <img class="card--img" src="assets/img/02plate/b22a.svg" alt="" id="i-b22a">
+                        <img src="assets/img/02plate/b22b.svg" alt="" id="i-b22b">
+                        <img src="assets/img/02plate/b22g.svg" alt="" id="i-b22g">
+                        <img src="assets/img/02plate/b22k.svg" alt="" id="i-b22k">
+                        <img src="assets/img/02plate/b22r.svg" alt="" id="i-b22r">
+                        <img src="assets/img/02plate/b22w.svg" alt="" id="i-b22w">
+                    </div>
+
+                    <div class="shop__card--title">
+                        <span>plate 2x2</span>
+                    </div>
+
+                    <div class="shop__card--color">
+                        <span class="colorA c-b22a" id="c-b22a"></span>
+                        <span class="colorB c-b22b" id="c-b22b"></span>
+                        <span class="colorG c-b22g" id="c-b22g"></span>
+                        <span class="colorK c-b22k" id="c-b22k"></span>
+                        <span class="colorR c-b22r" id="c-b22r"></span>
+                        <span class="colorW c-b22w" id="c-b22w"></span>
+                    </div>
+
+                    <div class="shop__card--quantity">
+                        <input type="number" class="card--quantity" value="1">
+                    </div>
+
+                    <div class="shop__card--price">
+                        <span>$0.24</span>
+                    </div>
+
+                    <div class="shop__card--add">
+                        <button>add to cart</button>
+                    </div>
+
+                </div>
+
+
+
+                <div class="shop__card">
+
+                    <div class="shop__card--img">
+                        <img src="assets/img/02plate/b23.svg" alt="" id="i-b23">
+                        <img class="card--img" src="assets/img/02plate/b23a.svg" alt="" id="i-b23a">
+                        <img src="assets/img/02plate/b23b.svg" alt="" id="i-b23b">
+                        <img src="assets/img/02plate/b23g.svg" alt="" id="i-b23g">
+                        <img src="assets/img/02plate/b23k.svg" alt="" id="i-b23k">
+                        <img src="assets/img/02plate/b23r.svg" alt="" id="i-b23r">
+                        <img src="assets/img/02plate/b23w.svg" alt="" id="i-b23w">
+                    </div>
+
+                    <div class="shop__card--title">
+                        <span>plate 2x3</span>
+                    </div>
+
+                    <div class="shop__card--color">
+                        <span class="colorA c-b23a" id="c-b23a"></span>
+                        <span class="colorB c-b23b" id="c-b23b"></span>
+                        <span class="colorG c-b23g" id="c-b23g"></span>
+                        <span class="colorK c-b23k" id="c-b23k"></span>
+                        <span class="colorR c-b23r" id="c-b23r"></span>
+                        <span class="colorW c-b23w" id="c-b23w"></span>
+                    </div>
+
+                    <div class="shop__card--quantity">
+                        <input type="number" class="card--quantity" value="1">
+                    </div>
+
+                    <div class="shop__card--price">
+                        <span>$0.34</span>
+                    </div>
+
+                    <div class="shop__card--add">
+                        <button>add to cart</button>
+                    </div>
+
+                </div>
+
+
+
+                <div class="shop__card">
+
+                    <div class="shop__card--img">
+                        <img src="assets/img/02plate/b24.svg" alt="" id="i-b24">
+                        <img class="card--img" src="assets/img/02plate/b24a.svg" alt="" id="i-b24a">
+                        <img src="assets/img/02plate/b24b.svg" alt="" id="i-b24b">
+                        <img src="assets/img/02plate/b24g.svg" alt="" id="i-b24g">
+                        <img src="assets/img/02plate/b24k.svg" alt="" id="i-b24k">
+                        <img src="assets/img/02plate/b24r.svg" alt="" id="i-b24r">
+                        <img src="assets/img/02plate/b24w.svg" alt="" id="i-b24w">
+                    </div>
+
+                    <div class="shop__card--title">
+                        <span>plate 2x4</span>
+                    </div>
+
+                    <div class="shop__card--color">
+                        <span class="colorA c-b24a" id="c-b24a"></span>
+                        <span class="colorB c-b24b" id="c-b24b"></span>
+                        <span class="colorG c-b24g" id="c-b24g"></span>
+                        <span class="colorK c-b24k" id="c-b24k"></span>
+                        <span class="colorR c-b24r" id="c-b24r"></span>
+                        <span class="colorW c-b24w" id="c-b24w"></span>
+                    </div>
+
+                    <div class="shop__card--quantity">
+                        <input type="number" class="card--quantity" value="1">
+                    </div>
+
+                    <div class="shop__card--price">
+                        <span>$0.44</span>
+                    </div>
+
+                    <div class="shop__card--add">
+                        <button>add to cart</button>
+                    </div>
 
                 </div>
                 
+
+
                 <div class="shop__card">
 
+                    <div class="shop__card--img">
+                        <img src="assets/img/02plate/b26.svg" alt="" id="i-b26">
+                        <img class="card--img" src="assets/img/02plate/b26a.svg" alt="" id="i-b26a">
+                        <img src="assets/img/02plate/b26b.svg" alt="" id="i-b26b">
+                        <img src="assets/img/02plate/b26g.svg" alt="" id="i-b26g">
+                        <img src="assets/img/02plate/b26k.svg" alt="" id="i-b26k">
+                        <img src="assets/img/02plate/b26r.svg" alt="" id="i-b26r">
+                        <img src="assets/img/02plate/b26w.svg" alt="" id="i-b26w">
+                    </div>
 
-                    
+                    <div class="shop__card--title">
+                        <span>plate 2x6</span>
+                    </div>
+
+                    <div class="shop__card--color">
+                        <span class="colorA c-b26a" id="c-b26a"></span>
+                        <span class="colorB c-b26b" id="c-b26b"></span>
+                        <span class="colorG c-b26g" id="c-b26g"></span>
+                        <span class="colorK c-b26k" id="c-b26k"></span>
+                        <span class="colorR c-b26r" id="c-b26r"></span>
+                        <span class="colorW c-b26w" id="c-b26w"></span>
+                    </div>
+
+                    <div class="shop__card--quantity">
+                        <input type="number" class="card--quantity" value="1">
+                    </div>
+
+                    <div class="shop__card--price">
+                        <span>$0.54</span>
+                    </div>
+
+                    <div class="shop__card--add">
+                        <button>add to cart</button>
+                    </div>
+
                 </div>
 
             </div>
@@ -262,19 +981,120 @@
 
                 <div class="shop__card">
 
+                    <div class="shop__card--img">
+                        <img src="assets/img/03base-plate/c33.svg" alt="" id="i-c33">
+                        <img class="card--img" src="assets/img/03base-plate/c33a.svg" alt="" id="i-c33a">
+                        <img src="assets/img/03base-plate/c33b.svg" alt="" id="i-c33b">
+                        <img src="assets/img/03base-plate/c33g.svg" alt="" id="i-c33g">
+                        <img src="assets/img/03base-plate/c33k.svg" alt="" id="i-c33k">
+                        <img src="assets/img/03base-plate/c33r.svg" alt="" id="i-c33r">
+                        <img src="assets/img/03base-plate/c33w.svg" alt="" id="i-c33w">
+                    </div>
 
+                    <div class="shop__card--title">
+                        <span>base plate 3x3</span>
+                    </div>
+
+                    <div class="shop__card--color">
+                        <span class="colorA c-c33a" id="c-c33a"></span>
+                        <span class="colorB c-c33b" id="c-c33b"></span>
+                        <span class="colorG c-c33g" id="c-c33g"></span>
+                        <span class="colorK c-c33k" id="c-c33k"></span>
+                        <span class="colorR c-c33r" id="c-c33r"></span>
+                        <span class="colorW c-c33w" id="c-c33w"></span>
+                    </div>
+
+                    <div class="shop__card--quantity">
+                        <input type="number" class="card--quantity" value="1">
+                    </div>
+
+                    <div class="shop__card--price">
+                        <span>$0.49</span>
+                    </div>
+
+                    <div class="shop__card--add">
+                        <button>add to cart</button>
+                    </div>
 
                 </div>
 
+
                 <div class="shop__card">
 
+                    <div class="shop__card--img">
+                        <img src="assets/img/03base-plate/c44.svg" alt="" id="i-c44">
+                        <img class="card--img" src="assets/img/03base-plate/c44a.svg" alt="" id="i-c44a">
+                        <img src="assets/img/03base-plate/c44b.svg" alt="" id="i-c44b">
+                        <img src="assets/img/03base-plate/c44g.svg" alt="" id="i-c44g">
+                        <img src="assets/img/03base-plate/c44k.svg" alt="" id="i-c44k">
+                        <img src="assets/img/03base-plate/c44r.svg" alt="" id="i-c44r">
+                        <img src="assets/img/03base-plate/c44w.svg" alt="" id="i-c44w">
+                    </div>
 
+                    <div class="shop__card--title">
+                        <span>base plate 4x4</span>
+                    </div>
+
+                    <div class="shop__card--color">
+                        <span class="colorA c-c44a" id="c-c44a"></span>
+                        <span class="colorB c-c44b" id="c-c44b"></span>
+                        <span class="colorG c-c44g" id="c-c44g"></span>
+                        <span class="colorK c-c44k" id="c-c44k"></span>
+                        <span class="colorR c-c44r" id="c-c44r"></span>
+                        <span class="colorW c-c44w" id="c-c44w"></span>
+                    </div>
+
+                    <div class="shop__card--quantity">
+                        <input type="number" class="card--quantity" value="1">
+                    </div>
+
+                    <div class="shop__card--price">
+                        <span>$0.59</span>
+                    </div>
+
+                    <div class="shop__card--add">
+                        <button>add to cart</button>
+                    </div>
 
                 </div>
 
+
                 <div class="shop__card">
 
+                    <div class="shop__card--img">
+                        <img src="assets/img/03base-plate/c88.svg" alt="" id="i-c88">
+                        <img class="card--img" src="assets/img/03base-plate/c88a.svg" alt="" id="i-c88a">
+                        <img src="assets/img/03base-plate/c88b.svg" alt="" id="i-c88b">
+                        <img src="assets/img/03base-plate/c88g.svg" alt="" id="i-c88g">
+                        <img src="assets/img/03base-plate/c88k.svg" alt="" id="i-c88k">
+                        <img src="assets/img/03base-plate/c88r.svg" alt="" id="i-c88r">
+                        <img src="assets/img/03base-plate/c88w.svg" alt="" id="i-c88w">
+                    </div>
 
+                    <div class="shop__card--title">
+                        <span>base plate 8x8</span>
+                    </div>
+
+                    <div class="shop__card--color">
+                        <span class="colorA c-c88a" id="c-c88a"></span>
+                        <span class="colorB c-c88b" id="c-c88b"></span>
+                        <span class="colorG c-c88g" id="c-c88g"></span>
+                        <span class="colorK c-c88k" id="c-c88k"></span>
+                        <span class="colorR c-c88r" id="c-c88r"></span>
+                        <span class="colorW c-c88w" id="c-c88w"></span>
+                    </div>
+
+                    <div class="shop__card--quantity">
+                        <input type="number" class="card--quantity" value="1">
+                    </div>
+
+                    <div class="shop__card--price">
+                        <span>$0.99</span>
+                    </div>
+
+                    <div class="shop__card--add">
+                        <button>add to cart</button>
+                    </div>
 
                 </div>
 
@@ -292,7 +1112,6 @@
 
     </section>
     
-
 
 
 
