@@ -8,6 +8,12 @@ var cartX = document.querySelector("#cart-x");
 
 var cart = document.querySelector(".cart");
 
+var aboutTheApp = document.querySelector('.header__nav--about');
+
+var aboutX = document.querySelector("#about-x");
+
+var about = document.querySelector(".about");
+
 
 
 
@@ -32,7 +38,21 @@ cartX.addEventListener('click', () => {
 
 })
 
+aboutTheApp.addEventListener('click', () => {
 
+    aboutX.style.pointerEvents = 'all';
+    about.style.pointerEvents = 'all';
+    about.style.opacity = '1';
+
+})
+
+aboutX.addEventListener('click', () => {
+    
+    aboutX.style.pointerEvents = 'none';
+    about.style.pointerEvents = 'none';
+    about.style.opacity = '0';
+
+})
 
 
 
@@ -5164,7 +5184,7 @@ cartX.addEventListener('click', () => {
 
                 cartItems[j].remove()
 
-                alert('this item is already in the cart. try different colors')
+                alert('this item is already in the cart. you can update quantity directly in the cart or try different colors for this part')
 
             }
         

@@ -40,15 +40,11 @@ html {
   align-items: center;
 
   z-index: 3;
-
-  /* background-color: rgb(0, 0, 0, 0.2); */
 }
 
 .header__logo {
   width: 10%;
   cursor: pointer;
-
-  /* background-color: rgb(0, 0, 0, 0.5); */
 }
 
 .header__logo img {
@@ -61,14 +57,13 @@ html {
   align-items: center;
 
   width: 25%;
-
-  /* background-color: rgb(0, 0, 0, 0.5); */
 }
 
-.header__nav a {
-  text-decoration: none;
+.header__nav--about span {
   color: #333;
   font-size: 2rem;
+
+  cursor: pointer;
 }
 
 .header__nav svg {
@@ -127,7 +122,7 @@ html {
   background-color: rgb(255, 207, 0);
 
   transform: translateY(calc(-100% - 11vh));
-  opacity: 1;
+  opacity: 0;
 
   transition: 1.5s ease;
 }
@@ -345,8 +340,6 @@ html {
   width: 100vw;
 
   border-bottom: 1px dashed;
-
-  /* background-color: rgb(0, 0, 0, 0.2); */
 }
 
 .banner__logo {
@@ -640,7 +633,7 @@ html {
 }
 
 .shop__baseplates .shop__card:nth-child(3) .shop__card--img img {
-  height: 90%;
+  height: 8vw;
 }
 
 .shop__card--title {
@@ -921,4 +914,68 @@ html {
 #i-c88r,
 #i-c88w {
   display: none;
+}
+
+/* 
+
+
+     ==========     about the app     ==========
+
+
+*/
+
+.about {
+  position: fixed;
+
+  top: 12vh;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  width: 60vw;
+  height: 80vh;
+
+  background: rgb(255, 207, 0);
+
+  transition: 0.8s ease;
+
+  opacity: 0;
+  pointer-events: none;
+}
+
+.about__text {
+  height: calc(100% - 2rem);
+  width: calc(100% - 2rem);
+
+  margin: 1rem 0 0 1rem;
+  padding: 3rem;
+
+  border: 1px dashed #000;
+}
+
+#about-x {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+
+  width: 4rem;
+  height: 4rem;
+
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about__text h2 {
+  font-size: 3.5rem;
+  font-weight: 200;
+  color: #555;
+}
+
+.about__text p {
+  margin-top: 3rem;
+  font-size: calc(0.7rem + 0.5vw);
+  color: #555;
 }
