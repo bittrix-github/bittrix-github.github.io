@@ -202,6 +202,20 @@ html {
 .cart__items {
   max-height: 30vh;
   overflow-y: auto;
+  max-width: 99%;
+}
+
+.cart__items::-webkit-scrollbar {
+  width: 1rem;
+}
+
+.cart__items::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+.cart__items::-webkit-scrollbar-thumb {
+  background-color: rgb(245, 197, 0);
+  outline: 1px solid rgb(0, 0, 0, 0.3);
 }
 
 .cart__item {
@@ -320,11 +334,13 @@ html {
   justify-content: center;
   align-items: center;
 
-  margin-top: 50%;
-
   font-size: 2rem;
   font-weight: 400;
   color: #333;
+}
+
+.cart__empty span {
+  margin-top: 32vh;
 }
 /* 
 
@@ -948,7 +964,7 @@ html {
   width: calc(100% - 2rem);
 
   margin: 1rem 0 0 1rem;
-  padding: 3rem;
+  padding: 3rem 1rem 3rem 3rem;
 
   border: 1px dashed #000;
 }
@@ -968,14 +984,38 @@ html {
   align-items: center;
 }
 
-.about__text h2 {
+.about__title h2 {
   font-size: 3.5rem;
   font-weight: 200;
   color: #555;
 }
 
-.about__text p {
-  margin-top: 3rem;
+.about__paragraph {
+  overflow-y: auto;
+  max-height: 90%;
+}
+
+.about__paragraph::-webkit-scrollbar {
+  width: 0.7rem;
+}
+
+.about__paragraph::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+.about__paragraph::-webkit-scrollbar-thumb {
+  background-color: rgb(245, 197, 0);
+  outline: 1px solid rgb(0, 0, 0, 0.3);
+}
+
+.about__paragraph p {
+  margin-top: 0.8vw;
   font-size: calc(0.7rem + 0.5vw);
   color: #555;
+
+  line-height: 2.8vh;
+}
+
+.about__paragraph p:nth-child(1) {
+  margin-top: 3rem;
 }

@@ -58,6 +58,20 @@
   .shop__baseplates .shop__card:nth-child(3) .shop__card--img img {
     height: 85%;
   }
+
+  .about {
+    width: 70vw;
+    height: 87vh;
+  }
+
+  .about__paragraph p {
+    margin-top: 2rem;
+    line-height: 2.7vh;
+  }
+
+  .about__paragraph p:nth-child(1) {
+    margin-top: 3rem;
+  }
 }
 
 /* 
@@ -187,12 +201,12 @@
     left: 0;
   }
 
-  #cart-x {
-    right: 4rem;
+  .cart__empty span {
+    margin-top: 44vh;
   }
 
-  .cart__empty.active {
-    margin-top: 39vh;
+  #cart-x {
+    right: 4rem;
   }
 
   .cart__items {
