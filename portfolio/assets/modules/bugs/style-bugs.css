@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.bugs__container {
+  position: relative;
+
+  height: 80vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  color: #444;
+}
+
+.bugs__container h2 {
+  font-size: 3rem;
+  font-weight: bolder;
+
+  margin-bottom: 6rem;
+}
+
+.bugs__container p {
+  font-size: 1.8rem;
+  font-weight: normal;
+
+  margin-top: 2rem;
+}
