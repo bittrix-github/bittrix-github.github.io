@@ -235,6 +235,96 @@ body {
 
 
 
+     ==========     language switch     ==========
+
+
+
+
+
+*/
+
+.language__switch {
+  position: absolute;
+
+  top: 2vh;
+  right: 2vh;
+
+  width: 15rem;
+  height: 4rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.language__switch .switch__scroll {
+  position: relative;
+
+  width: 4rem;
+  height: 2rem;
+
+  border-radius: 2rem;
+
+  background: #eee;
+
+  display: flex;
+  align-items: center;
+}
+
+.language__switch .switch__button {
+  position: absolute;
+
+  width: 2.5rem;
+  height: 2.5rem;
+
+  border-radius: 50%;
+
+  background: #caaae4;
+
+  transition: 0.7s ease;
+
+  cursor: pointer;
+}
+
+.language__switch .switch__button.translate {
+  transform: translateX(1.5rem);
+}
+
+.language__switch .switch__scroll::before,
+.language__switch .switch__scroll::after {
+  position: absolute;
+  content: "";
+
+  width: 2.5rem;
+  height: 2.5rem;
+
+  border-radius: 50%;
+}
+
+.language__switch .switch__scroll::before {
+  left: 0;
+  margin-left: -3.5rem;
+
+  background-image: url("images/uk.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.language__switch .switch__scroll::after {
+  right: 0;
+  margin-right: -3.5rem;
+
+  background-image: url("images/br.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* 
+
+
+
+
+
      ==========     wrapper     ==========
 
 

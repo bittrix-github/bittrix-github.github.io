@@ -387,6 +387,36 @@ portfolioInfoIcon.addEventListener('click', () => {
 
 
 
+//           ==========     language switch     ==========
+
+
+
+
+
+//
+
+
+
+
+
+var switchButton = document.querySelector('#switch-button');
+
+switchButton.addEventListener('click', () => {
+
+    switchButton.classList.toggle('translate');
+
+})
+
+
+
+
+
+// 
+
+
+
+
+
 //           ==========     functions     ==========
 
 
