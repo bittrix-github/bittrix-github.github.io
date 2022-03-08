@@ -28,6 +28,12 @@ html {
   margin-bottom: 6rem;
 }
 
+.profile__container h2 ion-icon {
+  position: absolute;
+
+  transform: translate(-4rem, 0.3rem);
+}
+
 .profile__container p {
   font-size: 1.8rem;
   font-weight: normal;

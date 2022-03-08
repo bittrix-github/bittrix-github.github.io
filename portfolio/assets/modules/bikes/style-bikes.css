@@ -28,8 +28,18 @@ html {
   margin-bottom: 6rem;
 }
 
+.bikes__container h2 ion-icon {
+  position: absolute;
+
+  transform: translate(-4rem, -0.2rem);
+
+  font-size: 4rem;
+}
+
 .bikes__container p {
-  font-size: 1.8rem;
+  font-family: consolas;
+
+  font-size: 3rem;
   font-weight: normal;
 
   margin-top: 2rem;

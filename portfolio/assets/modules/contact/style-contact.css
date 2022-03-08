@@ -28,6 +28,12 @@ html {
   margin-bottom: 6rem;
 }
 
+.contact__container h2 ion-icon {
+  position: absolute;
+
+  transform: translate(-3rem, 0.45rem);
+}
+
 .contact__container p {
   font-size: 1.8rem;
   font-weight: normal;

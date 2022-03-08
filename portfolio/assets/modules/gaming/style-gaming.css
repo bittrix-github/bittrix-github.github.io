@@ -28,8 +28,18 @@ html {
   margin-bottom: 6rem;
 }
 
+.gaming__container h2 ion-icon {
+  position: absolute;
+
+  transform: translate(-4rem, 0rem);
+
+  font-size: 4rem;
+}
+
 .gaming__container p {
-  font-size: 1.8rem;
+  font-family: consolas;
+
+  font-size: 3rem;
   font-weight: normal;
 
   margin-top: 2rem;

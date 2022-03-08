@@ -28,6 +28,14 @@ html {
   margin-bottom: 6rem;
 }
 
+.portfolio-info__container h2 ion-icon {
+  position: absolute;
+
+  transform: translate(-4rem, 0.15rem);
+
+  font-size: 3.5rem;
+}
+
 .portfolio-info__container p {
   font-size: 1.8rem;
   font-weight: normal;
