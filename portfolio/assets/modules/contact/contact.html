@@ -2,7 +2,46 @@
 
     <h2><ion-icon name = "mail-outline"></ion-icon>&nbsp;&nbsp;&nbsp;Contact</h2>
 
-    <p>Contact gonna display here.</p>
-    <p>This is just a test!</p>
+    <div class="contact__list">
+
+        <div class="contact__line">
+            <p><ion-icon name="paper-plane-outline"></ion-icon>&nbsp;&nbsp;&nbsp;Email:</p>
+            
+            <div class="click__copy">
+                <div class = "contact__tooltip" data-tooltip = "Email copied to clipboard!" id="emailTT"></div>
+                <p class="contact__line--data" id="email" onclick="copyEmail()" >bittrix@hotmail.com</p>
+            </div>
+        </div>
+
+
+        <div class="contact__line">
+            <p><ion-icon name="logo-whatsapp"></ion-icon>&nbsp;&nbsp;&nbsp;WhatsApp:</p>
+            
+            <div class="click__copy">
+                <div class = "contact__tooltip" data-tooltip = "Number copied to clipboard!" id="wappTT"></div>
+                <p class="contact__line--data" id="wapp" onclick="copyWapp()">+55 21 987230831</p>
+            </div>
+
+        </div>
+        
+
+        <div class="contact__line">
+            <p><ion-icon name="logo-github"></ion-icon>&nbsp;&nbsp;&nbsp;GitHub:</p>
+            <p class="contact__line--data"><a href="https://github.com/bittrix-github/" target="_blank">github.com/bittrix-github</a></p>
+        </div>
+
+
+        <div class="contact__line">
+            <p><ion-icon name="logo-linkedin"></ion-icon>&nbsp;&nbsp;&nbsp;LinkedIn:</p>
+            <p class="contact__line--data"><a href="https://www.linkedin.com/in/pedro-bittencourt-a66869188/" target="_blank">linkedin.com/pedro-bittencourt</a></p>
+        </div>
+
+
+        <div class="contact__line">
+            <p><ion-icon name="logo-instagram"></ion-icon>&nbsp;&nbsp;&nbsp;Instagram:</p>
+            <p class="contact__line--data"><a href="https://www.instagram.com/bittrix/" target="_blank">instagram.com/bittrix</a></p>
+        </div>
+
+    </div>
 
 </div>

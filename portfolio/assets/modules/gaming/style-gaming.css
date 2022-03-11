@@ -37,7 +37,7 @@ html {
 }
 
 .gaming__container p {
-  font-family: consolas;
+  font-family: "Cutive Mono", monospace;
 
   font-size: 3rem;
   font-weight: normal;

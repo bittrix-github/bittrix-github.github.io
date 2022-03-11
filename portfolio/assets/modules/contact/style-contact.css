@@ -12,6 +12,8 @@ html {
   position: relative;
 
   height: 80vh;
+  width: 80vw;
+  margin: auto;
 
   display: flex;
   flex-direction: column;
@@ -34,9 +36,98 @@ html {
   transform: translate(-3rem, 0.45rem);
 }
 
-.contact__container p {
-  font-size: 1.8rem;
-  font-weight: normal;
+.contact__container .contact__list {
+  text-align: left;
 
-  margin-top: 2rem;
+  width: 40vw;
+  min-width: 60rem;
+
+  margin-left: 15vw;
+}
+
+.contact__line {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact__container .contact__list p ion-icon {
+  transform: translateY(3px);
+}
+
+.contact__container p {
+  font-size: 2.2rem;
+  font-weight: normal;
+  line-height: 4rem;
+
+  margin-top: 3.5vh;
+}
+
+.contact__container .contact__list p a {
+  text-decoration: none;
+}
+
+.contact__container .contact__line--data {
+  width: 60%;
+
+  cursor: pointer;
+}
+
+.click__copy {
+  position: relative;
+
+  display: flex;
+  justify-content: start;
+
+  width: 60%;
+}
+
+.contact__tooltip::before,
+.contact__tooltip::after {
+  opacity: 0;
+  transition: 0.5s ease;
+
+  pointer-events: none;
+}
+
+.contact__tooltip::before {
+  position: absolute;
+  top: 22px;
+  background: rgb(0, 0, 0, 0.6);
+  transform: translate(-50%, -100%);
+
+  content: attr(data-tooltip);
+  height: 30px;
+  width: 500px;
+  width: max-content;
+  padding: 10px 8px 0px 8px;
+  border-radius: 5px;
+
+  color: #fff;
+  font-size: 16px;
+  font-weight: 200;
+}
+
+.contact__tooltip::after {
+  content: "";
+  position: absolute;
+  top: 22px;
+  border: 10px solid transparent;
+  border-top-color: rgb(0, 0, 0, 0.6);
+
+  transform: translateX(-50%);
+}
+
+.contact__line:nth-child(1) .contact__tooltip::before,
+.contact__line:nth-child(1) .contact__tooltip::after {
+  left: 113px;
+}
+
+.contact__line:nth-child(2) .contact__tooltip::before,
+.contact__line:nth-child(2) .contact__tooltip::after {
+  left: 95px;
+}
+
+.contact__tooltip.clicked::before,
+.contact__tooltip.clicked::after {
+  opacity: 1;
 }

@@ -12,6 +12,8 @@ html {
   position: relative;
 
   height: 80vh;
+  width: 80vw;
+  margin: auto;
 
   display: flex;
   flex-direction: column;
@@ -36,9 +38,34 @@ html {
   font-size: 3.5rem;
 }
 
+.portfolio-info__list {
+  font-family: "Cutive Mono", monospace;
+  text-align: left;
+
+  width: 40vw;
+  min-width: 60rem;
+
+  margin-left: 15vw;
+}
+
+.portfolio-info__line {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 5vh;
+}
+
+.portfolio-info__line:last-child {
+  margin-bottom: 0rem;
+}
+
+.portfolio-info__line--data {
+  width: 60%;
+}
+
 .portfolio-info__container p {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: normal;
 
-  margin-top: 2rem;
+  margin-top: 1.8vh;
 }

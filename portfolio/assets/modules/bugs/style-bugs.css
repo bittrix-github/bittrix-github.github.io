@@ -12,11 +12,11 @@ html {
   position: relative;
 
   height: 80vh;
+  width: 100%;
 
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 
   color: #444;
 }
@@ -34,9 +34,128 @@ html {
   transform: translate(-3rem, 0.4rem);
 }
 
-.bugs__container p {
+.bugs__container .bugs__text {
+  padding: 0 5rem;
+
+  margin-bottom: 3rem;
+
+  width: 100%;
+}
+
+.bugs__container .bugs__text p {
   font-size: 1.8rem;
   font-weight: normal;
+  line-height: 2.6rem;
 
-  margin-top: 2rem;
+  margin-bottom: 1.4rem;
+}
+
+.bugs__box {
+  margin-top: 5rem;
+
+  padding: 0 5rem;
+}
+
+.bugs__box ion-icon {
+  position: absolute;
+
+  font-size: calc(15rem + 8vw);
+
+  color: rgb(0, 0, 0, 0.05);
+}
+
+.bugs__box h3 {
+  font-size: 3rem;
+  font-weight: 400;
+
+  margin-bottom: 8rem;
+}
+
+.bugs__box p {
+  font-size: 1.8rem;
+  font-weight: normal;
+  line-height: 2.6rem;
+}
+
+.bugs__box .bugs_now p {
+  margin-bottom: 6rem;
+}
+
+.bugs__box .bugs__now .p__left {
+  position: relative;
+  margin: 0 0 20rem 10vw;
+  width: 35%;
+}
+
+.bugs__box .bugs__now .p__right {
+  position: relative;
+  margin: 0 0 20rem 45vw;
+  width: 35%;
+}
+
+#now-phone {
+  top: 50%;
+  left: 130%;
+
+  transform: translateY(-50%) rotate(10deg);
+}
+
+#now-sass {
+  top: 50%;
+  left: calc(-10rem - 85%);
+
+  transform: translateY(-50%) rotate(-10deg);
+}
+
+.bugs__box .bugs__soon {
+  position: relative;
+}
+
+.bugs__box .bugs__soon p {
+  margin-bottom: 6rem;
+}
+
+.bugs__box .bugs__soon .bugs__soon--list {
+  margin: 0 0 20rem 60vw;
+}
+
+.bugs__box .bugs__soon .bugs__soon--list p {
+  font-size: 3.5rem;
+  font-weight: 200;
+  margin-bottom: 10rem;
+}
+
+#queue-node {
+  top: calc(55% - 10vw);
+  left: 55%;
+
+  transform: translateX(-50%) rotate(10deg);
+}
+
+#queue-react {
+  top: 50%;
+  left: 20%;
+
+  transform: translateX(-50%) rotate(-10deg);
+}
+
+.bugs__box .bugs__goals .bugs__goals--list {
+  position: relative;
+  margin: 15rem 0 0 15vw;
+}
+
+.bugs__box .bugs__goals .bugs__goals--list p {
+  font-size: 2rem;
+  margin-bottom: 6rem;
+  height: 3.5rem;
+  width: max-content;
+
+  border-bottom: 1px dashed #666;
+}
+
+#goals-rocket {
+  top: 30%;
+  left: 65%;
+
+  transform: translateX(-50%) rotate(-20deg);
 }

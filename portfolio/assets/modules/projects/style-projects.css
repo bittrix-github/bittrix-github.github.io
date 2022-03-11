@@ -12,23 +12,28 @@ html {
   position: relative;
 
   height: 80vh;
+  width: 100%;
 
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
 
   color: #444;
 }
 
-.projects__container h2 {
-  font-size: 3rem;
-  font-weight: bolder;
+.projects__container .projects__title {
+  width: max-content;
+
+  margin-left: 45%;
 
   margin-bottom: 6rem;
 }
 
-.projects__container h2 ion-icon {
+.projects__container .projects__title h2 {
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+.projects__container .projects__title h2 ion-icon {
   position: absolute;
 
   transform: translate(-4rem, 0rem);
@@ -36,9 +41,299 @@ html {
   font-size: 4rem;
 }
 
-.projects__container p {
+.projects__container .projects__text {
+  padding: 0 5rem;
+
+  margin-bottom: 3rem;
+}
+
+.projects__container .projects__text p {
   font-size: 1.8rem;
   font-weight: normal;
+  line-height: 2.6rem;
 
-  margin-top: 2rem;
+  margin-bottom: 1.4rem;
+}
+
+.projects__box {
+  margin-top: 5rem;
+}
+
+.projects__box h3 {
+  font-size: 3rem;
+  font-weight: 400;
+
+  margin-left: 5rem;
+}
+
+.projects__box ion-icon {
+  transform: translateY(0.7rem);
+}
+
+.projects__web--cards {
+  width: 60vw;
+  display: grid;
+  grid-template-columns: repeat(2, 15vw);
+  grid-template-rows: repeat(4, 45rem);
+  row-gap: 15vw;
+  column-gap: 15vw;
+  margin-left: 22.5vw;
+  margin-bottom: 10rem;
+  margin-top: 15rem;
+}
+
+.projects__web--card:nth-child(7) {
+  margin-left: 15vw;
+}
+
+.projects__web--card {
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+
+  text-decoration: none;
+
+  background: #caaae4;
+
+  transform-style: preserve-3d;
+  transform: perspective(1800px);
+
+  transition: 1.5s ease-in-out;
+}
+
+.projects__web--card:hover .projects__web--cover {
+  transform: rotateY(-180deg);
+  z-index: 1;
+}
+
+.projects__web--card:hover .projects__web--backcover {
+  transform: rotateY(-180deg);
+  z-index: 3;
+}
+
+.projects__web--card:hover {
+  transform: translateX(50%);
+}
+
+.projects__web--cards .projects__web--cover {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+
+  z-index: 3;
+
+  transform-style: preserve-3d;
+  transform-origin: left;
+
+  transition: 1.5s ease-in-out;
+}
+
+.projects__web--cards .projects__web--backcover {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+
+  z-index: 2;
+
+  transform-style: preserve-3d;
+  transform-origin: left;
+
+  transition: 1.5s ease-in-out;
+}
+
+.projects__web--card:nth-child(1) .projects__web--backcover {
+  background: rgb(255, 207, 0);
+}
+
+.projects__web--card:nth-child(2) .projects__web--backcover {
+  background: rgb(179, 0, 105);
+}
+
+.projects__web--card:nth-child(3) .projects__web--backcover {
+  background: rgb(0, 183, 251);
+}
+
+.projects__web--card:nth-child(4) .projects__web--backcover {
+  background: rgb(55, 87, 57);
+}
+
+.projects__web--card:nth-child(5) .projects__web--backcover {
+  background: rgb(0, 0, 50);
+}
+
+.projects__web--card:nth-child(6) .projects__web--backcover {
+  background: rgb(25, 25, 25);
+}
+
+.projects__web--card:nth-child(7) .projects__web--backcover {
+  background: rgb(255, 255, 255);
+}
+
+.projects__web--cards .projects__web--content {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+
+  z-index: 1;
+}
+
+.projects__web--cards .card1 .projects__web--cover {
+  background-image: url("/assets/images/card-lego.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+.projects__web--cards .card2 .projects__web--cover {
+  background-image: url("/assets/images/card-casulo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+.projects__web--cards .card3 .projects__web--cover {
+  background-image: url("/assets/images/card-logitech.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+.projects__web--cards .card4 .projects__web--cover {
+  background-image: url("/assets/images/card-plant.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+.projects__web--cards .card5 .projects__web--cover {
+  background-image: url("/assets/images/card-california.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.projects__web--cards .card6 .projects__web--cover {
+  background-image: url("/assets/images/card-rio.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.projects__web--cards .card7 .projects__web--cover {
+  background-image: url("/assets/images/card-af1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+.projects__web--content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 5rem;
+}
+
+.projects__web--content .content__title h4 {
+  font-size: 2.8rem;
+  font-weight: 400;
+  color: #eee;
+}
+
+.projects__web--content .content__web--responsive {
+  position: absolute;
+
+  top: 45%;
+}
+
+.projects__web--content .content__web--responsive h5 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #eee;
+
+  margin-bottom: 2rem;
+}
+
+.projects__web--content .content__web--responsive p {
+  position: relative;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #eee;
+
+  width: max-content;
+  height: 3rem;
+
+  line-height: 3.5rem;
+
+  border-bottom: 1px dashed #ddd;
+}
+
+.project__python {
+  margin-top: 20rem;
+}
+
+.projects__python--cards {
+  width: 60vw;
+  display: grid;
+  grid-template-columns: repeat(1, 22vw);
+  grid-template-rows: repeat(1, 40rem);
+  /* row-gap: 15vw;
+  column-gap: 15vw; */
+  margin-left: 34vw;
+  margin-bottom: 10rem;
+  margin-top: 15rem;
+}
+
+.projects__python--card {
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+
+  text-decoration: none;
+
+  background: #caaae4;
+}
+
+.projects__python--card .projects__python--cover {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+
+  z-index: 3;
+
+  background-image: url("/assets/images/card-python.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.project__R {
+  margin-top: 20rem;
+}
+
+.projects__R--cards {
+  width: 60vw;
+  display: grid;
+  grid-template-columns: repeat(1, 15vw);
+  grid-template-rows: repeat(1, 40rem);
+  row-gap: 15vw;
+  column-gap: 15vw;
+  margin-left: 37.5vw;
+  margin-bottom: 10rem;
+  margin-top: 15rem;
+}
+
+.projects__R--card {
+  width: 100%;
+  height: 100%;
+
+  text-decoration: none;
+
+  background: #caaae4;
 }

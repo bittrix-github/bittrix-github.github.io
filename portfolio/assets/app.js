@@ -481,3 +481,53 @@ function cleanWrapper () {
     }
 
 }
+
+
+
+
+
+
+
+
+function copyEmail () {
+
+    var elementText = document.getElementById('email').innerText;
+
+    navigator.clipboard.writeText(elementText);
+
+
+
+
+    var emailTT = document.getElementById('emailTT');
+
+    emailTT.classList.add('clicked');
+
+    setTimeout(function(){
+
+        emailTT.classList.remove('clicked');
+
+    }, 2000);
+
+
+}
+
+
+function copyWapp () {
+
+    var elementText = document.getElementById('wapp').innerText;
+
+    navigator.clipboard.writeText(elementText);
+
+    
+    
+    var wappTT = document.getElementById('wappTT');
+
+    wappTT.classList.add('clicked');
+
+    setTimeout(function(){
+
+        wappTT.classList.remove('clicked');
+
+    }, 2000);
+
+}
