@@ -14,7 +14,7 @@ body {
   align-items: center;
 
   font-family: "Poppins", sans-serif;
-  min-height: 100vh;
+  height: 100vh;
 }
 
 #c1 {
@@ -69,10 +69,18 @@ body {
 }
 
 .card {
-  min-height: 80vh;
-  width: 50%;
+  position: relative;
+
+  height: 80vh;
+  width: 50vh;
+  max-width: 50%;
+  min-width: 35rem;
   padding: 0 5rem;
   border-radius: 3rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   box-shadow: 0 20px 20px rgb(0, 0, 0, 0.2), 0 0 60px rgb(0, 0, 0, 0.1);
 
@@ -81,40 +89,35 @@ body {
 
 .sneaker {
   position: absolute;
-  width: 30rem;
-  top: 9rem;
-  left: 6.5rem;
+  width: 35vh;
+  top: calc(1rem + 5.5vh);
   z-index: 2;
 
   transition: all 0.5s ease;
 }
 
 .circle {
-  width: 21rem;
-  height: 21rem;
+  width: 23vh;
+  height: 23vh;
   border-radius: 50%;
 
   position: absolute;
 
-  top: 5.5rem;
-  left: 11rem;
+  top: 3.5vh;
 }
 
 .title {
   position: absolute;
-  top: 28rem;
-  left: 5rem;
+  top: calc(40vh - 8rem);
 
-  font-size: 2.8rem;
+  font-size: calc(2.8vh + 0.5rem);
   color: #505050;
   transition: all 0.5s ease-out;
 }
 
 .description {
   position: absolute;
-  top: 32.2rem;
-  /* left: 5rem; */
-  left: 12rem;
+  top: calc(44vh - 8rem);
 
   font-size: 1.6rem;
   padding: 1.5rem 0;
@@ -127,8 +130,7 @@ body {
 
 .colors {
   position: absolute;
-  top: 38.7rem;
-  left: 8.5rem;
+  top: calc(52vh - 8rem);
 
   display: flex;
   justify-content: space-between;
@@ -168,8 +170,7 @@ body {
 
 .sizes {
   position: absolute;
-  top: 46rem;
-  left: 8.6rem;
+  top: calc(60vh - 8rem);
 
   display: flex;
   flex-wrap: wrap;
@@ -200,8 +201,8 @@ body {
 
 .-price- {
   position: absolute;
-  top: 57.5rem;
-  left: 14.7rem;
+  top: calc(68vh - 4rem);
+  left: 34%;
 
   font-family: "Rubik", sans-serif;
   font-size: 2rem;
@@ -214,8 +215,8 @@ body {
 
 .price {
   position: absolute;
-  top: 57.5rem;
-  left: 24rem;
+  top: calc(68vh - 4rem);
+  right: 34%;
 
   font-family: "Rubik", sans-serif;
   font-size: 2rem;
@@ -227,8 +228,7 @@ body {
 
 .purchase {
   position: absolute;
-  top: 63rem;
-  left: 10.4rem;
+  top: calc(75vh - 5rem);
 
   padding: 1.2rem 8rem;
   border-radius: 3rem;
@@ -244,4 +244,146 @@ body {
 
 .purchase:hover {
   background: #64b371;
+}
+
+.about__button span {
+  position: absolute;
+  top: 20rem;
+  right: calc(35vw - 30rem);
+
+  height: 7rem;
+  width: 7rem;
+
+  padding: 0.9rem 0 0 2.5rem;
+
+  border: 2px solid #444;
+
+  border-radius: 8px;
+
+  background: linear-gradient(180deg, #666, #444);
+
+  box-shadow: inset -8px 0 8px rgb(0, 0, 0, 0.15),
+    inset 0 -8px 8px rgb(0, 0, 0, 0.25), 0 0 0 2px rgb(0, 0, 0, 0.75),
+    10px 20px 25px rgb(0, 0, 0 0.4);
+
+  overflow: hidden;
+
+  cursor: pointer;
+}
+
+.about__button span p {
+  position: absolute;
+
+  color: #eee;
+
+  font-size: 3rem;
+
+  pointer-events: none;
+}
+
+.about__button span::before {
+  position: absolute;
+
+  content: "";
+
+  top: 3px;
+  left: 4px;
+  bottom: 14px;
+  right: 12px;
+
+  width: 5.4rem;
+  height: 5.4rem;
+
+  border-radius: 8px;
+
+  background: linear-gradient(90deg, #555, #999);
+
+  box-shadow: -10px -10px 10px rgb(255, 255, 255, 0.15),
+    10px 5px 10px rgb(0, 0, 0, 0.15);
+
+  border-left: 1px solid #0004;
+  border-bottom: 1px solid #0004;
+  border-top: 1px solid #0004;
+}
+
+.about__button.active span {
+  transform: scale(0.97);
+}
+
+.about {
+  position: absolute;
+
+  width: 30vw;
+  min-width: 53rem;
+  height: 85vh;
+
+  border-radius: 2.5rem;
+
+  padding: 3.5rem;
+
+  transition: 0.6s ease;
+
+  opacity: 0;
+  pointer-events: none;
+
+  background: linear-gradient(
+    to right bottom,
+    rgb(0, 0, 200, 0.2),
+    rgb(0, 0, 200, 0.05)
+  );
+
+  backdrop-filter: blur(0.9rem);
+}
+
+#about-x {
+  position: absolute;
+  top: 3rem;
+  right: 3rem;
+
+  width: 4rem;
+  height: 4rem;
+
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#x-1 {
+  position: absolute;
+
+  width: 30px;
+  height: 3px;
+
+  border-radius: 3px;
+
+  background-color: #333;
+
+  transform: rotate(45deg);
+}
+
+#x-2 {
+  width: 30px;
+  height: 3px;
+
+  border-radius: 5px;
+
+  background-color: #333;
+
+  transform: rotate(-45deg);
+}
+
+.about h2 {
+  font-size: calc(2vh + 1rem);
+
+  color: #333;
+}
+
+.about p {
+  font-size: calc(1vh + 0.8rem);
+  line-height: 2.9vh;
+  color: #000;
+
+  margin-top: calc(3.5vh + 0.7rem);
 }

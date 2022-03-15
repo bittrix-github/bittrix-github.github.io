@@ -45,6 +45,7 @@ const purchase = document.querySelector(".purchase");
 
 
 
+
 container.addEventListener("mousemove", (e) => {
 
     let xAxis = (window.innerWidth / 2 - e.pageX) / 25;
@@ -358,3 +359,61 @@ s6.addEventListener('click', () => {
     s5.classList.remove('active');
 
 });
+
+
+
+
+
+
+
+const aboutButton = document.querySelector(".about__button");
+
+const aboutX = document.querySelector("#about-x");
+
+const about = document.querySelector(".about");
+
+let aboutOn = false;
+
+
+
+aboutButton.addEventListener('mousedown', () => {
+    
+    aboutButton.classList.add('active');
+    
+
+});
+
+aboutButton.addEventListener('mouseup', () => {
+
+    aboutButton.classList.remove('active');
+
+    aboutX.style.pointerEvents = 'all';
+    about.style.pointerEvents = 'all';
+    about.style.opacity = '1';
+
+    if (aboutOn) {
+
+        aboutX.style.pointerEvents = 'none';
+        about.style.pointerEvents = 'none';
+        about.style.opacity = '0';
+
+        aboutOn = false;
+
+        return
+
+    }
+
+
+    aboutOn = true;
+
+
+
+})
+
+aboutX.addEventListener('click', () => {
+    
+    aboutX.style.pointerEvents = 'none';
+    about.style.pointerEvents = 'none';
+    about.style.opacity = '0';
+
+})
