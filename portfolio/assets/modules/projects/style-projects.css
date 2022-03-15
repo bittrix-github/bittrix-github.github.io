@@ -146,14 +146,17 @@ html {
 
 .projects__web--card:nth-child(1) .projects__web--backcover {
   background: rgb(255, 207, 0);
+  color: #333;
 }
 
 .projects__web--card:nth-child(2) .projects__web--backcover {
   background: rgb(179, 0, 105);
+  color: #fff;
 }
 
 .projects__web--card:nth-child(3) .projects__web--backcover {
   background: rgb(0, 183, 251);
+  color: #fff;
 }
 
 .projects__web--card:nth-child(4) .projects__web--backcover {
@@ -162,14 +165,17 @@ html {
 
 .projects__web--card:nth-child(5) .projects__web--backcover {
   background: rgb(0, 0, 50);
+  color: #fff;
 }
 
 .projects__web--card:nth-child(6) .projects__web--backcover {
   background: rgb(25, 25, 25);
+  color: #fff;
 }
 
 .projects__web--card:nth-child(7) .projects__web--backcover {
   background: rgb(255, 255, 255);
+  color: #333;
 }
 
 .projects__web--cards .projects__web--content {
@@ -182,52 +188,75 @@ html {
 }
 
 .projects__web--cards .card1 .projects__web--cover {
-  background-image: url("/assets/images/card-lego.png");
+  background-image: url("/assets/images/projects/card-lego.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
 }
 
 .projects__web--cards .card2 .projects__web--cover {
-  background-image: url("/assets/images/card-casulo.png");
+  background-image: url("/assets/images/projects/card-casulo.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
 }
 
 .projects__web--cards .card3 .projects__web--cover {
-  background-image: url("/assets/images/card-logitech.png");
+  background-image: url("/assets/images/projects/card-logitech.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
 }
 
 .projects__web--cards .card4 .projects__web--cover {
-  background-image: url("/assets/images/card-plant.png");
+  background-image: url("/assets/images/projects/card-plant.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
 }
 
 .projects__web--cards .card5 .projects__web--cover {
-  background-image: url("/assets/images/card-california.png");
+  background-image: url("/assets/images/projects/card-california.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .projects__web--cards .card6 .projects__web--cover {
-  background-image: url("/assets/images/card-rio.png");
+  background-image: url("/assets/images/projects/card-rio.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
 }
 
 .projects__web--cards .card7 .projects__web--cover {
-  background-image: url("/assets/images/card-af1.png");
+  background-image: url("/assets/images/projects/card-af1.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
+}
+
+.projects__web--backcover .backcover__text {
+  padding: 3rem;
+
+  font-size: 1.6rem;
+
+  transform: rotateY(180deg);
+
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects__web--backcover .backcover__text p:nth-child(1) {
+  margin-top: 0rem;
+}
+
+.projects__web--backcover .backcover__text p {
+  margin-top: 2rem;
 }
 
 .projects__web--content {
@@ -307,7 +336,7 @@ html {
 
   z-index: 3;
 
-  background-image: url("/assets/images/card-python.png");
+  background-image: url("/assets/images/projects/card-python.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;

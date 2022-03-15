@@ -62,6 +62,8 @@ html {
   font-size: calc(15rem + 8vw);
 
   color: rgb(0, 0, 0, 0.05);
+
+  pointer-events: none;
 }
 
 .bugs__box h3 {

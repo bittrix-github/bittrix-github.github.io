@@ -12,11 +12,11 @@ html {
   position: relative;
 
   height: 80vh;
+  width: 100%;
 
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 
   color: #444;
 }
@@ -34,9 +34,157 @@ html {
   transform: translate(-4rem, 0.3rem);
 }
 
-.profile__container p {
+.profile__text {
+  position: relative;
+}
+
+.profile__text p {
+  padding: 0 5rem;
+  font-size: 1.8rem;
+  font-weight: normal;
+  line-height: 2.8rem;
+
+  margin-top: 3rem;
+}
+
+.profile__text p a {
+  text-decoration: none;
+}
+
+/* .profile__text p:nth-child(9) {
+  width: 70%;
+}
+
+.profile__text p:nth-child(10) {
+  width: 70%;
+  margin: 6rem 0 6rem 30%;
+}
+
+.profile__text p:nth-child(11) {
+  width: 70%;
+}
+
+.profile__pic {
+  position: absolute;
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  transition: 2s ease;
+}
+
+#pic1 {
+  right: 15vw;
+  top: 12%;
+
+  background-image: url("/assets/images/p1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#pic1:hover {
+  transform: translate(0%, -20vh);
+
+  width: 70%;
+  height: 65vh;
+  border-radius: 0;
+
+  z-index: 7;
+}
+
+#pic2 {
+  left: 15vw;
+  top: 23%;
+
+  background-image: url("/assets/images/p2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#pic2:hover {
+  transform: translate(0%, -20vh);
+
+  width: 70%;
+  height: 65vh;
+  border-radius: 0;
+
+  z-index: 6;
+}
+
+#pic3 {
+  right: 15vw;
+  top: 33%;
+
+  background-image: url("/assets/images/p3.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#pic3:hover {
+  transform: translate(-70%, -20vh);
+
+  width: 30%;
+  height: 75vh;
+  border-radius: 0;
+
+  z-index: 7;
+} */
+
+.profile__resume {
+  width: 100%;
+  padding: 0 5rem;
+  margin-top: 10rem;
+}
+
+.profile__resume h3 {
+  height: 4.5rem;
+  width: 50%;
+  font-size: 3rem;
+  margin: 8rem 0 6rem 0;
+  border-bottom: 1px dashed #444;
+}
+
+.profile__resume span {
+  font-weight: 700;
+}
+
+.profile__resume p {
   font-size: 1.8rem;
   font-weight: normal;
 
-  margin-top: 2rem;
+  margin-top: 3rem;
+}
+
+.profile__resume h4 {
+  font-size: 1.8rem;
+  font-weight: normal;
+}
+
+.resume__skill {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 30%;
+  min-width: 45rem;
+  height: 2rem;
+
+  margin-top: 3rem;
+}
+
+.resume__skill h4 {
+  width: 50%;
+  min-width: 25rem;
+}
+
+.resume__skill p {
+  display: flex;
+  align-items: center;
+
+  font-size: 1.5rem;
+
+  margin-top: 0;
+
+  margin-left: 2rem;
 }
