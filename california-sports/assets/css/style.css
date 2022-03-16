@@ -1,5 +1,6 @@
 html {
   font-size: 62.5%;
+  overflow: hidden;
 }
 
 * {
@@ -9,7 +10,7 @@ html {
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .musica__mobile {
@@ -132,6 +133,8 @@ body {
   left: 50%;
   transform: translateX(-50%);
   font-family: "Josefin Sans", sans-serif;
+
+  pointer-events: none;
 }
 
 .california h1 {
@@ -496,6 +499,7 @@ ABOUT
 
 .about__container-mobile {
   display: none;
+  pointer-events: none;
 }
 
 .about {
@@ -509,6 +513,8 @@ ABOUT
   padding: 5rem 7rem;
   font-family: "Poppins", sans-serif;
   opacity: 0;
+
+  pointer-events: none;
 }
 
 .about h2 {
@@ -583,7 +589,7 @@ ABOUT
 
 */
 
-@media (max-width: 510px) {
+@media (max-width: 500px) {
   .conteudo {
     position: absolute;
     width: 99vw;
@@ -727,7 +733,7 @@ ABOUT
   }
 
   .palm__container {
-    bottom: 31vh;
+    bottom: calc(38vh - 7rem);
     left: 18vw;
   }
 
@@ -787,13 +793,13 @@ ABOUT
   }
 
   .about h2 {
-    font-size: 2.5rem;
-    margin-top: 2rem;
+    font-size: calc(1rem + 2vh);
+    margin-top: 1.5vh;
   }
 
   .about p {
-    font-size: 1.5rem;
-    margin-top: 4.5rem;
+    font-size: calc(0.5rem + 1.2vh);
+    margin-top: 2vh;
   }
 }
 /*

@@ -437,11 +437,11 @@ function stopDown(dD) {
 
 
   
-  var dD = window.matchMedia("(max-width: 510px)");
+var dD = window.matchMedia("(max-width: 510px)");
 
-  stopDown(dD);
+stopDown(dD);
 
-  dD.addListener(stopDown);
+dD.addListener(stopDown);
 
 
 
