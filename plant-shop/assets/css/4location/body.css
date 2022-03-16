@@ -1,7 +1,8 @@
 body {
   height: 100vh;
   width: 100vw;
-  background: url("../../img/location-background.jpg") top / cover no-repeat;
+  background: url("../../../assets/img/location-background.jpg") top / cover
+    no-repeat;
   text-align: center;
 }
 

@@ -1,6 +1,6 @@
 .main {
   text-align: center;
-  background: url("/assets/img/home-background.jpg") center / cover no-repeat;
+  background: url("../../../img/home-background.jpg") center / cover no-repeat;
   height: 120vh;
   width: 99vw;
 
