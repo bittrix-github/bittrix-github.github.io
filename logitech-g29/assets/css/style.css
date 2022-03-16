@@ -88,7 +88,7 @@ nav ul li p {
   position: absolute;
   width: 45vw;
   height: 70vh;
-  top: calc(1rem + 22vh);
+  top: calc(1rem + 20vh);
   right: 3vw;
 
   text-align: center;
@@ -97,8 +97,8 @@ nav ul li p {
 
 .s1__container h1 {
   font-family: "Be Vietnam Pro", sans-serif;
-  font-size: 10rem;
-  line-height: 8rem;
+  font-size: calc(5rem + 5vh);
+  line-height: calc(4rem + 4.5vh);
   letter-spacing: 0.1rem;
   text-transform: uppercase;
 
@@ -112,7 +112,7 @@ nav ul li p {
 
 .s1__container h3 {
   font-weight: 400;
-  font-size: 2.8rem;
+  font-size: 3.6vh;
 
   width: calc(50rem - 5vw);
   margin: auto;
@@ -123,12 +123,12 @@ nav ul li p {
   font-family: "Poppins", sans-serif;
   font-weight: 100;
   font-size: 1.8rem;
-  margin-top: 1vh;
+  margin-top: 1.5vh;
 }
 
 .s1__container h5 {
   font-family: "Rubik", sans-serif;
-  margin-top: 2vh;
+  margin-top: 2.5vh;
   font-size: 2rem;
   font-weight: 300;
   text-decoration: line-through;
@@ -143,7 +143,7 @@ nav ul li p {
 }
 
 .s1__container button {
-  margin: 1.8vh;
+  margin: 2vh;
   padding: 1rem 6rem;
   border-radius: 5rem;
   border-style: none;
@@ -169,7 +169,7 @@ nav ul li p {
   font-weight: 400;
   width: 20%;
   margin: auto;
-  margin-top: calc(7vh - 5rem);
+  margin-top: calc(8vh - 5rem);
 
   font-family: "Rubik", sans-serif;
 }
@@ -205,7 +205,7 @@ nav ul li p {
 
 .s2 h2 {
   text-transform: uppercase;
-  font-size: 5.5rem;
+  font-size: 6vh;
   font-weight: 700;
 
   margin-top: 10rem;
@@ -240,14 +240,14 @@ nav ul li p {
   position: absolute;
   width: 50%;
   height: 10%;
-  top: 16vh;
+  top: calc(3rem + 11vh);
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
 }
 
 .s3 h2 {
-  font-size: 5rem;
+  font-size: 6vh;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -258,7 +258,7 @@ nav ul li p {
   width: 85%;
   height: 67%;
   margin: auto;
-  margin-top: 30vh;
+  margin-top: 25vh;
 }
 
 .s3__card {
@@ -317,20 +317,20 @@ nav ul li p {
 .s4__title {
   position: absolute;
   width: 42rem;
-  top: 16vh;
+  top: calc(3rem + 11vh);
   left: 50vw;
   transform: translateX(-50%);
   text-align: center;
 
-  font-size: 5rem;
+  font-size: 6vh;
   font-weight: 700;
   text-transform: uppercase;
 }
 
 .s4__lists--container {
-  width: 75vw;
+  width: 80vw;
   margin: auto;
-  height: 45vh;
+  height: 50vh;
   margin-top: 10vh;
 
   display: flex;
@@ -346,15 +346,15 @@ nav ul li p {
 }
 
 .s4__list--container1 {
-  width: 30rem;
+  width: 25vw;
 }
 
 .s4__list--container2 {
-  width: 30rem;
+  width: 25vw;
 }
 
 .s4__list--container3 {
-  width: 31rem;
+  width: 25vw;
 }
 
 .s4__list1,
@@ -371,17 +371,17 @@ nav ul li p {
 }
 
 .s4__list2 .s4__list--item:nth-child(7) {
-  margin-top: 2rem;
+  margin-top: 1vh;
 }
 
 .s4__list31 .s4__list--item:nth-child(4) {
-  margin: 2rem 0;
+  margin: 1vh 0;
   border: none;
 }
 
 .s4__list32,
 .s4__list33 {
-  margin-top: 4rem;
+  margin-top: 2.5vh;
 }
 
 .s4__list--title {
@@ -392,7 +392,7 @@ nav ul li p {
 }
 
 .s4__list--item {
-  font-size: 1.4rem;
+  font-size: calc(0.5rem + 1vh);
   font-weight: 400;
   line-height: 3rem;
   border-bottom: 1px dashed rgb(100, 100, 100, 0.5);
@@ -443,25 +443,25 @@ nav ul li p {
 .s6__title {
   position: absolute;
   width: 40rem;
-  top: 16vh;
+  top: calc(3rem + 11vh);
   left: 50vw;
   transform: translateX(-50%);
   text-align: center;
 
-  font-size: 5rem;
+  font-size: 5vh;
   font-weight: 700;
   text-transform: uppercase;
 }
 
 .s6__about {
-  width: 70vw;
+  width: 80vw;
   margin: auto;
   height: 40vh;
   margin-top: 7vw;
 }
 
 .s6__about p {
-  font-size: 1.6rem;
+  font-size: calc(0.7rem + 1vh);
   line-height: 2.3vw;
 }
 
@@ -476,7 +476,17 @@ nav ul li p {
   font-style: italic;
 }
 
-/*         ====================     responsive     ====================          */
+/*
+
+
+
+
+====================     responsive     ==================== 
+
+
+
+
+*/
 
 @media (max-width: 500px) {
   nav {
@@ -507,11 +517,15 @@ nav ul li p {
     margin-top: 0rem;
   }
 
+  .s1 .slide img {
+    max-width: 35vh;
+  }
+
   .s1 .fp-slides {
     width: 70vw;
     left: 15vw;
     text-align: center;
-    transform: translateY(-3vh);
+    transform: translateY(-5vh);
   }
 
   .s1 .fp-controlArrow.fp-prev {
@@ -519,27 +533,27 @@ nav ul li p {
     width: 0;
     margin-top: 3rem;
     border-width: 13px 13px 13px 0;
-    transform: translateY(-16vh);
+    transform: translateY(-18vh);
   }
 
   .s1 .fp-controlArrow.fp-next {
     left: 91vw;
     margin-top: 3rem;
     border-width: 13px 0 13px 13px;
-    transform: translateY(-16vh);
+    transform: translateY(-18vh);
   }
 
   .s1__container {
     position: absolute;
     width: 96vw;
     height: 100vh;
-    top: 14vh;
+    top: 13vh;
     left: 2vw;
   }
 
   .s1__container h1 {
-    font-size: 7rem;
-    line-height: 6.5rem;
+    font-size: calc(3rem + 4vh);
+    line-height: 7vh;
     letter-spacing: 0.1rem;
 
     z-index: -2;
@@ -549,7 +563,7 @@ nav ul li p {
     position: absolute;
     width: 96vw;
     height: 50vh;
-    bottom: 0vh;
+    bottom: 2vh;
     padding-bottom: 5vh;
   }
 
@@ -576,12 +590,12 @@ nav ul li p {
   }
 
   .s1__container h5 {
-    margin-top: 2rem;
+    margin-top: 1vh;
     font-size: 1.8rem;
   }
 
   .s1__container h4 {
-    margin-top: 2rem;
+    margin-top: 1vh;
     font-size: 2rem;
   }
 
@@ -618,6 +632,10 @@ nav ul li p {
     text-align: center;
   }
 
+  .s2 img {
+    max-width: 50vh;
+  }
+
   .s2 h2 {
     font-size: 4rem;
     margin-top: 9vh;
@@ -638,10 +656,10 @@ nav ul li p {
   .s2__img {
     position: absolute;
     width: 75vw;
-    left: 12.5vw;
+    left: 16vw;
     height: 40vh;
     top: calc(55vh + 1rem);
-    transform: translateY(-50%);
+    transform: translateY(-45%);
   }
 
   .s3__title {
