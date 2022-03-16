@@ -1,25 +1,31 @@
 @media (max-width: 500px) {
   .header__container {
     width: 100vw;
-    height: 8.7vh;
+    min-height: 8rem;
     background-color: rgb(0, 0, 0, 0.8);
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
     padding: 0;
+    text-align: center;
   }
 
   .header__button {
-    display: none;
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .header__logo {
-    padding: 2rem 0;
-    margin-left: 4rem;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
-  .header__burguer {
+  .header__burguer--container {
     display: flex;
   }
 
@@ -41,6 +47,16 @@
     padding: 3.5rem 0;
   }
 
+  .header__items.e {
+    width: 100%;
+    text-align: center;
+    padding: 3.5rem 0;
+  }
+
+  .header__items.e a {
+    color: #000;
+  }
+
   .header__links {
     font-size: 2rem;
   }
@@ -48,10 +64,14 @@
   .header__nav.active {
     display: flex;
     position: absolute;
-    top: 8.7vh;
+    top: 8rem;
     right: 0;
     background-color: rgb(0, 0, 0, 0.8);
     width: 70vw;
     z-index: 3;
+  }
+
+  .header__nav.e.active {
+    top: 8.2rem;
   }
 }

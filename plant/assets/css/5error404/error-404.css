@@ -1,0 +1,18 @@
+.error__404 {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-around;
+
+  width: 35vw;
+}
+
+.error__404 img {
+  max-width: 300px;
+  width: 55%;
+}
+
+.error__404 h2 {
+  font-size: calc(13rem + 7vw);
+  font-weight: 700;
+  color: #355342;
+}

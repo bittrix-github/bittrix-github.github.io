@@ -1,9 +1,19 @@
 @media (max-width: 500px) {
+  html {
+    overflow-x: hidden;
+  }
+
   body {
     height: 75rem;
     width: 100vw;
     background: url("../../img/home-background.jpg") center / cover no-repeat;
     text-align: center;
+  }
+
+  .main {
+    margin-top: 0;
+    height: auto;
+    background: none;
   }
 
   .main__title {
@@ -95,6 +105,14 @@
     font-size: 6rem;
   }
 
+  .plants__plant h3 {
+    font-size: 4rem;
+  }
+
+  .plants__plant span {
+    font-size: 2.5rem;
+  }
+
   .plants__plant {
     flex-direction: column;
     justify-content: space-around;
@@ -105,20 +123,24 @@
   .plants__plant-type--foliage {
     margin: 0 0 6rem 0;
     opacity: 1;
+    width: 24rem;
   }
 
   .plants__plant-type--pucculent {
     margin: 0 0 6rem 0;
     opacity: 1;
+    width: 24rem;
   }
 
   .plants__plant-type--flower {
     margin: 0 0 6rem 0;
     opacity: 1;
+    width: 24rem;
   }
 
   .plants__plant-type--fruit {
     margin: 0;
     opacity: 1;
+    width: 24rem;
   }
 }

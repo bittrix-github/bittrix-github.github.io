@@ -1,17 +1,17 @@
 .plants__plant h3 {
-  font-size: 3.5rem;
+  font-size: calc(1rem + 1.5vw);
 }
 
 .plants__plant span {
   text-transform: uppercase;
-  font-size: 2.5rem;
+  font-size: calc(0.5rem + 1.5vw);
 }
 
 .plants__plant-type--foliage {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 30rem;
+  width: 15vw;
   height: 21rem;
   padding: 3rem;
   border-radius: 3rem;
@@ -21,6 +21,8 @@
   background-size: cover;
   opacity: 0.6;
   transition: all 0.2s ease-in-out;
+
+  cursor: pointer;
 }
 
 .plants__plant-type--foliage:hover {
@@ -39,7 +41,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 30rem;
+  width: 15vw;
   height: 21rem;
   padding: 3rem;
   border-radius: 3rem;
@@ -49,6 +51,8 @@
   background-size: cover;
   opacity: 0.6;
   transition: all 0.2s ease-in-out;
+
+  cursor: pointer;
 }
 
 .plants__plant-type--pucculent:hover {
@@ -67,7 +71,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 30rem;
+  width: 15vw;
   height: 21rem;
   padding: 3rem;
   border-radius: 3rem;
@@ -77,6 +81,8 @@
   background-size: cover;
   opacity: 0.6;
   transition: all 0.2s ease-in-out;
+
+  cursor: pointer;
 }
 
 .plants__plant-type--flower:hover {
@@ -95,7 +101,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 30rem;
+  width: 15vw;
   height: 21rem;
   padding: 3rem;
   border-radius: 3rem;
@@ -105,6 +111,8 @@
   background-size: cover;
   opacity: 0.6;
   transition: all 0.2s ease-in-out;
+
+  cursor: pointer;
 }
 
 .plants__plant-type--fruit:hover {
@@ -117,14 +125,4 @@
   right: 2.5rem;
   width: 4rem;
   height: 4rem;
-}
-
-@media (max-width: 1360px) {
-  .plants__plant-type--foliage,
-  .plants__plant-type--pucculent,
-  .plants__plant-type--flower,
-  .plants__plant-type--fruit {
-    width: 24rem;
-    padding: 2.5rem;
-  }
 }

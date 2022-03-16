@@ -1,14 +1,14 @@
 .plants__plant {
   display: flex;
-  justify-content: space-between;
-  width: 90%;
+  justify-content: space-around;
+  width: 100%;
   margin: auto;
   margin-top: 12rem;
   font-weight: bold;
   text-align: left;
 }
 
-.plants__plant a {
+.plants__plant {
   text-decoration: none;
   color: #ffffff;
 }
@@ -17,7 +17,7 @@
   cursor: pointer;
 }
 
-@media (max-width: 1360px) {
+@media (max-width: 1650px) {
   .plants__plant {
     width: 95%;
   }

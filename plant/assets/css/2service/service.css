@@ -2,14 +2,14 @@
   width: 50vw;
   height: 60vh;
   margin: auto;
-  margin-top: 10rem;
+  margin-top: calc(1rem + 4vh);
   border-radius: 2rem;
   background-image: linear-gradient(
       to right bottom,
       #213f36,
       rgb(33, 63, 54, 0.15)
     ),
-    url("../../img/service-card.jpg");
+    url("/assets/img/service-card.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   text-align: left;

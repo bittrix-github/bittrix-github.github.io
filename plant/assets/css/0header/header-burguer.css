@@ -1,8 +1,12 @@
-.header__burguer {
-  position: absolute;
-  top: 2.8rem;
-  right: 4rem;
+.header__burguer--container {
+  width: 20%;
   display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__burguer {
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 2.5rem;

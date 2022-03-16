@@ -1,6 +1,9 @@
 body {
-  height: 120vh;
+  height: 100vh;
   width: 99vw;
-  background: url("../../img/home-background.jpg") center / cover no-repeat;
   text-align: center;
+}
+
+html {
+  overflow-x: hidden;
 }

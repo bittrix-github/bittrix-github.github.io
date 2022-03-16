@@ -1,10 +1,10 @@
 .main__paragraph {
   width: 35%;
   margin: auto;
-  margin-top: 6rem;
+  margin-top: 9vh;
   color: #ffffff;
-  font-size: 3rem;
-  line-height: 5rem;
+  font-size: 3vh;
+  line-height: 5vh;
   text-shadow: -0.2px 2px 0 #000, 2px 2px 0 #000, 2px -2px 0 #000,
     -2px -2px 0 #000;
 }

@@ -2,7 +2,7 @@
   width: 35vw;
   height: 55vh;
   margin: auto;
-  margin-top: 8rem;
+  margin-top: 5vh;
   border: 2px solid rgb(76, 99, 92, 0.2);
   border-radius: 2rem;
   background-color: rgb(33, 63, 54, 0.8);
@@ -10,7 +10,7 @@
   backdrop-filter: blur(15px);
   filter: drop-shadow(20px 20px 20px rgb(0, 0, 0, 0.45));
   text-align: center;
-  padding-top: 7rem;
+  padding-top: 5vh;
 }
 
 @media (max-width: 1360px) {
