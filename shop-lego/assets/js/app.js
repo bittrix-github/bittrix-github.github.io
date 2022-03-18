@@ -5007,6 +5007,239 @@ aboutX.addEventListener('click', () => {
     }
 
 
+    //     base plate 16x16     //
+
+    {
+        var cc1616a = document.querySelector("#c-c1616a");
+        var cc1616b = document.querySelector("#c-c1616b");
+        var cc1616g = document.querySelector("#c-c1616g");
+        var cc1616k = document.querySelector("#c-c1616k");
+        var cc1616r = document.querySelector("#c-c1616r");
+        var cc1616w = document.querySelector("#c-c1616w");
+
+        var scc1616A = document.querySelector(".c-c1616a");
+        var scc1616B = document.querySelector(".c-c1616b");
+        var scc1616G = document.querySelector(".c-c1616g");
+        var scc1616K = document.querySelector(".c-c1616k");
+        var scc1616R = document.querySelector(".c-c1616r");
+        var scc1616W = document.querySelector(".c-c1616w");
+
+        var ic1616 = document.querySelector("#i-c1616");
+        var ic1616a = document.querySelector("#i-c1616a");
+        var ic1616b = document.querySelector("#i-c1616b");
+        var ic1616g = document.querySelector("#i-c1616g");
+        var ic1616k = document.querySelector("#i-c1616k");
+        var ic1616r = document.querySelector("#i-c1616r");
+        var ic1616w = document.querySelector("#i-c1616w");
+
+
+        cc1616a.addEventListener('click', () => {
+
+            ic1616.style.display = 'none';
+            ic1616b.style.display = 'none';
+            ic1616g.style.display = 'none';
+            ic1616k.style.display = 'none';
+            ic1616r.style.display = 'none';
+            ic1616w.style.display = 'none';
+
+
+            ic1616a.style.display = 'block';
+
+
+
+            ic1616a.classList.add('card--img');
+
+            ic1616b.classList.remove('card--img');
+            ic1616g.classList.remove('card--img');
+            ic1616k.classList.remove('card--img');
+            ic1616r.classList.remove('card--img');
+            ic1616w.classList.remove('card--img');
+
+
+
+            scc1616A.classList.add('active');
+
+            scc1616B.classList.remove('active');
+            scc1616G.classList.remove('active');
+            scc1616K.classList.remove('active');
+            scc1616R.classList.remove('active');
+            scc1616W.classList.remove('active');
+
+        })
+
+        cc1616b.addEventListener('click', () => {
+
+            ic1616.style.display = 'none';
+            ic1616a.style.display = 'none';
+            ic1616g.style.display = 'none';
+            ic1616k.style.display = 'none';
+            ic1616r.style.display = 'none';
+            ic1616w.style.display = 'none';
+
+
+            ic1616b.style.display = 'block';
+
+
+
+            ic1616b.classList.add('card--img');
+
+            ic1616a.classList.remove('card--img');
+            ic1616g.classList.remove('card--img');
+            ic1616k.classList.remove('card--img');
+            ic1616r.classList.remove('card--img');
+            ic1616w.classList.remove('card--img');
+
+
+
+            scc1616B.classList.add('active');
+
+            scc1616A.classList.remove('active');
+            scc1616G.classList.remove('active');
+            scc1616K.classList.remove('active');
+            scc1616R.classList.remove('active');
+            scc1616W.classList.remove('active');
+
+        })
+
+        cc1616g.addEventListener('click', () => {
+
+            ic1616.style.display = 'none';
+            ic1616a.style.display = 'none';
+            ic1616b.style.display = 'none';
+            ic1616k.style.display = 'none';
+            ic1616r.style.display = 'none';
+            ic1616w.style.display = 'none';
+
+
+            ic1616g.style.display = 'block';
+
+
+
+            ic1616g.classList.add('card--img');
+
+            ic1616a.classList.remove('card--img');
+            ic1616b.classList.remove('card--img');
+            ic1616k.classList.remove('card--img');
+            ic1616r.classList.remove('card--img');
+            ic1616w.classList.remove('card--img');
+
+
+
+            scc1616G.classList.add('active');
+
+            scc1616A.classList.remove('active');
+            scc1616B.classList.remove('active');
+            scc1616K.classList.remove('active');
+            scc1616R.classList.remove('active');
+            scc1616W.classList.remove('active');
+
+        })
+
+        cc1616k.addEventListener('click', () => {
+
+            ic1616.style.display = 'none';
+            ic1616a.style.display = 'none';
+            ic1616b.style.display = 'none';
+            ic1616g.style.display = 'none';
+            ic1616r.style.display = 'none';
+            ic1616w.style.display = 'none';
+
+
+            ic1616k.style.display = 'block';
+
+
+
+            ic1616k.classList.add('card--img');
+
+            ic1616a.classList.remove('card--img');
+            ic1616b.classList.remove('card--img');
+            ic1616g.classList.remove('card--img');
+            ic1616r.classList.remove('card--img');
+            ic1616w.classList.remove('card--img');
+
+
+
+            scc1616K.classList.add('active');
+
+            scc1616A.classList.remove('active');
+            scc1616B.classList.remove('active');
+            scc1616G.classList.remove('active');
+            scc1616R.classList.remove('active');
+            scc1616W.classList.remove('active');
+
+        })
+
+        cc1616r.addEventListener('click', () => {
+
+            ic1616.style.display = 'none';
+            ic1616a.style.display = 'none';
+            ic1616b.style.display = 'none';
+            ic1616g.style.display = 'none';
+            ic1616k.style.display = 'none';
+            ic1616w.style.display = 'none';
+
+
+            ic1616r.style.display = 'block';
+
+
+
+            ic1616r.classList.add('card--img');
+
+            ic1616a.classList.remove('card--img');
+            ic1616b.classList.remove('card--img');
+            ic1616g.classList.remove('card--img');
+            ic1616k.classList.remove('card--img');
+            ic1616w.classList.remove('card--img');
+
+
+
+            scc1616R.classList.add('active');
+
+            scc1616A.classList.remove('active');
+            scc1616B.classList.remove('active');
+            scc1616G.classList.remove('active');
+            scc1616K.classList.remove('active');
+            scc1616W.classList.remove('active');
+
+        })
+
+        cc1616w.addEventListener('click', () => {
+
+            ic1616.style.display = 'none';
+            ic1616a.style.display = 'none';
+            ic1616b.style.display = 'none';
+            ic1616g.style.display = 'none';
+            ic1616k.style.display = 'none';
+            ic1616r.style.display = 'none';
+
+
+            ic1616w.style.display = 'block';
+
+
+
+            ic1616w.classList.add('card--img');
+
+            ic1616a.classList.remove('card--img');
+            ic1616b.classList.remove('card--img');
+            ic1616g.classList.remove('card--img');
+            ic1616k.classList.remove('card--img');
+            ic1616r.classList.remove('card--img');
+
+
+
+            scc1616W.classList.add('active');
+
+            scc1616A.classList.remove('active');
+            scc1616B.classList.remove('active');
+            scc1616G.classList.remove('active');
+            scc1616K.classList.remove('active');
+            scc1616R.classList.remove('active');
+
+        })
+
+    }
+
+
 }
 
 
