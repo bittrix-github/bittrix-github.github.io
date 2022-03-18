@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" href="icon.png">
+    <title>shoot the moon! demo version</title>
+
+</head>
+<body>
+
+    <div class="container">
+
+
+        <div class="title">
+
+            <p>▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ </p>
+            <p>·············································································································</p>
+            <p>·············································································································</p>
+            <p>·····____···_····_···____···____···_____·····_____···_····_···____·····_····_···____···____···__···_···_·····</p>
+            <p>····/ ___|·| |··| |·|&nbsp; _ |·| &nbsp;_ |·|_&nbsp;&nbsp; _|···|_&nbsp;&nbsp; _|·| |··| |·|&nbsp; __|···| \&nbsp; / |·|&nbsp; _ |·|&nbsp; _ |·|&nbsp; \ | |·| |····</p>
+            <p>····|_|__··| |__| |·| | ||·| | ||···| |·······| |···| |__| |·| |__ ···|&nbsp; \/&nbsp; |·| | ||·| | ||·|&nbsp; _\| |·|_|····</p>
+            <p>·····__| |·|&nbsp; __&nbsp; |·| |_||·| |_||···| |·······| |···|&nbsp; __&nbsp; |·| |__ ···| |\/| |·| |_||·| |_||·| |·\&nbsp; |··_·····</p>
+            <p>····|___/··|_|··|_|·|____|·|____|···|_|·······|_|···|_|&nbsp; |_|·|____|···|_|&nbsp; |_|·|____|·|____|·|_|··\_|·|_|····</p>
+            <p>·············································································································</p>
+            <p>·············································································································</p>
+            <p>·············································································································</p>
+            <p>▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲</p>
+
+        </div>
+
+
+        <div class="content">
+
+            <p>basic controls:</p>
+            <p>&nbsp;</p>
+            <p>- key arrows -> direction</p>
+            <p>- left control -> shot</p>
+            <p>- left shift -> retro shooting</p>
+            <p>- s key -> special</p>
+            <p>- a key -> activate aim</p>
+            <p>- e key -> activate shield (not working properly)</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>lives: enemy reaches the bottom of the screen, you lose 1 life</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>wave: each time you clear the screen, a new wave spawns. each new wave, 2 more enemies than the last one</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>health: green bar. maximum value of 100. every shot you take, -10 health. every enemy you collide, -20 health. if health is down to 20%, the ship is significantly damaged, your speed will reduce to 40% of the natural speed</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>fuel: blue bar. maximum value of 5000. ship standing still on screen or moving sideways, natural consumption. move up or downwards, increased consumption. each shot consumes fuel. retro shooting consumes fuel. special consumes fuel. if fuel is down to 20%, economy mode procs, reducing your speed to 40% of the natural speed and ship can only move sideways (to guaranty you will reach next refuel)</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>temperature: gray dashed bar. natural value of 200°C, maximum value of 500°C. ship standing still on screen, temperature will always auto regulate back to 200°C. moving sideways, temperature slightly increases. mooving up or downwards, temperature significantly increases. each shot slightly increases temperature. retro shooting drasticaly increases temperature. special substantially increases temperature. if temperature reaches 88% max temp (440°C), health is drained and speed is reduced to 40% of the natural speed.</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>retro shooting: only 5 ammo. use wisely</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>item fix: heals to 100%</p>
+            <p>&nbsp;</p>
+            <p>item fuel: restores fuel to 100%</p>
+            <p>&nbsp;</p>
+            <p>item special: clears all enemies of the current wave (bosses are imune to it's effect)</p>
+            <p>&nbsp;</p>
+            <p>item aim: visual aim. duration of 2 minutes or 3 shots taken</p>
+            <p>&nbsp;</p>
+            <p>item shield: (not working properly)</p>
+            <p>&nbsp;</p>
+            <p>manual fix: if health is down to 20% (significant damage), type the word FIX repetedly to repair the ship manually. heals up to 30% (regaining natural speed)</p>
+
+
+        </div>
+
+
+        <div class="download">
+
+            <p>click here to download the 850x850 version&nbsp;&nbsp;&nbsp;<img src="download.png" alt="">&nbsp;<a href="shoot the moon! DEMO.zip" download="">shoot the moon!.zip</a></p>
+            <p>&nbsp;</p>
+            <p>click here to download the 640x640 version&nbsp;&nbsp;&nbsp;<img src="download.png" alt="">&nbsp;<a href="shoot the moon! DEMO 640.zip" download="">shoot the moon!.zip</a></p>
+
+        </div>
+
+
+        <div class="video">
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/9SEmvQPjQkE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        </div>
+
+
+    </div>
+    
+</body>
+</html>
