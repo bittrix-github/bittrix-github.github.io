@@ -12,14 +12,6 @@
 
 */
 @media (max-width: 1300px) {
-  .hero {
-    background-color: lightcoral;
-  }
-
-  .shop {
-    background-color: aquamarine;
-  }
-
   .header__nav {
     width: 30%;
   }
@@ -83,14 +75,6 @@
 */
 
 @media (max-width: 1024px) {
-  .hero {
-    background-color: lightgoldenrodyellow;
-  }
-
-  .shop {
-    background-color: lightskyblue;
-  }
-
   .header__nav {
     width: 35%;
   }
