@@ -1,0 +1,32 @@
+@media (max-width: 1300px) {
+  .projects__web--cards {
+    grid-template-columns: repeat(2, 25vw);
+    margin-left: 13vw;
+  }
+
+  .projects__web--card:nth-child(7) {
+    margin-left: 20vw;
+  }
+
+  .projects__python--cards {
+    grid-template-columns: repeat(1, 30vw);
+    margin-left: 30vw;
+  }
+
+  .projects__R--cards {
+    grid-template-columns: repeat(1, 30vw);
+    margin-left: 30vw;
+  }
+}
+
+@media (max-width: 1150px) {
+  .projects__web--card:nth-child(2):hover,
+  .projects__web--card:nth-child(4):hover,
+  .projects__web--card:nth-child(6):hover {
+    transform: translateX(42%);
+  }
+
+  .projects__python--content {
+    padding: 2rem;
+  }
+}
