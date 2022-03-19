@@ -189,49 +189,49 @@ html {
 }
 
 .projects__web--cards .card1 .projects__web--cover {
-  background-image: url("/assets/images/projects/card-lego.png");
+  background-image: url("assets/images/projects/card-lego.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
 }
 
 .projects__web--cards .card2 .projects__web--cover {
-  background-image: url("/assets/images/projects/card-casulo.png");
+  background-image: url("assets/images/projects/card-casulo.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
 }
 
 .projects__web--cards .card3 .projects__web--cover {
-  background-image: url("/assets/images/projects/card-logitech.png");
+  background-image: url("assets/images/projects/card-logitech.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
 }
 
 .projects__web--cards .card4 .projects__web--cover {
-  background-image: url("/assets/images/projects/card-plant.png");
+  background-image: url("assets/images/projects/card-plant.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
 }
 
 .projects__web--cards .card5 .projects__web--cover {
-  background-image: url("/assets/images/projects/card-california.png");
+  background-image: url("assets/images/projects/card-california.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .projects__web--cards .card6 .projects__web--cover {
-  background-image: url("/assets/images/projects/card-rio.png");
+  background-image: url("assets/images/projects/card-rio.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
 }
 
 .projects__web--cards .card7 .projects__web--cover {
-  background-image: url("/assets/images/projects/card-af1.png");
+  background-image: url("assets/images/projects/card-af1.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
@@ -337,7 +337,7 @@ html {
 
   z-index: 3;
 
-  background-image: url("/assets/images/projects/card-python.png");
+  background-image: url("assets/images/projects/card-python.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
@@ -412,7 +412,7 @@ html {
 
   z-index: 3;
 
-  background-image: url("/assets/images/projects/card-finalproject.png");
+  background-image: url("assets/images/projects/card-finalproject.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
