@@ -1,6 +1,7 @@
 body {
   height: 100vh;
   width: 99vw;
+  overflow-x: hidden;
 }
 
 .header__items.e a {
