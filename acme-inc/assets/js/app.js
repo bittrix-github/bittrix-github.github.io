@@ -451,7 +451,7 @@ function addItemToFav(event) {
     var itemId = shopCard.id
 
 
-    shopCard.classList.remove('not__show')
+    shopCard.classList.toggle('not__show')
 
 
 
@@ -501,6 +501,8 @@ function addItemToFav(event) {
     favON.classList.toggle('active')
 
 
+
+    filterFav()
 
     checkFavRepeat()
 
@@ -1145,8 +1147,10 @@ function returnToMain(event) {
 
 
 
-function filterFav(event) {
+function filterFav() {
 
+    
+    var checkBox = document.getElementsByClassName('check__fav')[0]
 
     var shopCards = document.getElementsByClassName('shop__cards')[0]
 
@@ -1155,7 +1159,7 @@ function filterFav(event) {
 
     for(var i = 0; i < shopCardHide.length; i++) {
 
-        if(event.target.checked) {
+        if(checkBox.checked) {
 
             shopCardHide[i].style.display = "none"
         
@@ -1169,7 +1173,7 @@ function filterFav(event) {
 
     }
 
-    
+
 }
 
 
