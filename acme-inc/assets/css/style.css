@@ -94,3 +94,7 @@ footer {
     color: #000;
     font-weight: bolder;
 }
+
+.shop__cards--save {
+    display: none;
+}

@@ -1,11 +1,7 @@
-.shop__wrapper {
-    /* display: none; */
-}
-
-
 .shop__title {
 
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
@@ -18,12 +14,30 @@
     color: #291810;
 }
 
+.search__bar {
+    width: 25vw;
+
+    padding: 1rem;
+
+    margin-top: 8rem;
+}
+
+.check__fav {
+
+    margin-left: 5rem;
+}
+
+.check__fav--label {
+    margin-left: 0.5rem;
+    font-size: 1.8rem;
+}
+
 
 .shop__cards {
     width: 90vw;
     display: grid;
-    grid-template-columns: repeat(3, 22vw);
-    grid-template-rows: repeat(4, calc(20vw + 20rem));
+    grid-template-columns: repeat(auto-fill, min(22vw));
+    grid-template-rows: repeat(auto-fill, min(calc(20vw + 20rem)));
     row-gap: 10vw;
     column-gap: 7vw;
     margin-left: 10vw;
@@ -71,7 +85,8 @@
 
 .shop__card--favOFF {
     position: absolute;
-    right: 2rem;
+    top: 3.7rem;
+    right: 3.3rem;
     width: 42px;
     height: 42px;
     background-color: rgb(255, 255, 255, 0.5);
@@ -114,7 +129,8 @@
 .shop__card--favON.active {
     display: block;
     position: absolute;
-    right: 2rem;
+    top: 3.7rem;
+    right: 3.3rem;
     width: 42px;
     height: 42px;
     background-color: rgb(175, 0, 0, 0.4);
@@ -132,7 +148,8 @@
 }
 
 .shop__card--name {
-    font-size: 2.2rem;
+    font-size: 2rem;
+    margin-top: 1rem;
 }
 
 .shop__card--quantity {

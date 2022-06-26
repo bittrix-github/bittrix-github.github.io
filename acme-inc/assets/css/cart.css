@@ -227,8 +227,6 @@
     font-size: 1.8rem;
     color: #291810;
   
-    border-radius: 5rem;
-  
     border: 1px solid;
   
     background-color: #fff;
@@ -239,7 +237,7 @@
 }
   
 .cart__purchase button:hover {
-    background-color: #a5a5a5;
+    background-color: rgb(170, 170, 170);
 }
   
 .cart__empty {

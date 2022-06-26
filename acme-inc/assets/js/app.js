@@ -4,6 +4,10 @@ var filtroFavoritos = false
 
 
 
+var shopCardSave = []
+
+
+
 var cartIcon = document.querySelector("#cart-icon");
 
 var fullCart = document.querySelector(".fullcart");
@@ -216,9 +220,26 @@ function ready() {
 
 
 
-    var favFilterButton = document.getElementsByClassName('fav__filter')[0]
+    var searchInput = document.getElementById('search-input')
 
-    favFilterButton.addEventListener('click', favFilter)
+    searchInput.addEventListener('input', filterCard)
+
+
+
+    // var favFilterButton = document.getElementsByClassName('fav__filter')[0]
+
+    // favFilterButton.addEventListener('click', favFilter)
+
+
+    // var notFavFilterButton = document.getElementsByClassName('not__fav__filter')[0]
+
+    // notFavFilterButton.addEventListener('click', notFavFilter)
+
+
+
+    var checkFavFilter = document.getElementsByClassName('check__fav')[0]
+
+    checkFavFilter.addEventListener('change', filterFav)
 
 
 
@@ -480,6 +501,7 @@ function addItemToFav(event) {
     favON.classList.toggle('active')
 
 
+
     checkFavRepeat()
 
     ready()
@@ -634,23 +656,36 @@ function removeFavItem(event) {
 
     var productCards = document.getElementsByClassName('product__cards')[0]
 
+    var productCard = productCards.getElementsByClassName('product__card')[0]
+
     productCardsLength = productCards.childNodes.length
 
+    
+    if(productCardsLength > 1) {
 
-    if (productCardsLength > 1) {
+        var productCardId = productCard.id
+
+        favItemIdRemove = favItemId.substring(1)    
+
+    
 
 
-        productId = favItemId.substring(1)
+        if (productCardId == favItemIdRemove) {
 
 
-        var productCard = document.getElementById(`${productId}`)
+            productId = favItemId.substring(1)
 
-        var productCardFav = productCard.getElementsByClassName('product__card--fav')[0]
 
-        var favON = productCardFav.getElementsByClassName('product__card--favON')[0]
+            var productCard = document.getElementById(`${productId}`)
 
-        favON.classList.toggle('active')
+            var productCardFav = productCard.getElementsByClassName('product__card--fav')[0]
 
+            var favON = productCardFav.getElementsByClassName('product__card--favON')[0]
+
+            favON.classList.toggle('active')
+
+
+        }
 
     }
 
@@ -658,11 +693,11 @@ function removeFavItem(event) {
     updateFavCounter()
 
 
-    if (filtroFavoritos) {
+    // if (filtroFavoritos) {
 
-        favFilter()
+    //     favFilter()
 
-    }
+    // }
     
 
     ready()    
@@ -728,7 +763,7 @@ function checkFavRepeat() {
 
     var favImageSrcList = []
 
-    var shopCardIndex
+    var shopCardIndex = 0
     
 
 
@@ -750,123 +785,65 @@ function checkFavRepeat() {
 
 
 
+    for (let i = 0; i < favImageSrcList.length; i++) {
 
-
-    if (filtroFavoritos) {
-
-
-        for (let i = 0; i < favImageSrcList.length; i++) {
-
-       
-            if (favImageSrcList.indexOf(favImageSrcList[i]) !== favImageSrcList.lastIndexOf(favImageSrcList[i])) {
-            
-                        
-                j = favImageSrcList.lastIndexOf(favImageSrcList[i])
-
-                k = favImageSrcList.indexOf(favImageSrcList[i])
-
-                
-                var favItemId = favItems[k].id
-
-                shopCardIndex = favItemId.substring(2)
-
-
-                favItems[j].remove()
-
-                favItems[k].remove()
-          
-            
-                updateFavCounter()
-
-                break
-
-
-
-            }
+    
+        if (favImageSrcList.indexOf(favImageSrcList[i]) !== favImageSrcList.lastIndexOf(favImageSrcList[i])) {
         
-        }
+                    
+            j = favImageSrcList.lastIndexOf(favImageSrcList[i])
 
-
-
-
-
-        if(shopCardIndex > 0) {
-
-            var shopCards = document.getElementsByClassName('shop__cards')[0]
-
-            var shopCard = shopCards.getElementsByClassName('shop__card')[shopCardIndex-1]
-
-            shopCard.classList.add('not__show')
+            k = favImageSrcList.indexOf(favImageSrcList[i])
 
             
-            favFilter()
+            var favItemId = favItems[k].id
+
+            shopCardIndex = favItemId.substring(2)
+
+
+            favItems[j].remove()
+
+            favItems[k].remove()
+        
+        
+            updateFavCounter()
+
+            break
+
+
 
         }
+    
+    }
 
+
+
+
+
+    if(shopCardIndex > 0) {
+
+        var shopCards = document.getElementsByClassName('shop__cards')[0]
+
+        var shopCard = shopCards.getElementsByClassName('shop__card')[shopCardIndex-1]
+
+        shopCard.classList.add('not__show')
+
+
+
+        // if (filtroFavoritos) {
+
+        //     favFilter()
+
+        // }
 
 
     }
 
-    
-    
-    
-    else {
 
-
-        for (let i = 0; i < favImageSrcList.length; i++) {
-
-
-            if (favImageSrcList.indexOf(favImageSrcList[i]) !== favImageSrcList.lastIndexOf(favImageSrcList[i])) {
-        
-                    
-                j = favImageSrcList.lastIndexOf(favImageSrcList[i])
-    
-                k = favImageSrcList.indexOf(favImageSrcList[i])
-    
-                
-                var favItemId = favItems[k].id
-
-                shopCardIndex = favItemId.substring(2)
-    
-    
-                favItems[j].remove()
-    
-                favItems[k].remove()
-                
-    
-                updateFavCounter()
-
-                break
-    
-    
-
-    
-    
-            }
-
-
-        }
-
-        
-
-
-        if(shopCardIndex > 0) {
-
-            var shopCards = document.getElementsByClassName('shop__cards')[0]
-
-            var shopCard = shopCards.getElementsByClassName('shop__card')[shopCardIndex-1]
-
-            shopCard.classList.add('not__show')
-        }
-     
-        
-    }   
-
-      
 
 }
 
-
+      
 
 
 
@@ -1168,28 +1145,72 @@ function returnToMain(event) {
 
 
 
-function favFilter() {
+function filterFav(event) {
 
-    filtroFavoritos = true
-
-    // var favFilterButtonClicked = event.target
-
-    // var shopWrapper = favFilterButtonClicked.parentElement.parentElement
 
     var shopCards = document.getElementsByClassName('shop__cards')[0]
 
-    var shopCardsNot = shopCards.getElementsByClassName('not__show')
+    var shopCardHide = shopCards.getElementsByClassName('not__show')
 
 
-    for (var i = 0; i < shopCardsNot.length; i++) {
+    for(var i = 0; i < shopCardHide.length; i++) {
 
-        var shopCardNot = shopCardsNot[i]
+        if(event.target.checked) {
 
-        shopCardNot.style.display = "none"
-    
+            shopCardHide[i].style.display = "none"
+        
+        }
+
+        else {
+
+            shopCardHide[i].style.display = ""
+
+        }
+
     }
 
-    ready()
+    
+}
+
+
+
+
+function filterCard(event) {
+
+
+
+    searchInputChanged = event.target
+
+    filter = searchInputChanged.value.toLowerCase()
+
+    var shopCards = document.getElementsByClassName('shop__cards')[0]
+
+    var shopCard = shopCards.getElementsByClassName('shop__card')
+
+
+    
+
+
+    for(var i = 0; i < shopCard.length; i++) {
+
+        var cardName = shopCard[i].getElementsByClassName('shop__card--name')[0]
+
+        var name = cardName.textContent.toLowerCase()
+
+        if(name.includes(filter)) {
+
+            shopCard[i].style.display = ""
+
+        }
+
+        else {
+
+            shopCard[i].style.display = "none"
+
+        }
+
+    }
+
 
 }
 

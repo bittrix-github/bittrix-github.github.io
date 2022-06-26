@@ -53,7 +53,7 @@ let loremIpsum = [
 
 
 
-let numeros = numberArray(10, 80)
+let numeros = numberArray(10, 510)
 
 
 
