@@ -1,0 +1,188 @@
+.shop__wrapper {
+    /* display: none; */
+}
+
+
+.shop__title {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+    padding: 12rem 0 12rem 0;
+}
+
+.shop__title h1 {
+    font-size: 3rem;
+    color: #291810;
+}
+
+
+.shop__cards {
+    width: 90vw;
+    display: grid;
+    grid-template-columns: repeat(3, 22vw);
+    grid-template-rows: repeat(4, calc(20vw + 20rem));
+    row-gap: 10vw;
+    column-gap: 7vw;
+    margin-left: 10vw;
+    margin-bottom: 20rem;
+}
+
+.shop__card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  
+    padding: 3rem;
+  
+    border: 2px solid rgb(110, 0, 0);
+  
+    background-color: rgb(100, 0, 0, 0.25);
+}
+
+.shop__card--link {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 255, 0, 0);
+    cursor: pointer;
+}
+
+.shop__card--img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 50%;
+  height: 70%;
+
+}
+
+.shop__card--img img {
+    height: 18vw;
+}
+
+.shop__card--favOFF {
+    position: absolute;
+    right: 2rem;
+    width: 42px;
+    height: 42px;
+    background-color: rgb(255, 255, 255, 0.5);
+
+    border-radius: 50%;
+    border: 3px solid rgb(110, 0, 0);
+
+    cursor: pointer;
+
+    z-index: 2;
+}
+
+.shop__card--favOFF:hover {
+
+    animation: heart-beat 0.7s ease-out infinite;
+
+}
+  
+@keyframes heart-beat {
+    from {
+      transform: scale(115%);
+    }
+  
+    to {
+      transform: scale(103%);
+    }
+}
+
+.shop__card--favOFF img {
+    position: relative;
+    top: 3px;
+    width: 32px;
+}
+
+.shop__card--favON {
+    display: none;
+    z-index: 2;
+}
+
+.shop__card--favON.active {
+    display: block;
+    position: absolute;
+    right: 2rem;
+    width: 42px;
+    height: 42px;
+    background-color: rgb(175, 0, 0, 0.4);
+
+    border-radius: 50%;
+    border: 3px solid rgb(110, 0, 0);
+
+    cursor: pointer;
+}
+
+.shop__card--favON img {
+    position: relative;
+    top: 3px;
+    width: 32px;
+}
+
+.shop__card--name {
+    font-size: 2.2rem;
+}
+
+.shop__card--quantity {
+    z-index: 3;
+    width: 15%;
+}
+
+.shop__card--quantity input {
+    width: 100%;
+    height: 3rem;
+    margin-top: 1rem;
+    
+
+    font-size: 1.4rem;
+  
+    border: 1px solid rgb(110, 0, 0);
+    padding: 0 0.2rem 0 0.7rem;
+
+    background-color: rgb(240, 240, 240);
+}
+  
+.shop__card--price {
+    font-size: 1.8rem;
+    padding: 1rem;
+}
+
+.shop__card--add {
+    z-index: 2;
+    width: fit-content;
+    margin: auto;
+}
+  
+.shop__card--add button {
+    padding: 1rem 1.2rem;
+  
+    border: 1px solid rgb(110, 0, 0);
+  
+    font-size: calc(0.5vw + 0.8rem);
+  
+    background-color: rgb(240, 240, 240);
+  
+    cursor: pointer;
+  
+    transition: 0.3s ease;
+}
+  
+  .shop__card--add button:hover {
+    background-color: rgb(100, 0, 0, 0.3);
+}
+
+.shop__card--description {
+    display: none;
+}

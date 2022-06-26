@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/fav-box.css">
+    <link rel="stylesheet" href="assets/css/cart.css">
+    <link rel="stylesheet" href="assets/css/shop.css">
+    <link rel="stylesheet" href="assets/css/product.css">
+
+
+
+    <script src="assets/js/products.js" sync></script>
+    <script src="assets/js/app.js" async></script>
+
+
+    
+    <link rel="icon" href="assets/img/icon.png">
+
+    <title>Acme Inc.</title>
+
+</head>
+<body>
+
+
+
+    <header class="header">
+
+
+        <div class="header__container">
+
+            <div class="header__logo"><img src="assets/img/logo.png" alt="acme logo"></div>
+
+            <div class="header__nav">
+
+
+                <div class="header__nav--fav">
+
+                    <svg id="fav-icon" data-src="https://s2.svgbox.net/hero-solid.svg?ic=heart" width="45" height="45" color="#291810"></svg>
+
+                    <div class="fullfav">
+
+                        <span class="total-favs">0</span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="header__nav--cart">
+
+                    <svg id="cart-icon" data-src="https://s2.svgbox.net/hero-solid.svg?ic=shopping-cart" width="45" height="45" color="#291810"></svg>
+
+                    <div class="fullcart">
+
+                        <span class="total-itens">0</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </header>
+
+
+
+    <section class="cart__wrapper">
+
+        <div class="cart">
+
+            <div id="cart-x">
+                <div id="cart-x-1"></div>
+                <div id="cart-x-2"></div>
+            </div>
+
+
+            <div class="cart__row">
+
+                <span class="cart__product">Item</span>
+                <span class="cart__price">Preço</span>
+                <span class="cart__quantity">Quantidade</span>
+
+            </div>
+
+            <div class="cart__items">            
+
+            </div>
+
+            <div class="cart__total">
+
+                <span class="cart__total--title">Total</span>
+                <span class="cart__total--price">R$0.93</span>
+
+            </div>
+
+            <div class="cart__purchase">
+
+                <button>Finalizar compra</button>
+
+            </div>
+
+            <div class="cart__empty">
+
+                <span>Carrinho vazio</span>
+
+            </div>
+
+            
+
+        </div>
+
+    </section>
+
+
+
+    <section class="fav__wrapper">
+
+        <div class="fav">
+
+            <div id="fav-x">
+                <div id="fav-x-1"></div>
+                <div id="fav-x-2"></div>
+            </div>
+
+            <div class="fav__title">
+
+                <span>Resumo dos seus Favoritos</span>
+
+            </div>
+
+
+            <div class="fav__row">
+
+                <span class="fav__product">Item</span>
+                <span class="fav__price">Preço</span>
+
+            </div>
+
+            <div class="fav__items">
+        
+            </div>
+
+            <div class="fav__empty">
+
+                <span>Lista de favoritos está vazia</span>
+
+            </div>
+
+            
+
+        </div>
+
+    </section>
+
+
+
+    <section class="hero">
+        
+        <div class="banner"><img src="assets/img/banner.png" alt="acme banner"></div>
+        
+    </section>
+
+
+
+    <section class="shop__wrapper">
+
+
+        <div class="shop__title">
+
+            <h1>Conheça nossos produtos</h1>
+
+            <button class="fav__filter">FAVORITOS</button>
+    
+        </div>
+
+
+        <div class="shop__cards">
+
+
+        
+
+
+            <!-- <div class="shop__card"  id="i-1">
+
+                <div class="shop__card--fav">
+                    <img class="shop__card--favOFF" src="https://s2.svgbox.net/hero-outline.svg?ic=heart&color=6E0000">
+                    <img class="shop__card--favON" src="https://s2.svgbox.net/hero-solid.svg?ic=heart&color=6E0000">
+                </div>
+
+                <div class="shop__card--link"><a href=""></a></div>
+
+                <div class="shop__card--img">
+                    
+                </div>
+
+                <div class="shop__card--name">
+                    
+                </div>
+
+                <div class="shop__card--quantity">
+                    <input type="number" class="card--quantity" value="1">
+                </div>
+
+                <div class="shop__card--price">
+                    <span>R$ 1.81</span>
+                </div>
+
+                <div class="shop__card--add">
+                    <button>Adicionar ao carrinho</button>
+                </div>
+
+            </div> -->
+
+
+
+
+
+        </div>
+
+
+
+
+
+    </section>
+
+
+
+    <section calss="product__wrapper">
+
+
+
+        <div class="product__cards">
+            
+        </div>
+
+        
+
+    </section>
+
+
+
+    <footer class="footer">
+
+        <div class="footer__container">
+
+            <div class="footer__by">
+                <span>Desenvolvido por <a href="https://bittrix-github.github.io/portfolio/" target="_blank">bittrix</a></span>
+            </div>
+
+            <div class="footer__for">
+                <span>Encomendado por <a href="https://hypeempreendimentos.com.br/" target="_blank">Hype Empreendimentos</a></span>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <script  type="text/javascript"  src="https://unpkg.com/external-svg-loader@latest/svg-loader.min.js"  async></script>
+    
+
+
+</body>
+</html>

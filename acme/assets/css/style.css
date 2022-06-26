@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+html {
+    font-size: 62.5%;
+    font-family: 'Varela Round', sans-serif;
+  
+    overflow-x: hidden;
+
+    background-color: rgb(240, 240, 240);
+}
+
+/* 
+  
+  
+  
+  
+  
+   ==========     banner     ==========
+  
+  
+  
+  
+
+*/
+
+.hero {
+
+    margin-top: 10vh;
+    width: 100vw;
+
+    background-color: rgb(173, 34, 37);
+}
+
+.banner img {
+    position: relative;
+    width: calc(45vw + 30rem);
+
+    left: 50vw;
+
+    transform: translateX(-50%);
+}
+
+/* 
+  
+  
+  
+  
+  
+   ==========     footer     ==========
+  
+  
+  
+  
+  
+*/
+
+footer {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+    height: 10vh;
+
+    background-color: rgb(110, 0, 0);
+
+    color: #000;
+
+    font-size: 1.6rem;
+}
+
+.footer.product {
+    position: absolute;
+
+    bottom: 0;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: auto;
+    width: 85%;
+}
+
+.footer__container a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bolder;
+}
