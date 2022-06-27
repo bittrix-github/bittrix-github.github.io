@@ -559,6 +559,9 @@ function addItemToFavProduct(event) {
     var shopCard = shopCards.getElementsByClassName('shop__card')[shopCardId-1]
 
 
+    shopCard.classList.toggle('not__show')
+
+
 
 
 
@@ -572,6 +575,8 @@ function addItemToFavProduct(event) {
 
     favONs.classList.toggle('active')
 
+
+    filterFav()
 
     checkFavRepeat()
 
