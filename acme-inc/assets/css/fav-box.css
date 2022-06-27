@@ -171,20 +171,20 @@
     justify-content: space-around;
     align-items: center;
   
-    width: 40%;
+    width: 60%;
 }
   
 .fav__item--img {
     max-height: 6vh;
-  }
+}
   
-  .fav__item--price {
+.fav__item--price {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 15%;
+    width: 20%;
 
-    margin-left: 10rem;
+    padding-left: 1rem;
 }
   
 .fav__item--remove {

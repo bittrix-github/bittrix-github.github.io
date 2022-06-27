@@ -167,18 +167,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 15%;
+    width: 20%;
 }
   
 .cart__item--quantity {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 30%;
+    width: 20%;
 }
   
 .cart__item--quantity input {
-    width: 25%;
+    width: 33%;
     height: 3rem;
   
     border: solid 1px;

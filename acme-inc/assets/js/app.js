@@ -1,13 +1,5 @@
 
 
-var filtroFavoritos = false
-
-
-
-var shopCardSave = []
-
-
-
 var cartIcon = document.querySelector("#cart-icon");
 
 var fullCart = document.querySelector(".fullcart");
@@ -223,17 +215,6 @@ function ready() {
     var searchInput = document.getElementById('search-input')
 
     searchInput.addEventListener('input', filterCard)
-
-
-
-    // var favFilterButton = document.getElementsByClassName('fav__filter')[0]
-
-    // favFilterButton.addEventListener('click', favFilter)
-
-
-    // var notFavFilterButton = document.getElementsByClassName('not__fav__filter')[0]
-
-    // notFavFilterButton.addEventListener('click', notFavFilter)
 
 
 

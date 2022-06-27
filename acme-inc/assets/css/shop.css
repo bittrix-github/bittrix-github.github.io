@@ -90,11 +90,13 @@
 
 .shop__card--favOFF {
     position: absolute;
-    top: 3.7rem;
-    right: 3.3rem;
     width: 42px;
     height: 42px;
     background-color: rgb(255, 255, 255, 0.5);
+
+    margin-left: calc(9vw - 5rem);
+
+    margin-top: 1rem;
 
     border-radius: 50%;
     border: 3px solid rgb(110, 0, 0);
@@ -105,6 +107,7 @@
 }
 
 .shop__card--favOFF:hover {
+    
 
     animation: heart-beat 0.7s ease-out infinite;
 
@@ -121,8 +124,6 @@
 }
 
 .shop__card--favOFF img {
-    position: relative;
-    top: 3px;
     width: 32px;
 }
 
@@ -134,11 +135,13 @@
 .shop__card--favON.active {
     display: block;
     position: absolute;
-    top: 3.7rem;
-    right: 3.3rem;
     width: 42px;
     height: 42px;
     background-color: rgb(175, 0, 0, 0.4);
+
+    margin-left: calc(9vw - 5rem);
+
+    margin-top: 1rem;
 
     border-radius: 50%;
     border: 3px solid rgb(110, 0, 0);
@@ -147,8 +150,6 @@
 }
 
 .shop__card--favON img {
-    position: relative;
-    top: 3px;
     width: 32px;
 }
 
@@ -159,7 +160,7 @@
 
 .shop__card--quantity {
     z-index: 3;
-    width: 15%;
+    width: calc(1.5vw + 2rem);
 }
 
 .shop__card--quantity input {
