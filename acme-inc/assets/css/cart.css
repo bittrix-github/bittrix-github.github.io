@@ -92,7 +92,7 @@
     margin: auto;
     height: 7vh;
   
-    margin-top: 5vh;
+    margin-top: 6vh;
   
     font-size: 1.8rem;
     color: #291810;
@@ -103,12 +103,12 @@
     width: 45%;
   }
   
-  .cart__price {
+.cart__price {
     width: 15%;
   }
   
-  .cart__quantity {
-    width: 30%;
+.cart__quantity {
+    width: 25%;
 }
   
 .cart__items {
@@ -174,11 +174,11 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 20%;
+    width: 25%;
 }
   
 .cart__item--quantity input {
-    width: 33%;
+    width: 40%;
     height: 3rem;
   
     border: solid 1px;
