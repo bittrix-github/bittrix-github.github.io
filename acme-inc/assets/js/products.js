@@ -30,7 +30,7 @@ let adjetivos = [
 
 
 
-// vetor com 100 strings do tipo lorem ipsum para descrição dos produtos
+// lista com 100 strings do tipo lorem ipsum para descrição dos produtos
 
 let loremIpsum = [
 
@@ -55,13 +55,13 @@ let loremIpsum = [
 
 
 
-// vetor com números para a geração de imagens do produtos
+// lista com números para a geração de imagens do produtos
 
 let numeros = numberArray(10, 510)
 
 
 
-// vetor com números para a geração das descrições dos produtos
+// lista com números para a geração das descrições dos produtos
 
 let numerosDesc = numberArray(10, 20)
 
