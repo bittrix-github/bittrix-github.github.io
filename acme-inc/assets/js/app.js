@@ -1,5 +1,7 @@
 
 
+// toggle do modal carrinho
+
 var cartIcon = document.querySelector("#cart-icon");
 
 var fullCart = document.querySelector(".fullcart");
@@ -40,6 +42,8 @@ cartX.addEventListener('click', () => {
 
 
 
+
+// toggle do modal favoritos
 
 var favIcon = document.querySelector("#fav-icon");
 
@@ -104,6 +108,8 @@ if (document.readyState == 'loading') {
 function ready() {
 
 
+    // target para botões de adicionar aos favoritos na página inicial
+
     var addToFavButtons = document.getElementsByClassName('shop__card--fav')
 
     for (var i = 0; i < addToFavButtons.length; i++) {
@@ -115,6 +121,8 @@ function ready() {
     }
 
 
+
+    // target para botões de adicionar aos favoritos na página do produto
 
     var addToFavProductButtons = document.getElementsByClassName('product__card--fav')
 
@@ -128,6 +136,8 @@ function ready() {
 
 
 
+    // target para botões de adicionar ao carrinho na página inicial
+
     var addToCartButtons = document.getElementsByClassName('shop__card--add')
 
     for (var i = 0; i < addToCartButtons.length; i++) {
@@ -139,6 +149,8 @@ function ready() {
     }
 
 
+
+    // target para botões de adicionar ao carrinho na página do produto
 
     var addToCartProductButtons = document.getElementsByClassName('product__card--add')
 
@@ -152,6 +164,8 @@ function ready() {
 
 
 
+    // target para botões de remover produto do carrinho
+
     var removeButtons = document.getElementsByClassName('cart__item--remove')
 
     for (var i = 0; i < removeButtons.length; i++) {
@@ -163,6 +177,8 @@ function ready() {
     }
 
 
+
+    // target para botões de remover produto dos favoritos
 
     var removeFavButtons = document.getElementsByClassName('fav__item--remove')
 
@@ -176,6 +192,8 @@ function ready() {
 
 
 
+    // trigger para função que evita quantidade zero ou negativa para um produto no card
+
     var cardQuantityInputs = document.getElementsByClassName('card--quantity')
 
     for (var i = 0; i < cardQuantityInputs.length; i++) {
@@ -187,6 +205,8 @@ function ready() {
     }
 
 
+
+    // trigger para função que evita quantidade zero ou negativa para um produto no carrinho
 
     var cartQuantityInputs = document.getElementsByClassName('item--quantity')
 
@@ -200,6 +220,8 @@ function ready() {
 
 
 
+    // target para grupo de funções que abrem a página do produto
+
     var openProductButtons = document.getElementsByClassName('shop__card--link')
 
     for (var i = 0; i < openProductButtons.length; i++) {
@@ -212,17 +234,23 @@ function ready() {
 
 
 
+    // target para função de filtro por nome do produto (barra de pesquisa)
+
     var searchInput = document.getElementById('search-input')
 
     searchInput.addEventListener('input', filterCard)
 
 
 
+    // target para função de filtro pelo critério de apenas favoritos (checkbox)
+
     var checkFavFilter = document.getElementsByClassName('check__fav')[0]
 
     checkFavFilter.addEventListener('change', filterFav)
 
 
+
+    // target para botão de finalizar compra
 
     var purchaseButton = document.getElementsByClassName('cart__purchase')[0]
 
@@ -255,7 +283,7 @@ function ready() {
 
 
 
-
+// evita quantidade zero ou negativa para um produto no card
 
 function cardQuantityChanged(event) {
 
@@ -272,6 +300,8 @@ function cardQuantityChanged(event) {
 
 
 
+
+// evita quantidade zero ou negativa para um produto no carrinho
 
 function cartQuantityChanged(event) {
 
@@ -290,6 +320,8 @@ function cartQuantityChanged(event) {
 
 
 
+
+// adiciona um produto ao carrinho na página inicial
 
 function addItemToCart(event) {
 
@@ -354,6 +386,8 @@ function addItemToCart(event) {
 
 
 
+// adiciona um produto ao carrinho na página do produto
+
 function addItemToCartProduct(event) {
 
     var addToCartProductButtonClicked = event.target
@@ -416,6 +450,8 @@ function addItemToCartProduct(event) {
 
 
 
+
+// adiciona um produto aos favoritos na página inicial
 
 function addItemToFav(event) {
 
@@ -494,6 +530,8 @@ function addItemToFav(event) {
 
 
 
+
+// adiciona um produto aos favoritos na página do produto
 
 function addItemToFavProduct(event) {
 
@@ -590,6 +628,8 @@ function addItemToFavProduct(event) {
 
 
 
+// remove um produto do carrinho
+
 function removeCartItem(event) {
 
     var removeButtonClicked = event.target
@@ -605,6 +645,8 @@ function removeCartItem(event) {
 
 
 
+
+// remove um produto dos favoritos
 
 function removeFavItem(event) {
 
@@ -697,6 +739,8 @@ function removeFavItem(event) {
 
 
 
+// ao adicionar um produto ao carrinho, checa se o mesmo produto já está no carrinho
+
 function checkCartRepeat() {
 
     var cartItemContainer = document.getElementsByClassName('cart__items')[0]
@@ -713,7 +757,7 @@ function checkCartRepeat() {
 
         var cartImageSrc = cartImage.src
 
-        cartImageSeed = cartImageSrc.substring(-3, (cartImageSrc.length - 3))
+        var cartImageSeed = cartImageSrc.substring(-3, (cartImageSrc.length - 3))
 
         cartImageSrcList.push(cartImageSeed)
 
@@ -744,6 +788,8 @@ function checkCartRepeat() {
 
 
 
+// ao adicionar um produto aos favoritos, checa se o mesmo produto já está nos favoritos
+// caso o produto já esteja, funciona como toggle, excluindo o produto dos favoritos
 
 function checkFavRepeat() {
 
@@ -828,6 +874,8 @@ function checkFavRepeat() {
 
 
 
+// atualiza o contador do carrinho no header; trigger para carrinho cheio / vazio
+
 function updateCartCounter() {
 
     var cartItemContainer = document.getElementsByClassName('cart__items')[0]
@@ -873,6 +921,8 @@ function updateCartCounter() {
 
 
 
+// atualiza o contador dos favoritos no header; trigger para favoritos cheio / vazio
+
 function updateFavCounter() {
 
     var favItemContainer = document.getElementsByClassName('fav__items')[0]
@@ -910,6 +960,8 @@ function updateFavCounter() {
 
 
 
+// soma os preços totais (levando em conta as quantidades) dos produtos no carrinho, gerando o subtotal da compra
+
 function updateCartTotal() {
 
     var cartItemContainer = document.getElementsByClassName('cart__items')[0]
@@ -941,6 +993,8 @@ function updateCartTotal() {
 
 
 
+
+// trigger para abrir a página do produto
 
 function openProduct(event) {
 
@@ -1074,6 +1128,8 @@ function openProduct(event) {
 
 
 
+// cria o botão de retornar à páginal inicial
+
 function returnButtonGen() {
 
 
@@ -1090,6 +1146,8 @@ function returnButtonGen() {
 
 
 
+
+// trigger para fechar a página do produto e retornar à páginal inicial
 
 function returnToMain(event) {
 
@@ -1126,6 +1184,8 @@ function returnToMain(event) {
 
 
 
+// filtra o display dos produtos com o critério de apenas favoritos
+
 function filterFav() {
 
     
@@ -1157,6 +1217,9 @@ function filterFav() {
 
 
 
+
+
+// filtra o display dos produtos com o critério de nome do produto (barra de pesquisa)
 
 function filterCard(event) {
 
@@ -1200,6 +1263,8 @@ function filterCard(event) {
 
 
 
+
+// conclui a compra, limpa o carrinho, gera JSON com informações da compra
 
 function purchaseConcluded() {
 

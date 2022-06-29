@@ -30,6 +30,8 @@ let adjetivos = [
 
 
 
+// vetor com 100 strings do tipo lorem ipsum para descrição dos produtos
+
 let loremIpsum = [
 
     "solore", "gravida", "quis", "blandit", "turpis", "cursus", "in", "hac", "habitasse", "platea", 
@@ -53,9 +55,13 @@ let loremIpsum = [
 
 
 
+// vetor com números para a geração de imagens do produtos
+
 let numeros = numberArray(10, 510)
 
 
+
+// vetor com números para a geração das descrições dos produtos
 
 let numerosDesc = numberArray(10, 20)
 
@@ -82,6 +88,8 @@ if (document.readyState == 'loading') {
 
 
 
+// gera os cards de produtos
+
 function productGen() {
 
     cardGen()
@@ -99,6 +107,8 @@ function productGen() {
 
 
 
+
+// gera a estrutura HTML dos cards
 
 function cardGen() {
 
@@ -164,6 +174,8 @@ function cardGen() {
 
 
 
+// gera os nomes dos produtos
+
 function nameGen() {
 
     var shopCards = document.getElementsByClassName('shop__cards')[0];
@@ -221,6 +233,8 @@ function nameGen() {
 
 
 
+// gera as imagens dos produtos
+
 function imageGen() {
 
     var shopCards = document.getElementsByClassName('shop__cards')[0];
@@ -264,6 +278,8 @@ function imageGen() {
 
 
 
+
+// gera as descrições dos produtos
 
 function descriptionGen() {
 
@@ -313,6 +329,8 @@ function descriptionGen() {
 
 
 
+
+// gera os preços dos rodutos
 
 function priceGen() {
 
@@ -390,6 +408,8 @@ function priceGen() {
 
 
 
+// gera um vetor com números ordenados
+
 function numberArray(start, end) {
 
     let array = [];
@@ -407,6 +427,8 @@ function numberArray(start, end) {
 
 
 
+
+// embaralha os elementos de um vetor
 
 function shuffleArray(array) {
 
