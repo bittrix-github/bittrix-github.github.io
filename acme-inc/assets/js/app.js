@@ -729,6 +729,8 @@ function checkCartRepeat() {
 
             alert('Este produto já está no seu carrinho. Você pode atualizar a quantidade diretamente no carrinho.')
 
+            break
+
         }
     
     }
@@ -799,7 +801,6 @@ function checkFavRepeat() {
             break
 
 
-
         }
     
     }
@@ -815,14 +816,6 @@ function checkFavRepeat() {
         var shopCard = shopCards.getElementsByClassName('shop__card')[shopCardIndex-1]
 
         shopCard.classList.add('not__show')
-
-
-
-        // if (filtroFavoritos) {
-
-        //     favFilter()
-
-        // }
 
 
     }
@@ -1230,7 +1223,7 @@ function purchaseConcluded() {
 
     for (var i = 0; i < cartItems.length; i++) {
 
-        cartItem = cartItems[i]
+        var cartItem = cartItems[i]
 
         var quantityElement = cartItem.getElementsByClassName('item--quantity')[0]
 
@@ -1260,14 +1253,7 @@ function purchaseConcluded() {
 
 
 
-
-    console.log(purchaseSummary)
-
-
     localStorage.setItem('Resumo da compra', JSON.stringify(purchaseSummary))  
-
-
-
 
 
 
